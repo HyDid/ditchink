@@ -1,0 +1,811 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		044D585A1DB1F4DE00450FF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D58591DB1F4DE00450FF6 /* main.m */; };
+		044D585D1DB1F4DE00450FF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D585C1DB1F4DE00450FF6 /* AppDelegate.m */; };
+		044D58661DB1F4DE00450FF6 /* ditchink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 044D58641DB1F4DE00450FF6 /* ditchink.xcdatamodeld */; };
+		044D58681DB1F4DE00450FF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044D58671DB1F4DE00450FF6 /* Assets.xcassets */; };
+		044D586B1DB1F4DE00450FF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044D58691DB1F4DE00450FF6 /* LaunchScreen.storyboard */; };
+		044D58761DB1F4DE00450FF6 /* ditchinkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D58751DB1F4DE00450FF6 /* ditchinkTests.m */; };
+		044D58811DB1F4DE00450FF6 /* ditchinkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D58801DB1F4DE00450FF6 /* ditchinkUITests.m */; };
+		044D58A21DB2001100450FF6 /* HyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D58A11DB2001100450FF6 /* HyTabBarController.m */; };
+		044D58A51DB2156B00450FF6 /* HyTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D58A41DB2156B00450FF6 /* HyTabBar.m */; };
+		044D58A91DB2219A00450FF6 /* HyTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D58A81DB2219A00450FF6 /* HyTabBarButton.m */; };
+		044D58AC1DB22BA100450FF6 /* HyNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D58AB1DB22BA100450FF6 /* HyNavigationController.m */; };
+		044D58B01DB22C2300450FF6 /* HyHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D58AE1DB22C2300450FF6 /* HyHomeViewController.m */; };
+		044D58B11DB22C2300450FF6 /* HyHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044D58AF1DB22C2300450FF6 /* HyHomeViewController.xib */; };
+		044D58B51DB22CA200450FF6 /* HyMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D58B31DB22CA200450FF6 /* HyMessageViewController.m */; };
+		044D58B61DB22CA200450FF6 /* HyMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044D58B41DB22CA200450FF6 /* HyMessageViewController.xib */; };
+		044D58BD1DB2305D00450FF6 /* HyMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D58BB1DB2305D00450FF6 /* HyMeViewController.m */; };
+		044D58BE1DB2305D00450FF6 /* HyMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044D58BC1DB2305D00450FF6 /* HyMeViewController.xib */; };
+		CF92AFBADF0160AA35F4F888 /* libPods-ditchink.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8C8630BCDEDA91006837EC /* libPods-ditchink.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		044D58721DB1F4DE00450FF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 044D584D1DB1F4DE00450FF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 044D58541DB1F4DE00450FF6;
+			remoteInfo = ditchink;
+		};
+		044D587D1DB1F4DE00450FF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 044D584D1DB1F4DE00450FF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 044D58541DB1F4DE00450FF6;
+			remoteInfo = ditchink;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		044D58551DB1F4DE00450FF6 /* 沟思.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "沟思.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		044D58591DB1F4DE00450FF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		044D585B1DB1F4DE00450FF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		044D585C1DB1F4DE00450FF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
+		044D58651DB1F4DE00450FF6 /* ditchink.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ditchink.xcdatamodel; sourceTree = "<group>"; };
+		044D58671DB1F4DE00450FF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		044D586A1DB1F4DE00450FF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		044D586C1DB1F4DE00450FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044D58711DB1F4DE00450FF6 /* ditchinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ditchinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		044D58751DB1F4DE00450FF6 /* ditchinkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ditchinkTests.m; sourceTree = "<group>"; };
+		044D58771DB1F4DE00450FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044D587C1DB1F4DE00450FF6 /* ditchinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ditchinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		044D58801DB1F4DE00450FF6 /* ditchinkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ditchinkUITests.m; sourceTree = "<group>"; };
+		044D58821DB1F4DE00450FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044D58A01DB2001100450FF6 /* HyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyTabBarController.h; sourceTree = "<group>"; };
+		044D58A11DB2001100450FF6 /* HyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyTabBarController.m; sourceTree = "<group>"; };
+		044D58A31DB2156B00450FF6 /* HyTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyTabBar.h; sourceTree = "<group>"; };
+		044D58A41DB2156B00450FF6 /* HyTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyTabBar.m; sourceTree = "<group>"; };
+		044D58A61DB215FD00450FF6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		044D58A71DB2219A00450FF6 /* HyTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyTabBarButton.h; sourceTree = "<group>"; };
+		044D58A81DB2219A00450FF6 /* HyTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyTabBarButton.m; sourceTree = "<group>"; };
+		044D58AA1DB22BA100450FF6 /* HyNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyNavigationController.h; sourceTree = "<group>"; };
+		044D58AB1DB22BA100450FF6 /* HyNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyNavigationController.m; sourceTree = "<group>"; };
+		044D58AD1DB22C2300450FF6 /* HyHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyHomeViewController.h; sourceTree = "<group>"; };
+		044D58AE1DB22C2300450FF6 /* HyHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyHomeViewController.m; sourceTree = "<group>"; };
+		044D58AF1DB22C2300450FF6 /* HyHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyHomeViewController.xib; sourceTree = "<group>"; };
+		044D58B21DB22CA200450FF6 /* HyMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyMessageViewController.h; sourceTree = "<group>"; };
+		044D58B31DB22CA200450FF6 /* HyMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyMessageViewController.m; sourceTree = "<group>"; };
+		044D58B41DB22CA200450FF6 /* HyMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyMessageViewController.xib; sourceTree = "<group>"; };
+		044D58BA1DB2305C00450FF6 /* HyMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyMeViewController.h; sourceTree = "<group>"; };
+		044D58BB1DB2305D00450FF6 /* HyMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyMeViewController.m; sourceTree = "<group>"; };
+		044D58BC1DB2305D00450FF6 /* HyMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyMeViewController.xib; sourceTree = "<group>"; };
+		1F8C8630BCDEDA91006837EC /* libPods-ditchink.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ditchink.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9E0B158292A533E12A5675F /* Pods-ditchink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ditchink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ditchink/Pods-ditchink.debug.xcconfig"; sourceTree = "<group>"; };
+		F9F846419A68F9148CC26410 /* Pods-ditchink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ditchink.release.xcconfig"; path = "Pods/Target Support Files/Pods-ditchink/Pods-ditchink.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		044D58521DB1F4DE00450FF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF92AFBADF0160AA35F4F888 /* libPods-ditchink.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044D586E1DB1F4DE00450FF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044D58791DB1F4DE00450FF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		044D584C1DB1F4DE00450FF6 = {
+			isa = PBXGroup;
+			children = (
+				044D58571DB1F4DE00450FF6 /* ditchink */,
+				044D58741DB1F4DE00450FF6 /* ditchinkTests */,
+				044D587F1DB1F4DE00450FF6 /* ditchinkUITests */,
+				044D58561DB1F4DE00450FF6 /* Products */,
+				46AA41B1834AD5FEB205C3E7 /* Pods */,
+				2A09287940B57B86C3BCB100 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		044D58561DB1F4DE00450FF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				044D58551DB1F4DE00450FF6 /* 沟思.app */,
+				044D58711DB1F4DE00450FF6 /* ditchinkTests.xctest */,
+				044D587C1DB1F4DE00450FF6 /* ditchinkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		044D58571DB1F4DE00450FF6 /* ditchink */ = {
+			isa = PBXGroup;
+			children = (
+				044D589F1DB1FFA200450FF6 /* Welcome */,
+				044D58921DB1FEDE00450FF6 /* Main */,
+				044D588E1DB1FEDE00450FF6 /* Home */,
+				044D589A1DB1FEDE00450FF6 /* Message */,
+				044D58961DB1FEDE00450FF6 /* Me */,
+				044D589E1DB1FEFA00450FF6 /* Other */,
+				044D58671DB1F4DE00450FF6 /* Assets.xcassets */,
+				044D58691DB1F4DE00450FF6 /* LaunchScreen.storyboard */,
+				044D58581DB1F4DE00450FF6 /* Supporting Files */,
+			);
+			path = ditchink;
+			sourceTree = "<group>";
+		};
+		044D58581DB1F4DE00450FF6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				044D58641DB1F4DE00450FF6 /* ditchink.xcdatamodeld */,
+				044D586C1DB1F4DE00450FF6 /* Info.plist */,
+				044D58591DB1F4DE00450FF6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		044D58741DB1F4DE00450FF6 /* ditchinkTests */ = {
+			isa = PBXGroup;
+			children = (
+				044D58751DB1F4DE00450FF6 /* ditchinkTests.m */,
+				044D58771DB1F4DE00450FF6 /* Info.plist */,
+			);
+			path = ditchinkTests;
+			sourceTree = "<group>";
+		};
+		044D587F1DB1F4DE00450FF6 /* ditchinkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				044D58801DB1F4DE00450FF6 /* ditchinkUITests.m */,
+				044D58821DB1F4DE00450FF6 /* Info.plist */,
+			);
+			path = ditchinkUITests;
+			sourceTree = "<group>";
+		};
+		044D588E1DB1FEDE00450FF6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				044D588F1DB1FEDE00450FF6 /* Controller */,
+				044D58901DB1FEDE00450FF6 /* Model */,
+				044D58911DB1FEDE00450FF6 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		044D588F1DB1FEDE00450FF6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				044D58AD1DB22C2300450FF6 /* HyHomeViewController.h */,
+				044D58AE1DB22C2300450FF6 /* HyHomeViewController.m */,
+				044D58AF1DB22C2300450FF6 /* HyHomeViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		044D58901DB1FEDE00450FF6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		044D58911DB1FEDE00450FF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		044D58921DB1FEDE00450FF6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				044D585B1DB1F4DE00450FF6 /* AppDelegate.h */,
+				044D585C1DB1F4DE00450FF6 /* AppDelegate.m */,
+				044D58931DB1FEDE00450FF6 /* Controller */,
+				044D58941DB1FEDE00450FF6 /* Model */,
+				044D58951DB1FEDE00450FF6 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		044D58931DB1FEDE00450FF6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				044D58A01DB2001100450FF6 /* HyTabBarController.h */,
+				044D58A11DB2001100450FF6 /* HyTabBarController.m */,
+				044D58AA1DB22BA100450FF6 /* HyNavigationController.h */,
+				044D58AB1DB22BA100450FF6 /* HyNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		044D58941DB1FEDE00450FF6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		044D58951DB1FEDE00450FF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				044D58A31DB2156B00450FF6 /* HyTabBar.h */,
+				044D58A41DB2156B00450FF6 /* HyTabBar.m */,
+				044D58A71DB2219A00450FF6 /* HyTabBarButton.h */,
+				044D58A81DB2219A00450FF6 /* HyTabBarButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		044D58961DB1FEDE00450FF6 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				044D58971DB1FEDE00450FF6 /* Controller */,
+				044D58981DB1FEDE00450FF6 /* Model */,
+				044D58991DB1FEDE00450FF6 /* View */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		044D58971DB1FEDE00450FF6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				044D58BA1DB2305C00450FF6 /* HyMeViewController.h */,
+				044D58BB1DB2305D00450FF6 /* HyMeViewController.m */,
+				044D58BC1DB2305D00450FF6 /* HyMeViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		044D58981DB1FEDE00450FF6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		044D58991DB1FEDE00450FF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		044D589A1DB1FEDE00450FF6 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				044D589B1DB1FEDE00450FF6 /* Controller */,
+				044D589C1DB1FEDE00450FF6 /* Model */,
+				044D589D1DB1FEDE00450FF6 /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		044D589B1DB1FEDE00450FF6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				044D58B21DB22CA200450FF6 /* HyMessageViewController.h */,
+				044D58B31DB22CA200450FF6 /* HyMessageViewController.m */,
+				044D58B41DB22CA200450FF6 /* HyMessageViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		044D589C1DB1FEDE00450FF6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		044D589D1DB1FEDE00450FF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		044D589E1DB1FEFA00450FF6 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				044D58A61DB215FD00450FF6 /* PrefixHeader.pch */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		044D589F1DB1FFA200450FF6 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		2A09287940B57B86C3BCB100 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F8C8630BCDEDA91006837EC /* libPods-ditchink.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46AA41B1834AD5FEB205C3E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9E0B158292A533E12A5675F /* Pods-ditchink.debug.xcconfig */,
+				F9F846419A68F9148CC26410 /* Pods-ditchink.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		044D58541DB1F4DE00450FF6 /* ditchink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 044D58851DB1F4DE00450FF6 /* Build configuration list for PBXNativeTarget "ditchink" */;
+			buildPhases = (
+				BAB5CBBCB39E11F5CD97C3EE /* [CP] Check Pods Manifest.lock */,
+				044D58511DB1F4DE00450FF6 /* Sources */,
+				044D58521DB1F4DE00450FF6 /* Frameworks */,
+				044D58531DB1F4DE00450FF6 /* Resources */,
+				A15934D9D9A00B81DC5759B1 /* [CP] Embed Pods Frameworks */,
+				40691F1182991A925BB79DFB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ditchink;
+			productName = ditchink;
+			productReference = 044D58551DB1F4DE00450FF6 /* 沟思.app */;
+			productType = "com.apple.product-type.application";
+		};
+		044D58701DB1F4DE00450FF6 /* ditchinkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 044D58881DB1F4DE00450FF6 /* Build configuration list for PBXNativeTarget "ditchinkTests" */;
+			buildPhases = (
+				044D586D1DB1F4DE00450FF6 /* Sources */,
+				044D586E1DB1F4DE00450FF6 /* Frameworks */,
+				044D586F1DB1F4DE00450FF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				044D58731DB1F4DE00450FF6 /* PBXTargetDependency */,
+			);
+			name = ditchinkTests;
+			productName = ditchinkTests;
+			productReference = 044D58711DB1F4DE00450FF6 /* ditchinkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		044D587B1DB1F4DE00450FF6 /* ditchinkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 044D588B1DB1F4DE00450FF6 /* Build configuration list for PBXNativeTarget "ditchinkUITests" */;
+			buildPhases = (
+				044D58781DB1F4DE00450FF6 /* Sources */,
+				044D58791DB1F4DE00450FF6 /* Frameworks */,
+				044D587A1DB1F4DE00450FF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				044D587E1DB1F4DE00450FF6 /* PBXTargetDependency */,
+			);
+			name = ditchinkUITests;
+			productName = ditchinkUITests;
+			productReference = 044D587C1DB1F4DE00450FF6 /* ditchinkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		044D584D1DB1F4DE00450FF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = LiHongYu;
+				TargetAttributes = {
+					044D58541DB1F4DE00450FF6 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					044D58701DB1F4DE00450FF6 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 044D58541DB1F4DE00450FF6;
+					};
+					044D587B1DB1F4DE00450FF6 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 044D58541DB1F4DE00450FF6;
+					};
+				};
+			};
+			buildConfigurationList = 044D58501DB1F4DE00450FF6 /* Build configuration list for PBXProject "ditchink" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 044D584C1DB1F4DE00450FF6;
+			productRefGroup = 044D58561DB1F4DE00450FF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				044D58541DB1F4DE00450FF6 /* ditchink */,
+				044D58701DB1F4DE00450FF6 /* ditchinkTests */,
+				044D587B1DB1F4DE00450FF6 /* ditchinkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		044D58531DB1F4DE00450FF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044D586B1DB1F4DE00450FF6 /* LaunchScreen.storyboard in Resources */,
+				044D58B61DB22CA200450FF6 /* HyMessageViewController.xib in Resources */,
+				044D58BE1DB2305D00450FF6 /* HyMeViewController.xib in Resources */,
+				044D58B11DB22C2300450FF6 /* HyHomeViewController.xib in Resources */,
+				044D58681DB1F4DE00450FF6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044D586F1DB1F4DE00450FF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044D587A1DB1F4DE00450FF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40691F1182991A925BB79DFB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ditchink/Pods-ditchink-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A15934D9D9A00B81DC5759B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ditchink/Pods-ditchink-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAB5CBBCB39E11F5CD97C3EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		044D58511DB1F4DE00450FF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044D58A51DB2156B00450FF6 /* HyTabBar.m in Sources */,
+				044D58BD1DB2305D00450FF6 /* HyMeViewController.m in Sources */,
+				044D58A21DB2001100450FF6 /* HyTabBarController.m in Sources */,
+				044D58B01DB22C2300450FF6 /* HyHomeViewController.m in Sources */,
+				044D58AC1DB22BA100450FF6 /* HyNavigationController.m in Sources */,
+				044D585D1DB1F4DE00450FF6 /* AppDelegate.m in Sources */,
+				044D585A1DB1F4DE00450FF6 /* main.m in Sources */,
+				044D58B51DB22CA200450FF6 /* HyMessageViewController.m in Sources */,
+				044D58A91DB2219A00450FF6 /* HyTabBarButton.m in Sources */,
+				044D58661DB1F4DE00450FF6 /* ditchink.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044D586D1DB1F4DE00450FF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044D58761DB1F4DE00450FF6 /* ditchinkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044D58781DB1F4DE00450FF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044D58811DB1F4DE00450FF6 /* ditchinkUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		044D58731DB1F4DE00450FF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 044D58541DB1F4DE00450FF6 /* ditchink */;
+			targetProxy = 044D58721DB1F4DE00450FF6 /* PBXContainerItemProxy */;
+		};
+		044D587E1DB1F4DE00450FF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 044D58541DB1F4DE00450FF6 /* ditchink */;
+			targetProxy = 044D587D1DB1F4DE00450FF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		044D58691DB1F4DE00450FF6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				044D586A1DB1F4DE00450FF6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		044D58831DB1F4DE00450FF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		044D58841DB1F4DE00450FF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		044D58861DB1F4DE00450FF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9E0B158292A533E12A5675F /* Pods-ditchink.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ditchink/Other/PrefixHeader.pch";
+				INFOPLIST_FILE = ditchink/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hy.ditchink;
+				PRODUCT_NAME = "沟思";
+			};
+			name = Debug;
+		};
+		044D58871DB1F4DE00450FF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9F846419A68F9148CC26410 /* Pods-ditchink.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ditchink/Other/PrefixHeader.pch";
+				INFOPLIST_FILE = ditchink/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hy.ditchink;
+				PRODUCT_NAME = "沟思";
+			};
+			name = Release;
+		};
+		044D58891DB1F4DE00450FF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ditchinkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hy.ditchinkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ditchink.app/ditchink";
+			};
+			name = Debug;
+		};
+		044D588A1DB1F4DE00450FF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ditchinkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hy.ditchinkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ditchink.app/ditchink";
+			};
+			name = Release;
+		};
+		044D588C1DB1F4DE00450FF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ditchinkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hy.ditchinkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ditchink;
+			};
+			name = Debug;
+		};
+		044D588D1DB1F4DE00450FF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ditchinkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hy.ditchinkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ditchink;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		044D58501DB1F4DE00450FF6 /* Build configuration list for PBXProject "ditchink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044D58831DB1F4DE00450FF6 /* Debug */,
+				044D58841DB1F4DE00450FF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		044D58851DB1F4DE00450FF6 /* Build configuration list for PBXNativeTarget "ditchink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044D58861DB1F4DE00450FF6 /* Debug */,
+				044D58871DB1F4DE00450FF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		044D58881DB1F4DE00450FF6 /* Build configuration list for PBXNativeTarget "ditchinkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044D58891DB1F4DE00450FF6 /* Debug */,
+				044D588A1DB1F4DE00450FF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		044D588B1DB1F4DE00450FF6 /* Build configuration list for PBXNativeTarget "ditchinkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044D588C1DB1F4DE00450FF6 /* Debug */,
+				044D588D1DB1F4DE00450FF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		044D58641DB1F4DE00450FF6 /* ditchink.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				044D58651DB1F4DE00450FF6 /* ditchink.xcdatamodel */,
+			);
+			currentVersion = 044D58651DB1F4DE00450FF6 /* ditchink.xcdatamodel */;
+			path = ditchink.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 044D584D1DB1F4DE00450FF6 /* Project object */;
+}
