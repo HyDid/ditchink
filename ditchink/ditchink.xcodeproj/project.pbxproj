@@ -24,6 +24,8 @@
 		044D58B61DB22CA200450FF6 /* HyMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044D58B41DB22CA200450FF6 /* HyMessageViewController.xib */; };
 		044D58BD1DB2305D00450FF6 /* HyMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D58BB1DB2305D00450FF6 /* HyMeViewController.m */; };
 		044D58BE1DB2305D00450FF6 /* HyMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044D58BC1DB2305D00450FF6 /* HyMeViewController.xib */; };
+		044D58C71DB34D9D00450FF6 /* HyTitleBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D58C61DB34D9D00450FF6 /* HyTitleBtn.m */; };
+		044D58CA1DB3504C00450FF6 /* HyScanBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D58C91DB3504C00450FF6 /* HyScanBtn.m */; };
 		CF92AFBADF0160AA35F4F888 /* libPods-ditchink.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8C8630BCDEDA91006837EC /* libPods-ditchink.a */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +79,10 @@
 		044D58BA1DB2305C00450FF6 /* HyMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyMeViewController.h; sourceTree = "<group>"; };
 		044D58BB1DB2305D00450FF6 /* HyMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyMeViewController.m; sourceTree = "<group>"; };
 		044D58BC1DB2305D00450FF6 /* HyMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyMeViewController.xib; sourceTree = "<group>"; };
+		044D58C51DB34D9D00450FF6 /* HyTitleBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyTitleBtn.h; sourceTree = "<group>"; };
+		044D58C61DB34D9D00450FF6 /* HyTitleBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyTitleBtn.m; sourceTree = "<group>"; };
+		044D58C81DB3504C00450FF6 /* HyScanBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyScanBtn.h; sourceTree = "<group>"; };
+		044D58C91DB3504C00450FF6 /* HyScanBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyScanBtn.m; sourceTree = "<group>"; };
 		1F8C8630BCDEDA91006837EC /* libPods-ditchink.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ditchink.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E0B158292A533E12A5675F /* Pods-ditchink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ditchink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ditchink/Pods-ditchink.debug.xcconfig"; sourceTree = "<group>"; };
 		F9F846419A68F9148CC26410 /* Pods-ditchink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ditchink.release.xcconfig"; path = "Pods/Target Support Files/Pods-ditchink/Pods-ditchink.release.xcconfig"; sourceTree = "<group>"; };
@@ -204,6 +210,10 @@
 		044D58911DB1FEDE00450FF6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				044D58C51DB34D9D00450FF6 /* HyTitleBtn.h */,
+				044D58C61DB34D9D00450FF6 /* HyTitleBtn.m */,
+				044D58C81DB3504C00450FF6 /* HyScanBtn.h */,
+				044D58C91DB3504C00450FF6 /* HyScanBtn.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -539,11 +549,13 @@
 				044D58BD1DB2305D00450FF6 /* HyMeViewController.m in Sources */,
 				044D58A21DB2001100450FF6 /* HyTabBarController.m in Sources */,
 				044D58B01DB22C2300450FF6 /* HyHomeViewController.m in Sources */,
+				044D58CA1DB3504C00450FF6 /* HyScanBtn.m in Sources */,
 				044D58AC1DB22BA100450FF6 /* HyNavigationController.m in Sources */,
 				044D585D1DB1F4DE00450FF6 /* AppDelegate.m in Sources */,
 				044D585A1DB1F4DE00450FF6 /* main.m in Sources */,
 				044D58B51DB22CA200450FF6 /* HyMessageViewController.m in Sources */,
 				044D58A91DB2219A00450FF6 /* HyTabBarButton.m in Sources */,
+				044D58C71DB34D9D00450FF6 /* HyTitleBtn.m in Sources */,
 				044D58661DB1F4DE00450FF6 /* ditchink.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
