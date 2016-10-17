@@ -30,7 +30,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         
-        self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@""]];
+        self.backgroundColor = HyColor(255, 255, 255);
     }
     return self;
 }
@@ -48,8 +48,9 @@
     [self.tabBarButtons addObject:button];
     
     // 4.默认选中
-    if (self.tabBarButtons.count == 2) {
+    if (self.tabBarButtons.count == 1) {
         [self buttonClick:button];
+        
     }
 
 

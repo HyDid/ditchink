@@ -17,14 +17,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-    application.statusBarHidden = NO;
     
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
-    self.window.rootViewController = [[HyTabBarController alloc] init];
+    HyTabBarController *con = [[HyTabBarController alloc] init];
+    self.window.rootViewController = con;
     [self.window makeKeyAndVisible];
     return YES;
+}
+-(void)applicationDidReceiveMemoryWarning:(UIApplication *)application{
+
 }
 
 

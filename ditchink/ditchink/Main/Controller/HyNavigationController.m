@@ -16,31 +16,42 @@
 
 + (void)initialize
 {
+
     // 1.设置导航栏主题
     [self setupNavBarTheme];
     
-    // 2.设置导航栏按钮的主题
-    [self setupBarButtonTheme];
+//    // 2.设置导航栏按钮的主题
+//    [self setupBarButtonTheme];
 }
-+ (void)setupBarButtonTheme
-{
-    UIBarButtonItem *barItem = [UIBarButtonItem appearance];
-    
-    // 1.设置按钮的背景
-
-        [barItem setBackgroundImage:[UIImage imageNamed:@""] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-        [barItem setBackgroundImage:[UIImage imageNamed:@""] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
-        [barItem setBackgroundImage:[UIImage imageNamed:@""] forState:UIControlStateDisabled barMetrics:UIBarMetricsDefault];
-    
-}
+//+ (void)setupBarButtonTheme
+//{
+//    UIBarButtonItem *barItem = [UIBarButtonItem appearance];
+//    
+//    //设置按钮的背景
+//
+//        [barItem setBackgroundImage:[UIImage imageNamed:@"icon-top"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+//        [barItem setBackgroundImage:[UIImage imageNamed:@"icon-top"] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+//        [barItem setBackgroundImage:[UIImage imageNamed:@"icon-top"] forState:UIControlStateDisabled barMetrics:UIBarMetricsDefault];
+//
+//    
+//}
 
 + (void)setupNavBarTheme
 {
+
+
     
     UINavigationBar *navBar = [UINavigationBar appearance];
     
-    [navBar setBackgroundImage:[UIImage imageNamed:@""] forBarMetrics:UIBarMetricsDefault];
-//        [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleBlackOpaque;
+    [navBar setBarTintColor:HyColor(87, 190, 174)];
+    [navBar setTranslucent:NO];
+//    [navBar setBackgroundColor:HyColor(87, 190, 174)];
+    
+    // 3.设置文字样式
+    NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
+    attrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
+    attrs[NSFontAttributeName] = [UIFont fontWithName:@"Helvetica" size:15];
+    [navBar setTitleTextAttributes:attrs];
 
 }
 
@@ -56,11 +67,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-//    self.view.backgroundColor;
 
-//    self.interactivePopGestureRecognizer.delegate = nil;
-    
 }
+
+
+
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
+
+
 
 @end

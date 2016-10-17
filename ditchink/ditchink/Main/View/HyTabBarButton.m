@@ -22,8 +22,8 @@ const double HyTabBarImagescale = 0.65;
         // 2.文字居中
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
         self.titleLabel.font = [UIFont systemFontOfSize:11];
-        [self setTitleColor:HyColor(236, 103, 0) forState:UIControlStateSelected];
-        [self setTitleColor:HyColor(250, 163, 25) forState:UIControlStateNormal];
+        [self setTitleColor:HyColor(95, 182, 174) forState:UIControlStateSelected];
+        [self setTitleColor:HyColor(163, 163, 163) forState:UIControlStateNormal];
         
         // 3.设置选中时的背景图片
         [self setBackgroundImage:[UIImage imageNamed:@""] forState:UIControlStateSelected];
