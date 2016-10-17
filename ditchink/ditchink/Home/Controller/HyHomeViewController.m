@@ -7,31 +7,23 @@
 //
 
 #import "HyHomeViewController.h"
-
-<<<<<<< HEAD
-@interface HyHomeViewController () <UITableViewDataSource>
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (nonatomic,strong) NSArray *home;
-=======
-
 #import "HySearchBar.h"
 
-
-@interface HyHomeViewController ()
+@interface HyHomeViewController () 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic,strong) NSArray *home;
 @property(nonatomic,strong) HySearchBar *bar;
->>>>>>> 9a6522409bdc3fb37af7622a0ca5b9ce5954eb72
+
 
 @end
 
 @implementation HyHomeViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-<<<<<<< HEAD
-    // Do any additional setup after loading the view from its nib.
+    [super viewDidLoad];    // Do any additional setup after loading the view from its nib.
     
     // 设置数据源
-    self.tableView.dataSource = self;
+
 }
 
 
@@ -46,9 +38,9 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
 
-=======
+
+
     
     //设置导航栏
     [self setupNav];
@@ -119,6 +111,5 @@
 }
 
 
->>>>>>> 9a6522409bdc3fb37af7622a0ca5b9ce5954eb72
 
 @end
