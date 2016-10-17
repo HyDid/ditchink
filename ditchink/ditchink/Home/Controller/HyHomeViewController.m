@@ -8,8 +8,7 @@
 
 #import "HyHomeViewController.h"
 
-#import "HyTitleBtn.h"
-#import "HyScanBtn.h"
+
 #import "HySearchBar.h"
 
 
