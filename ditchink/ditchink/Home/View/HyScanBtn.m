@@ -15,7 +15,7 @@
 {
     CGFloat h = contentRect.size.height;
     CGFloat w = contentRect.size.width;
-    CGFloat x = 0;
+    CGFloat x = 100;
     return CGRectMake(x, 0, w, h);
 }
 
