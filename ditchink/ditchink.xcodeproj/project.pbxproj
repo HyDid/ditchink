@@ -26,6 +26,10 @@
 		044D58BE1DB2305D00450FF6 /* HyMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044D58BC1DB2305D00450FF6 /* HyMeViewController.xib */; };
 		044D58CD1DB3683300450FF6 /* HySearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D58CC1DB3683300450FF6 /* HySearchBar.m */; };
 		CF92AFBADF0160AA35F4F888 /* libPods-ditchink.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8C8630BCDEDA91006837EC /* libPods-ditchink.a */; };
+		E4375B711DC1AFB9009AF40D /* home.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4375B701DC1AFB9009AF40D /* home.plist */; };
+		E45CB2D01DC21BD8000201BB /* HyHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E45CB2CF1DC21BD8000201BB /* HyHomeModel.m */; };
+		E45CB2D41DC21EB9000201BB /* HyCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45CB2D31DC21EB9000201BB /* HyCustomCell.xib */; };
+		E45CB2D71DC22017000201BB /* HyCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E45CB2D61DC22017000201BB /* HyCustomCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +86,12 @@
 		044D58CC1DB3683300450FF6 /* HySearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HySearchBar.m; sourceTree = "<group>"; };
 		1F8C8630BCDEDA91006837EC /* libPods-ditchink.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ditchink.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E0B158292A533E12A5675F /* Pods-ditchink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ditchink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ditchink/Pods-ditchink.debug.xcconfig"; sourceTree = "<group>"; };
+		E4375B701DC1AFB9009AF40D /* home.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = home.plist; sourceTree = "<group>"; };
+		E45CB2CE1DC21BD8000201BB /* HyHomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HyHomeModel.h; path = ditchink/Home/View/HyHomeModel.h; sourceTree = SOURCE_ROOT; };
+		E45CB2CF1DC21BD8000201BB /* HyHomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HyHomeModel.m; path = ditchink/Home/View/HyHomeModel.m; sourceTree = SOURCE_ROOT; };
+		E45CB2D31DC21EB9000201BB /* HyCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyCustomCell.xib; sourceTree = "<group>"; };
+		E45CB2D51DC22017000201BB /* HyCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyCustomCell.h; sourceTree = "<group>"; };
+		E45CB2D61DC22017000201BB /* HyCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyCustomCell.m; sourceTree = "<group>"; };
 		F9F846419A68F9148CC26410 /* Pods-ditchink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ditchink.release.xcconfig"; path = "Pods/Target Support Files/Pods-ditchink/Pods-ditchink.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +162,7 @@
 		044D58581DB1F4DE00450FF6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E4375B701DC1AFB9009AF40D /* home.plist */,
 				044D58641DB1F4DE00450FF6 /* ditchink.xcdatamodeld */,
 				044D586C1DB1F4DE00450FF6 /* Info.plist */,
 				044D58591DB1F4DE00450FF6 /* main.m */,
@@ -200,6 +211,8 @@
 		044D58901DB1FEDE00450FF6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E45CB2CE1DC21BD8000201BB /* HyHomeModel.h */,
+				E45CB2CF1DC21BD8000201BB /* HyHomeModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -209,6 +222,9 @@
 			children = (
 				044D58CB1DB3683300450FF6 /* HySearchBar.h */,
 				044D58CC1DB3683300450FF6 /* HySearchBar.m */,
+				E45CB2D31DC21EB9000201BB /* HyCustomCell.xib */,
+				E45CB2D51DC22017000201BB /* HyCustomCell.h */,
+				E45CB2D61DC22017000201BB /* HyCustomCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -465,6 +481,8 @@
 			files = (
 				044D586B1DB1F4DE00450FF6 /* LaunchScreen.storyboard in Resources */,
 				044D58B61DB22CA200450FF6 /* HyMessageViewController.xib in Resources */,
+				E45CB2D41DC21EB9000201BB /* HyCustomCell.xib in Resources */,
+				E4375B711DC1AFB9009AF40D /* home.plist in Resources */,
 				044D58BE1DB2305D00450FF6 /* HyMeViewController.xib in Resources */,
 				044D58B11DB22C2300450FF6 /* HyHomeViewController.xib in Resources */,
 				044D58681DB1F4DE00450FF6 /* Assets.xcassets in Resources */,
@@ -547,8 +565,10 @@
 				044D58AC1DB22BA100450FF6 /* HyNavigationController.m in Sources */,
 				044D585D1DB1F4DE00450FF6 /* AppDelegate.m in Sources */,
 				044D585A1DB1F4DE00450FF6 /* main.m in Sources */,
+				E45CB2D01DC21BD8000201BB /* HyHomeModel.m in Sources */,
 				044D58B51DB22CA200450FF6 /* HyMessageViewController.m in Sources */,
 				044D58A91DB2219A00450FF6 /* HyTabBarButton.m in Sources */,
+				E45CB2D71DC22017000201BB /* HyCustomCell.m in Sources */,
 				044D58CD1DB3683300450FF6 /* HySearchBar.m in Sources */,
 				044D58661DB1F4DE00450FF6 /* ditchink.xcdatamodeld in Sources */,
 			);

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>icon</key>
+		<string>icon-mushroom.png</string>
+		<key>title</key>
+		<string>时讯科普&gt;</string>
+		<key>intro1</key>
+		<string>“蓝瘦香菇”什么梗？不知道你就out了！</string>
+		<key>intro2</key>
+		<string>“厉害了我的哥！”到底厉害的是谁的哥？</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon-mom.png</string>
+		<key>title</key>
+		<string>育儿经验&gt;</string>
+		<key>intro1</key>
+		<string>80、90催生辣妈时代，你真的够格吗？</string>
+		<key>intro2</key>
+		<string>给年轻父母的20条忠告</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon-table.png</string>
+		<key>title</key>
+		<string>量身定制&gt;</string>
+		<key>intro1</key>
+		<string>多方位了解孩子的真实内心</string>
+		<key>intro2</key>
+		<string>想和孩子交流不知如何开口怎么办？</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon-autumn2.png</string>
+		<key>title</key>
+		<string>线下互动&gt;</string>
+		<key>intro1</key>
+		<string>十一假期全家游哪里玩？</string>
+		<key>intro2</key>
+		<string>有哪些适合父母与孩子一起玩的游戏？</string>
+	</dict>
+</array>
+</plist>
