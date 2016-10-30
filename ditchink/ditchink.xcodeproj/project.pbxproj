@@ -21,10 +21,10 @@
 		044D58B01DB22C2300450FF6 /* HyHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D58AE1DB22C2300450FF6 /* HyHomeViewController.m */; };
 		044D58B11DB22C2300450FF6 /* HyHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044D58AF1DB22C2300450FF6 /* HyHomeViewController.xib */; };
 		044D58B51DB22CA200450FF6 /* HyMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D58B31DB22CA200450FF6 /* HyMessageViewController.m */; };
-		044D58B61DB22CA200450FF6 /* HyMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044D58B41DB22CA200450FF6 /* HyMessageViewController.xib */; };
 		044D58BD1DB2305D00450FF6 /* HyMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D58BB1DB2305D00450FF6 /* HyMeViewController.m */; };
 		044D58BE1DB2305D00450FF6 /* HyMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044D58BC1DB2305D00450FF6 /* HyMeViewController.xib */; };
 		044D58CD1DB3683300450FF6 /* HySearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D58CC1DB3683300450FF6 /* HySearchBar.m */; };
+		04F3BFD81DC5879300E427E1 /* HyTitleButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3BFD71DC5879300E427E1 /* HyTitleButtonView.m */; };
 		CF92AFBADF0160AA35F4F888 /* libPods-ditchink.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8C8630BCDEDA91006837EC /* libPods-ditchink.a */; };
 		E4375B711DC1AFB9009AF40D /* home.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4375B701DC1AFB9009AF40D /* home.plist */; };
 		E45CB2D01DC21BD8000201BB /* HyHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E45CB2CF1DC21BD8000201BB /* HyHomeModel.m */; };
@@ -78,12 +78,13 @@
 		044D58AF1DB22C2300450FF6 /* HyHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyHomeViewController.xib; sourceTree = "<group>"; };
 		044D58B21DB22CA200450FF6 /* HyMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyMessageViewController.h; sourceTree = "<group>"; };
 		044D58B31DB22CA200450FF6 /* HyMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyMessageViewController.m; sourceTree = "<group>"; };
-		044D58B41DB22CA200450FF6 /* HyMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyMessageViewController.xib; sourceTree = "<group>"; };
 		044D58BA1DB2305C00450FF6 /* HyMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyMeViewController.h; sourceTree = "<group>"; };
 		044D58BB1DB2305D00450FF6 /* HyMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyMeViewController.m; sourceTree = "<group>"; };
 		044D58BC1DB2305D00450FF6 /* HyMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyMeViewController.xib; sourceTree = "<group>"; };
 		044D58CB1DB3683300450FF6 /* HySearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HySearchBar.h; sourceTree = "<group>"; };
 		044D58CC1DB3683300450FF6 /* HySearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HySearchBar.m; sourceTree = "<group>"; };
+		04F3BFD61DC5879300E427E1 /* HyTitleButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyTitleButtonView.h; sourceTree = "<group>"; };
+		04F3BFD71DC5879300E427E1 /* HyTitleButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyTitleButtonView.m; sourceTree = "<group>"; };
 		1F8C8630BCDEDA91006837EC /* libPods-ditchink.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ditchink.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E0B158292A533E12A5675F /* Pods-ditchink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ditchink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ditchink/Pods-ditchink.debug.xcconfig"; sourceTree = "<group>"; };
 		E4375B701DC1AFB9009AF40D /* home.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = home.plist; sourceTree = "<group>"; };
@@ -319,7 +320,6 @@
 			children = (
 				044D58B21DB22CA200450FF6 /* HyMessageViewController.h */,
 				044D58B31DB22CA200450FF6 /* HyMessageViewController.m */,
-				044D58B41DB22CA200450FF6 /* HyMessageViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -334,6 +334,8 @@
 		044D589D1DB1FEDE00450FF6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04F3BFD61DC5879300E427E1 /* HyTitleButtonView.h */,
+				04F3BFD71DC5879300E427E1 /* HyTitleButtonView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -480,7 +482,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				044D586B1DB1F4DE00450FF6 /* LaunchScreen.storyboard in Resources */,
-				044D58B61DB22CA200450FF6 /* HyMessageViewController.xib in Resources */,
 				E45CB2D41DC21EB9000201BB /* HyCustomCell.xib in Resources */,
 				E4375B711DC1AFB9009AF40D /* home.plist in Resources */,
 				044D58BE1DB2305D00450FF6 /* HyMeViewController.xib in Resources */,
@@ -563,6 +564,7 @@
 				044D58A21DB2001100450FF6 /* HyTabBarController.m in Sources */,
 				044D58B01DB22C2300450FF6 /* HyHomeViewController.m in Sources */,
 				044D58AC1DB22BA100450FF6 /* HyNavigationController.m in Sources */,
+				04F3BFD81DC5879300E427E1 /* HyTitleButtonView.m in Sources */,
 				044D585D1DB1F4DE00450FF6 /* AppDelegate.m in Sources */,
 				044D585A1DB1F4DE00450FF6 /* main.m in Sources */,
 				E45CB2D01DC21BD8000201BB /* HyHomeModel.m in Sources */,
