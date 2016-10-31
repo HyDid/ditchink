@@ -8,8 +8,11 @@
 
 #import "HyMessageViewController.h"
 #import "HyTitleButtonView.h"
+#import "HyMessageTableViewCell.h"
 
-@interface HyMessageViewController ()
+#import "HySearchBar.h"
+
+@interface HyMessageViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong)HyTitleButtonView *titleButtonView;
 @property (nonatomic,strong)UITableView *messageTableview;
@@ -27,11 +30,19 @@
     
     UITableView *systemTableview = [[UITableView alloc]init];
     systemTableview.frame = self.view.frame;
-    systemTableview.backgroundColor = [UIColor blueColor];
+    systemTableview.backgroundColor = HyColor(239, 239, 239);
+    systemTableview.separatorStyle = NO;
+    systemTableview.delegate = self;
+    systemTableview.dataSource = self;
     [self.view addSubview:systemTableview];
+    
+    
     UITableView *messagetableview = [[UITableView alloc]init];
     messagetableview.frame = self.view.frame;
-    messagetableview.backgroundColor = [UIColor greenColor];
+    messagetableview.backgroundColor = HyColor(239, 239, 239);
+    messagetableview.separatorStyle = NO;
+    messagetableview.delegate = self;
+    messagetableview.dataSource = self;
     [self.view addSubview:messagetableview];
     self.systemTableview = systemTableview;
     self.messageTableview = messagetableview;
@@ -54,10 +65,8 @@
     
 
     HyTitleButtonView *titleButtonView = [[HyTitleButtonView alloc]init];
-    titleButtonView.frame = CGRectMake(0, 0, 160, 30);
-    titleButtonView.backgroundColor = [UIColor redColor];
+    titleButtonView.frame = CGRectMake(0, 0, 160, 25);
     self.navigationItem.titleView = titleButtonView;
-    
     self.titleButtonView = titleButtonView;
     [self.titleButtonView.messageButton addTarget:self action:@selector(messageButtonOnclick) forControlEvents:UIControlEventTouchUpInside];
     [self.titleButtonView.systemButton addTarget:self action:@selector(systemButtonOnclick) forControlEvents:UIControlEventTouchUpInside];
@@ -68,17 +77,15 @@
     
 }
 
-//导航栏左侧按钮
+//导航栏按钮
 -(void)NavLeftBtn{
     NSLog(@"left");
 }
-
 -(void)messageButtonOnclick{
     self.titleButtonView.messageButton.selected = YES;
     self.titleButtonView.systemButton.selected = NO;
     self.messageTableview.hidden = NO;
     self.systemTableview.hidden = YES;
-    
 }
 -(void)systemButtonOnclick{
     self.titleButtonView.messageButton.selected = NO;
@@ -88,14 +95,55 @@
 }
 
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 35;
 }
-*/
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if ([tableView isEqual:self.messageTableview]) {
+        return 70;
+    }else if([tableView isEqual:self.systemTableview]){
+        return 100;
+    }
+    return 0;
+}
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    UIView *messageSeachView = [[UIView alloc]init];
+    messageSeachView.backgroundColor = [UIColor whiteColor];
+    HySearchBar *bar = [[HySearchBar alloc]init];
+    bar.frame = CGRectMake(10, 5, [UIScreen mainScreen].bounds.size.width-20, 25);
+    bar.background = [UIImage imageNamed:@"icon-searchbackgroundlightgray"];
+    bar.contentMode = UIViewContentModeCenter;
+    [messageSeachView addSubview:bar];
+    
+    return messageSeachView;
+    
+}
+
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    if ([tableView isEqual:self.messageTableview]) {
+        return 3;
+    }else if([tableView isEqual:self.systemTableview]){
+        return 4;
+    }
+    return 0;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [[UITableViewCell alloc]init];
+    
+    if ([tableView isEqual:self.messageTableview]) {
+        HyMessageTableViewCell *cell = [HyMessageTableViewCell cellWithTableView:self.messageTableview];
+        return cell;
+    }else if([tableView isEqual:self.systemTableview]){
+        return cell;
+    }
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES]; 
+}
+
 
 @end

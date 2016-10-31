@@ -19,22 +19,35 @@
         
 
 
+
+
         UIButton *messageButton = [[UIButton alloc]init];
+        messageButton.titleLabel.font = [UIFont systemFontOfSize:15];
         [messageButton setTitle:@"消息" forState:UIControlStateNormal];
         [messageButton setTitle:@"消息" forState:UIControlStateSelected];
         
         [messageButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [messageButton setTitleColor:HyColor(87, 190, 174) forState:UIControlStateSelected];
         
+        
+        [messageButton setBackgroundImage:[UIImage imageNamed:@"icon-left"] forState:UIControlStateNormal];
+        [messageButton setBackgroundImage:[UIImage imageNamed:@"icon-leftpress"] forState:UIControlStateSelected];
+        messageButton.adjustsImageWhenHighlighted = NO;
+        
         [self addSubview:messageButton];
         self.messageButton = messageButton;
         
         
         UIButton *systemButton = [[UIButton alloc]init];
+        systemButton.titleLabel.font = [UIFont systemFontOfSize:15];
         [systemButton setTitle:@"系统" forState:UIControlStateNormal];
         [systemButton setTitle:@"系统" forState:UIControlStateSelected];
         [systemButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [systemButton setTitleColor:HyColor(87, 190, 174) forState:UIControlStateSelected];
+        [systemButton setBackgroundImage:[UIImage imageNamed:@"icon-right"] forState:UIControlStateNormal];
+        [systemButton setBackgroundImage:[UIImage imageNamed:@"icon-rightpress"] forState:UIControlStateSelected];
+        systemButton.adjustsImageWhenHighlighted = NO;
+        
         [self addSubview:systemButton];
         self.systemButton = systemButton;
         
@@ -52,6 +65,8 @@
     self.systemButton.frame = CGRectMake(self.frame.size.width/2, 0, self.frame.size.width/2, self.frame.size.height);
     
 }
+
+
 
 
 
