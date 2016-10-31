@@ -8,7 +8,9 @@
 
 #import "HyMessageViewController.h"
 #import "HyTitleButtonView.h"
+
 #import "HyMessageTableViewCell.h"
+#import "HySystemViewTableViewCell.h"
 
 #import "HySearchBar.h"
 
@@ -17,9 +19,25 @@
 @property (nonatomic,strong)HyTitleButtonView *titleButtonView;
 @property (nonatomic,strong)UITableView *messageTableview;
 @property (nonatomic,strong)UITableView *systemTableview;
+
+@property (nonatomic,copy)NSMutableArray *messageArray;
+@property (nonatomic,copy)NSMutableArray *systemArray;
 @end
 
 @implementation HyMessageViewController
+
+-(NSMutableArray *)messageArray{
+    if (_messageArray == nil) {
+        _messageArray = [NSMutableArray array];
+    }
+    return _messageArray;
+}
+-(NSMutableArray *)systemArray{
+    if (_systemArray == nil) {
+        _systemArray = [NSMutableArray array];
+    }
+    return _systemArray;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,6 +52,7 @@
     systemTableview.separatorStyle = NO;
     systemTableview.delegate = self;
     systemTableview.dataSource = self;
+    systemTableview.allowsSelection = NO;
     [self.view addSubview:systemTableview];
     
     
@@ -103,7 +122,7 @@
     if ([tableView isEqual:self.messageTableview]) {
         return 70;
     }else if([tableView isEqual:self.systemTableview]){
-        return 100;
+        return 130;
     }
     return 0;
 }
@@ -124,8 +143,10 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if ([tableView isEqual:self.messageTableview]) {
         return 3;
+//        return self.messageArray.count;
     }else if([tableView isEqual:self.systemTableview]){
-        return 4;
+        return 2;
+//        return self.systemArray.count;
     }
     return 0;
 }
@@ -134,8 +155,11 @@
     
     if ([tableView isEqual:self.messageTableview]) {
         HyMessageTableViewCell *cell = [HyMessageTableViewCell cellWithTableView:self.messageTableview];
+//        cell.messageModel = self.messageArray[indexPath.row];
         return cell;
     }else if([tableView isEqual:self.systemTableview]){
+        HySystemViewTableViewCell *cell = [HySystemViewTableViewCell cellWithTableView:self.systemTableview];
+//        cell.systemModel = self.systemArray[indexPath.row];
         return cell;
     }
     return cell;

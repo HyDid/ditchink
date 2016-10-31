@@ -8,30 +8,32 @@
 
 #import "HyMessageTableViewCell.h"
 
+@interface HyMessageTableViewCell()
+
+@property (weak, nonatomic) IBOutlet UIImageView *iconView;
+
+@property (weak, nonatomic) IBOutlet UILabel *nameLable;
+@property (weak, nonatomic) IBOutlet UILabel *timeLable;
+@property (weak, nonatomic) IBOutlet UILabel *detailsLable;
+
+
+@end
 @implementation HyMessageTableViewCell
 
 + (instancetype)cellWithTableView:(UITableView *)tableView{
 
-    static  NSString *CellIdentifier = @ "HyMessageTableViewCell" ;
+    static  NSString *CellIdentifier = @"HyMessageTableViewCell" ;
     HyMessageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if  (cell == nil) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:@ "HyMessageTableViewCell"  owner:self options:nil] lastObject];
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"HyMessageTableViewCell"  owner:self options:nil] lastObject];
     }
     return cell;
 }
 
-
-
-
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+-(void)setMessageModel:(HyMessageModel *)messageModel{
+    self.nameLable.text = messageModel.nameStr;
+    self.timeLable.text = messageModel.timeStr;
+    self.detailsLable.text = messageModel.detailsStr;
 }
 
 @end

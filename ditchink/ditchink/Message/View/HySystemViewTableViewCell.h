@@ -1,5 +1,5 @@
 //
-//  HyMessageTableViewCell.h
+//  HySystemViewTableViewCell.h
 //  ditchink
 //
 //  Created by LiHongYu on 2016/10/31.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HyMessageModel.h"
-@interface HyMessageTableViewCell : UITableViewCell
+#import "HySystemModel.h"
+@interface HySystemViewTableViewCell : UITableViewCell
 
 + (instancetype)cellWithTableView:(UITableView *)tableView;
-@property (nonatomic,strong)HyMessageModel *messageModel;
+@property(nonatomic,strong)HySystemModel *systemModel;
 @end

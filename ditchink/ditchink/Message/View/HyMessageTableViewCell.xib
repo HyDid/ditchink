@@ -70,6 +70,12 @@
                     <constraint firstItem="ABM-RC-3yD" firstAttribute="leading" secondItem="ezH-Pm-dHS" secondAttribute="trailing" constant="20" id="s6d-VX-ddR"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="detailsLable" destination="aFR-b9-ifq" id="2SU-av-VQL"/>
+                <outlet property="iconView" destination="ezH-Pm-dHS" id="TRE-wi-5O3"/>
+                <outlet property="nameLable" destination="ABM-RC-3yD" id="wue-1G-xz9"/>
+                <outlet property="timeLable" destination="rlg-8H-ORY" id="pMG-Dt-Dz3"/>
+            </connections>
             <point key="canvasLocation" x="33.5" y="54"/>
         </tableViewCell>
     </objects>
