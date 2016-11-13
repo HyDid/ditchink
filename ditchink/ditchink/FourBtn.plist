@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>icon</key>
+		<string>icon-parents</string>
+		<key>title</key>
+		<string>家长交流</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon-specialist</string>
+		<key>title</key>
+		<string>专家咨询</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon-case</string>
+		<key>title</key>
+		<string>案例介绍</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon-book</string>
+		<key>title</key>
+		<string>图书推荐</string>
+	</dict>
+</array>
+</plist>
