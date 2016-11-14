@@ -43,7 +43,8 @@
     
     UINavigationBar *navBar = [UINavigationBar appearance];
     
-    [navBar setBarTintColor:HyColor(87, 190, 174)];
+    [navBar setBarTintColor:HyColor(88, 194, 174)];
+    
     [navBar setTranslucent:NO];
 //    [navBar setBackgroundColor:HyColor(87, 190, 174)];
     
