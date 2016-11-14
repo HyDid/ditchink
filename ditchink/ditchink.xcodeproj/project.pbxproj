@@ -36,13 +36,6 @@
 		E45CB2D01DC21BD8000201BB /* HyHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E45CB2CF1DC21BD8000201BB /* HyHomeModel.m */; };
 		E45CB2D41DC21EB9000201BB /* HyCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45CB2D31DC21EB9000201BB /* HyCustomCell.xib */; };
 		E45CB2D71DC22017000201BB /* HyCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E45CB2D61DC22017000201BB /* HyCustomCell.m */; };
-		E4D4FC3E1DD71F2500143270 /* HyCusLifeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D4FC3C1DD71F2500143270 /* HyCusLifeCell.m */; };
-		E4D4FC3F1DD71F2500143270 /* HyCusLifeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4D4FC3D1DD71F2500143270 /* HyCusLifeCell.xib */; };
-		E4D4FC431DD71F4B00143270 /* HyCusBtnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D4FC411DD71F4B00143270 /* HyCusBtnCell.m */; };
-		E4D4FC441DD71F4B00143270 /* HyCusBtnCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4D4FC421DD71F4B00143270 /* HyCusBtnCell.xib */; };
-		E4D4FC491DD7F3DD00143270 /* FourBtn.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4D4FC481DD7F3DD00143270 /* FourBtn.plist */; };
-		E4D4FC511DD8071500143270 /* headerImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D4FC4F1DD8071500143270 /* headerImage.m */; };
-		E4D4FC521DD8071500143270 /* headerImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4D4FC501DD8071500143270 /* headerImage.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,16 +109,6 @@
 		E45CB2D31DC21EB9000201BB /* HyCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyCustomCell.xib; sourceTree = "<group>"; };
 		E45CB2D51DC22017000201BB /* HyCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyCustomCell.h; sourceTree = "<group>"; };
 		E45CB2D61DC22017000201BB /* HyCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyCustomCell.m; sourceTree = "<group>"; };
-		E4D4FC3B1DD71F2500143270 /* HyCusLifeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyCusLifeCell.h; sourceTree = "<group>"; };
-		E4D4FC3C1DD71F2500143270 /* HyCusLifeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyCusLifeCell.m; sourceTree = "<group>"; };
-		E4D4FC3D1DD71F2500143270 /* HyCusLifeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyCusLifeCell.xib; sourceTree = "<group>"; };
-		E4D4FC401DD71F4B00143270 /* HyCusBtnCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyCusBtnCell.h; sourceTree = "<group>"; };
-		E4D4FC411DD71F4B00143270 /* HyCusBtnCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyCusBtnCell.m; sourceTree = "<group>"; };
-		E4D4FC421DD71F4B00143270 /* HyCusBtnCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyCusBtnCell.xib; sourceTree = "<group>"; };
-		E4D4FC481DD7F3DD00143270 /* FourBtn.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FourBtn.plist; sourceTree = "<group>"; };
-		E4D4FC4E1DD8071500143270 /* headerImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = headerImage.h; sourceTree = "<group>"; };
-		E4D4FC4F1DD8071500143270 /* headerImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = headerImage.m; sourceTree = "<group>"; };
-		E4D4FC501DD8071500143270 /* headerImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = headerImage.xib; sourceTree = "<group>"; };
 		F9F846419A68F9148CC26410 /* Pods-ditchink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ditchink.release.xcconfig"; path = "Pods/Target Support Files/Pods-ditchink/Pods-ditchink.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,7 +183,6 @@
 				044D58641DB1F4DE00450FF6 /* ditchink.xcdatamodeld */,
 				044D586C1DB1F4DE00450FF6 /* Info.plist */,
 				044D58591DB1F4DE00450FF6 /* main.m */,
-				E4D4FC481DD7F3DD00143270 /* FourBtn.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -255,11 +237,11 @@
 		044D58911DB1FEDE00450FF6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E4D4FC4D1DD806D900143270 /* imageTurn */,
-				E4D4FC3A1DD71E5B00143270 /* BtnCell */,
-				E4D4FC391DD71E4A00143270 /* LifeCell */,
-				E4D4FC381DD71E2F00143270 /* FourCell */,
-				E4D4FC371DD71E1C00143270 /* HySearchBar */,
+				044D58CB1DB3683300450FF6 /* HySearchBar.h */,
+				044D58CC1DB3683300450FF6 /* HySearchBar.m */,
+				E45CB2D31DC21EB9000201BB /* HyCustomCell.xib */,
+				E45CB2D51DC22017000201BB /* HyCustomCell.h */,
+				E45CB2D61DC22017000201BB /* HyCustomCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -416,55 +398,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		E4D4FC371DD71E1C00143270 /* HySearchBar */ = {
-			isa = PBXGroup;
-			children = (
-				044D58CB1DB3683300450FF6 /* HySearchBar.h */,
-				044D58CC1DB3683300450FF6 /* HySearchBar.m */,
-			);
-			name = HySearchBar;
-			sourceTree = "<group>";
-		};
-		E4D4FC381DD71E2F00143270 /* FourCell */ = {
-			isa = PBXGroup;
-			children = (
-				E45CB2D31DC21EB9000201BB /* HyCustomCell.xib */,
-				E45CB2D51DC22017000201BB /* HyCustomCell.h */,
-				E45CB2D61DC22017000201BB /* HyCustomCell.m */,
-			);
-			name = FourCell;
-			sourceTree = "<group>";
-		};
-		E4D4FC391DD71E4A00143270 /* LifeCell */ = {
-			isa = PBXGroup;
-			children = (
-				E4D4FC3B1DD71F2500143270 /* HyCusLifeCell.h */,
-				E4D4FC3C1DD71F2500143270 /* HyCusLifeCell.m */,
-				E4D4FC3D1DD71F2500143270 /* HyCusLifeCell.xib */,
-			);
-			name = LifeCell;
-			sourceTree = "<group>";
-		};
-		E4D4FC3A1DD71E5B00143270 /* BtnCell */ = {
-			isa = PBXGroup;
-			children = (
-				E4D4FC401DD71F4B00143270 /* HyCusBtnCell.h */,
-				E4D4FC411DD71F4B00143270 /* HyCusBtnCell.m */,
-				E4D4FC421DD71F4B00143270 /* HyCusBtnCell.xib */,
-			);
-			name = BtnCell;
-			sourceTree = "<group>";
-		};
-		E4D4FC4D1DD806D900143270 /* imageTurn */ = {
-			isa = PBXGroup;
-			children = (
-				E4D4FC4E1DD8071500143270 /* headerImage.h */,
-				E4D4FC4F1DD8071500143270 /* headerImage.m */,
-				E4D4FC501DD8071500143270 /* headerImage.xib */,
-			);
-			name = imageTurn;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -574,17 +507,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
-				E4D4FC441DD71F4B00143270 /* HyCusBtnCell.xib in Resources */,
-				E4D4FC491DD7F3DD00143270 /* FourBtn.plist in Resources */,
-=======
 				04F3BFDD1DC6DC7500E427E1 /* HyMessageTableViewCell.xib in Resources */,
->>>>>>> 866361780621adae51755dc15e38eae8eafd2657
 				044D586B1DB1F4DE00450FF6 /* LaunchScreen.storyboard in Resources */,
 				04F3BFE21DC7558D00E427E1 /* HySystemViewTableViewCell.xib in Resources */,
 				E45CB2D41DC21EB9000201BB /* HyCustomCell.xib in Resources */,
-				E4D4FC3F1DD71F2500143270 /* HyCusLifeCell.xib in Resources */,
-				E4D4FC521DD8071500143270 /* headerImage.xib in Resources */,
 				E4375B711DC1AFB9009AF40D /* home.plist in Resources */,
 				044D58BE1DB2305D00450FF6 /* HyMeViewController.xib in Resources */,
 				044D58B11DB22C2300450FF6 /* HyHomeViewController.xib in Resources */,
@@ -665,7 +591,6 @@
 				044D58BD1DB2305D00450FF6 /* HyMeViewController.m in Sources */,
 				044D58A21DB2001100450FF6 /* HyTabBarController.m in Sources */,
 				044D58B01DB22C2300450FF6 /* HyHomeViewController.m in Sources */,
-				E4D4FC511DD8071500143270 /* headerImage.m in Sources */,
 				044D58AC1DB22BA100450FF6 /* HyNavigationController.m in Sources */,
 				04F3BFD81DC5879300E427E1 /* HyTitleButtonView.m in Sources */,
 				044D585D1DB1F4DE00450FF6 /* AppDelegate.m in Sources */,
@@ -679,8 +604,6 @@
 				044D58A91DB2219A00450FF6 /* HyTabBarButton.m in Sources */,
 				E45CB2D71DC22017000201BB /* HyCustomCell.m in Sources */,
 				044D58CD1DB3683300450FF6 /* HySearchBar.m in Sources */,
-				E4D4FC3E1DD71F2500143270 /* HyCusLifeCell.m in Sources */,
-				E4D4FC431DD71F4B00143270 /* HyCusBtnCell.m in Sources */,
 				044D58661DB1F4DE00450FF6 /* ditchink.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

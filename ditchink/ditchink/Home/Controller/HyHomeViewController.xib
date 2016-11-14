@@ -17,7 +17,9 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="yaR-FT-9SP">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="yaR-FT-9SP">
+                    <frame key="frameInset" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="MtG-Gd-e7W"/>
@@ -26,12 +28,6 @@
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="yaR-FT-9SP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5pj-hS-XJ9"/>
-                <constraint firstAttribute="trailing" secondItem="yaR-FT-9SP" secondAttribute="trailing" id="GF0-tR-rC2"/>
-                <constraint firstItem="yaR-FT-9SP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GVH-z2-74m"/>
-                <constraint firstAttribute="bottom" secondItem="yaR-FT-9SP" secondAttribute="bottom" id="nEt-rK-7BO"/>
-            </constraints>
             <point key="canvasLocation" x="-113.5" y="47.5"/>
         </view>
     </objects>
