@@ -14,6 +14,7 @@
 
 #import "HySearchBar.h"
 
+
 @interface HyMessageViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong)HyTitleButtonView *titleButtonView;
@@ -43,6 +44,7 @@
     [super viewDidLoad];
     
 
+    
     //设置导航栏
     [self setupNav];
     
