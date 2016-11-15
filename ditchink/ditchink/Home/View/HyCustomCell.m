@@ -9,7 +9,7 @@
 #import "HyCustomCell.h"
 #import "HyHomeModel.h"
 
-@interface HyCustomCell()
+@interface HyCustomCell() <UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *iconView;
 @property (weak, nonatomic) IBOutlet UILabel *titleView;
 @property (weak, nonatomic) IBOutlet UILabel *intro1View;
@@ -30,15 +30,16 @@
     return cell;
 }
 
--(void)setModel:(HyHomeModel *)model {
+-(void)setModelll:(HyHomeModel *)modelll {
     // 重写set方法
-    _model = model;
+    _modelll = modelll;
     
-    self.iconView.image = [UIImage imageNamed:model.icon];
-    self.titleView.text = model.title;
-    self.intro1View.text = model.intro1;
-    self.intro2View.text = model.intro2;
+    self.iconView.image = [UIImage imageNamed:_modelll.icon];
+    self.titleView.text = _modelll.title;
+    self.intro1View.text = _modelll.intro1;
+    self.intro2View.text = _modelll.intro2;
+    
+//    [self addSubview:<#(nonnull UIView *)#>];
 }
-
 
 @end

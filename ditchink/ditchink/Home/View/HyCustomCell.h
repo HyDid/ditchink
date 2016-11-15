@@ -16,6 +16,6 @@
 +(instancetype)cellWithTableView:(UITableView *)tableView;
 
 // 模型
-@property(nonatomic,strong) HyHomeModel *model;
+@property(nonatomic,strong) HyHomeModel *modelll;
 
 @end
