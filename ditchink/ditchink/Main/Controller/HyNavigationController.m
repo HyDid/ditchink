@@ -20,7 +20,7 @@
     // 1.设置导航栏主题
     [self setupNavBarTheme];
     
-//    // 2.设置导航栏按钮的主题
+    // 2.设置导航栏按钮的主题
 //    [self setupBarButtonTheme];
 }
 //+ (void)setupBarButtonTheme
@@ -40,6 +40,7 @@
 {
 
 
+
     
     UINavigationBar *navBar = [UINavigationBar appearance];
     
@@ -51,7 +52,8 @@
     // 3.设置文字样式
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
     attrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
-    attrs[NSFontAttributeName] = [UIFont fontWithName:@"Helvetica" size:15];
+//    attrs[NSFontAttributeName] = [UIFont fontWithName:@"Helvetica" size:18];
+    attrs[NSFontAttributeName] = [UIFont systemFontOfSize:19 weight:20];
     [navBar setTitleTextAttributes:attrs];
 
 }

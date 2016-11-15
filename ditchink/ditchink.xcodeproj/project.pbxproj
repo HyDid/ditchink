@@ -24,6 +24,7 @@
 		044D58BD1DB2305D00450FF6 /* HyMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D58BB1DB2305D00450FF6 /* HyMeViewController.m */; };
 		044D58BE1DB2305D00450FF6 /* HyMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044D58BC1DB2305D00450FF6 /* HyMeViewController.xib */; };
 		044D58CD1DB3683300450FF6 /* HySearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D58CC1DB3683300450FF6 /* HySearchBar.m */; };
+		04F343901DDAEFCD0055364D /* HyNearbyTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3438F1DDAEFCD0055364D /* HyNearbyTopView.m */; };
 		04F3BFD81DC5879300E427E1 /* HyTitleButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3BFD71DC5879300E427E1 /* HyTitleButtonView.m */; };
 		04F3BFDC1DC6DC7500E427E1 /* HyMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3BFDA1DC6DC7500E427E1 /* HyMessageTableViewCell.m */; };
 		04F3BFDD1DC6DC7500E427E1 /* HyMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F3BFDB1DC6DC7500E427E1 /* HyMessageTableViewCell.xib */; };
@@ -89,6 +90,8 @@
 		044D58BC1DB2305D00450FF6 /* HyMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyMeViewController.xib; sourceTree = "<group>"; };
 		044D58CB1DB3683300450FF6 /* HySearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HySearchBar.h; sourceTree = "<group>"; };
 		044D58CC1DB3683300450FF6 /* HySearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HySearchBar.m; sourceTree = "<group>"; };
+		04F3438E1DDAEFCD0055364D /* HyNearbyTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyNearbyTopView.h; sourceTree = "<group>"; };
+		04F3438F1DDAEFCD0055364D /* HyNearbyTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyNearbyTopView.m; sourceTree = "<group>"; };
 		04F3BFD61DC5879300E427E1 /* HyTitleButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyTitleButtonView.h; sourceTree = "<group>"; };
 		04F3BFD71DC5879300E427E1 /* HyTitleButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyTitleButtonView.m; sourceTree = "<group>"; };
 		04F3BFD91DC6DC7500E427E1 /* HyMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyMessageTableViewCell.h; sourceTree = "<group>"; };
@@ -167,7 +170,7 @@
 				044D58921DB1FEDE00450FF6 /* Main */,
 				044D588E1DB1FEDE00450FF6 /* Home */,
 				044D589A1DB1FEDE00450FF6 /* Message */,
-				044D58961DB1FEDE00450FF6 /* Me */,
+				044D58961DB1FEDE00450FF6 /* Nearby */,
 				044D589E1DB1FEFA00450FF6 /* Other */,
 				044D58671DB1F4DE00450FF6 /* Assets.xcassets */,
 				044D58691DB1F4DE00450FF6 /* LaunchScreen.storyboard */,
@@ -252,7 +255,6 @@
 				044D585B1DB1F4DE00450FF6 /* AppDelegate.h */,
 				044D585C1DB1F4DE00450FF6 /* AppDelegate.m */,
 				044D58931DB1FEDE00450FF6 /* Controller */,
-				044D58941DB1FEDE00450FF6 /* Model */,
 				044D58951DB1FEDE00450FF6 /* View */,
 			);
 			path = Main;
@@ -269,13 +271,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		044D58941DB1FEDE00450FF6 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		044D58951DB1FEDE00450FF6 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,14 +282,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		044D58961DB1FEDE00450FF6 /* Me */ = {
+		044D58961DB1FEDE00450FF6 /* Nearby */ = {
 			isa = PBXGroup;
 			children = (
 				044D58971DB1FEDE00450FF6 /* Controller */,
-				044D58981DB1FEDE00450FF6 /* Model */,
-				044D58991DB1FEDE00450FF6 /* View */,
+				04F3438C1DDAEFAE0055364D /* Model */,
+				04F3438D1DDAEFAE0055364D /* View */,
 			);
-			path = Me;
+			path = Nearby;
 			sourceTree = "<group>";
 		};
 		044D58971DB1FEDE00450FF6 /* Controller */ = {
@@ -305,20 +300,6 @@
 				044D58BC1DB2305D00450FF6 /* HyMeViewController.xib */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		044D58981DB1FEDE00450FF6 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		044D58991DB1FEDE00450FF6 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		044D589A1DB1FEDE00450FF6 /* Message */ = {
@@ -379,6 +360,22 @@
 			children = (
 			);
 			path = Welcome;
+			sourceTree = "<group>";
+		};
+		04F3438C1DDAEFAE0055364D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04F3438D1DDAEFAE0055364D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04F3438E1DDAEFCD0055364D /* HyNearbyTopView.h */,
+				04F3438F1DDAEFCD0055364D /* HyNearbyTopView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		2A09287940B57B86C3BCB100 /* Frameworks */ = {
@@ -594,6 +591,7 @@
 				044D58AC1DB22BA100450FF6 /* HyNavigationController.m in Sources */,
 				04F3BFD81DC5879300E427E1 /* HyTitleButtonView.m in Sources */,
 				044D585D1DB1F4DE00450FF6 /* AppDelegate.m in Sources */,
+				04F343901DDAEFCD0055364D /* HyNearbyTopView.m in Sources */,
 				04F3BFDC1DC6DC7500E427E1 /* HyMessageTableViewCell.m in Sources */,
 				04F3BFE51DC769B100E427E1 /* HyMessageModel.m in Sources */,
 				044D585A1DB1F4DE00450FF6 /* main.m in Sources */,

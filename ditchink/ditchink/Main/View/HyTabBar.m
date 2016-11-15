@@ -48,7 +48,8 @@
     [self.tabBarButtons addObject:button];
     
     // 4.默认选中
-    if (self.tabBarButtons.count == 1) {
+    if (self.tabBarButtons.count == 2) {
+        button.tag = 1;
         [self buttonClick:button];
         
     }
@@ -57,15 +58,17 @@
 }
 - (void)buttonClick:(HyTabBarButton *)button
 {
-    // 0.通知代理
+    // 控制器选中按钮
+    self.selectedButton.selected = NO;
+    button.selected = YES;
+    self.selectedButton = button;
+    
+    // 通知代理
     if ([self.delegate respondsToSelector:@selector(tabBar:didSelectedButtonFrom:to:)]) {
         [self.delegate tabBar:self didSelectedButtonFrom:(int)self.selectedButton.tag to:(int)button.tag];
     }
     
-    // 1.控制器选中按钮
-    self.selectedButton.selected = NO;
-    button.selected = YES;
-    self.selectedButton = button;
+
 }
 
 /**
