@@ -39,9 +39,6 @@
 + (void)setupNavBarTheme
 {
 
-
-
-    
     UINavigationBar *navBar = [UINavigationBar appearance];
     
     [navBar setBarTintColor:HyColor(88, 194, 174)];
@@ -72,8 +69,6 @@
     [super viewDidLoad];
 
 }
-
-
 
 - (UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;

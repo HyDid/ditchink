@@ -8,7 +8,13 @@
 
 #import "HyNearbyTopView.h"
 
+@interface HyNearbyTopView()
+@property (weak, nonatomic)UIButton *selectedButton;
+@end
+
 @implementation HyNearbyTopView
+
+
 
 static int n = 4;
 
@@ -29,10 +35,14 @@ static int n = 4;
             customButton.adjustsImageWhenHighlighted = NO;
             customButton.tag = i;
             
+            [customButton addTarget:self action:@selector(customButtonOnclick:) forControlEvents:UIControlEventTouchUpInside];
+            
             switch (customButton.tag) {
                 case 0:
                     self.personButton = customButton;
                     [self addSubview:customButton];
+                    //设置默认按钮
+                    [self customButtonOnclick:customButton];
                     break;
                 case 1:
                     self.thingButton = customButton;
@@ -58,43 +68,28 @@ static int n = 4;
     return self;
 }
 
+
 -(void)layoutSubviews{
     [super layoutSubviews];
     self.personButton.frame = CGRectMake(0, 0, self.frame.size.width/n, self.frame.size.height);
     self.thingButton.frame = CGRectMake(self.frame.size.width/n, 0, self.frame.size.width/n, self.frame.size.height);
     self.mineButton.frame = CGRectMake(self.frame.size.width*2/n, 0, self.frame.size.width/n, self.frame.size.height);
     self.moreButton.frame = CGRectMake(self.frame.size.width*3/n, 0, self.frame.size.width/n, self.frame.size.height);
-    
-    [self.personButton addTarget:self action:@selector(personButtonOnclick) forControlEvents:UIControlEventTouchUpInside];
-    [self.thingButton addTarget:self action:@selector(thingButtonOnclick) forControlEvents:UIControlEventTouchUpInside];
-    [self.mineButton addTarget:self action:@selector(mineButtonOnclick) forControlEvents:UIControlEventTouchUpInside];
-    [self.moreButton addTarget:self action:@selector(moreButtonOnclick) forControlEvents:UIControlEventTouchUpInside];
 }
 
--(void)personButtonOnclick{
-    self.personButton.selected = YES;
-    self.thingButton.selected = NO;
-    self.mineButton.selected = NO;
-    self.moreButton.selected = NO;
-}
--(void)thingButtonOnclick{
-    self.personButton.selected = NO;
-    self.thingButton.selected = YES;
-    self.mineButton.selected = NO;
-    self.moreButton.selected = NO;
+-(void)customButtonOnclick:(UIButton *)btn{
     
-}
--(void)mineButtonOnclick{
-    self.personButton.selected = NO;
-    self.thingButton.selected = NO;
-    self.mineButton.selected = YES;
-    self.moreButton.selected = NO;
-}
--(void)moreButtonOnclick{
-    self.personButton.selected = NO;
-    self.thingButton.selected = NO;
-    self.mineButton.selected = NO;
-    self.moreButton.selected = YES;
+    self.selectedButton.selected = NO;
+    btn.selected = YES;
+    self.selectedButton = btn;
+
+    
+    if ([self.delegate respondsToSelector:@selector(HyNearbyTopView:didSelectedButtonFrom:to:)]) {
+        [self.delegate HyNearbyTopView:self didSelectedButtonFrom:(int)self.selectedButton.tag to:(int)btn.tag];
+    }
+    
+    
+    
 }
 
 @end

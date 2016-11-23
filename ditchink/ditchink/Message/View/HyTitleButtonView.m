@@ -16,23 +16,19 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        
-
-
-
 
         UIButton *messageButton = [[UIButton alloc]init];
         messageButton.titleLabel.font = [UIFont systemFontOfSize:15];
         [messageButton setTitle:@"消息" forState:UIControlStateNormal];
         [messageButton setTitle:@"消息" forState:UIControlStateSelected];
-        
         [messageButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [messageButton setTitleColor:HyColor(87, 190, 174) forState:UIControlStateSelected];
-        
-        
         [messageButton setBackgroundImage:[UIImage imageNamed:@"icon-left"] forState:UIControlStateNormal];
         [messageButton setBackgroundImage:[UIImage imageNamed:@"icon-leftpress"] forState:UIControlStateSelected];
         messageButton.adjustsImageWhenHighlighted = NO;
+        
+        //设置默认
+        messageButton.selected = YES;
         
         [self addSubview:messageButton];
         self.messageButton = messageButton;
@@ -52,7 +48,8 @@
         self.systemButton = systemButton;
         
         
-
+        [self.messageButton addTarget:self action:@selector(messageButtonOnclick) forControlEvents:UIControlEventTouchUpInside];
+        [self.systemButton addTarget:self action:@selector(systemButtonOnclick) forControlEvents:UIControlEventTouchUpInside];
         
 
     }
@@ -66,7 +63,16 @@
     
 }
 
+-(void)messageButtonOnclick{
+    self.messageButton.selected = YES;
+    self.systemButton.selected = NO;
 
+}
+-(void)systemButtonOnclick{
+    self.messageButton.selected = NO;
+    self.systemButton.selected = YES;
+
+}
 
 
 

@@ -14,6 +14,8 @@
 
 #import "HySearchBar.h"
 
+#import "MJRefresh.h"
+
 @interface HyMessageViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong)HyTitleButtonView *titleButtonView;
@@ -42,37 +44,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
     //设置导航栏
     [self setupNav];
+    //设置tableView
+    [self setupTableView];
+    //加载数据
+    [self setupHttp];
     
-    UITableView *systemTableview = [[UITableView alloc]init];
-    systemTableview.frame = self.view.frame;
-    systemTableview.backgroundColor = HyColor(239, 239, 239);
-    systemTableview.separatorStyle = NO;
-    systemTableview.delegate = self;
-    systemTableview.dataSource = self;
-    systemTableview.allowsSelection = NO;
-    [self.view addSubview:systemTableview];
-    
-    
-    UITableView *messagetableview = [[UITableView alloc]init];
-    messagetableview.frame = self.view.frame;
-    messagetableview.backgroundColor = HyColor(239, 239, 239);
-    messagetableview.separatorStyle = NO;
-    messagetableview.delegate = self;
-    messagetableview.dataSource = self;
-    [self.view addSubview:messagetableview];
-    self.systemTableview = systemTableview;
-    self.messageTableview = messagetableview;
-
-    
-
 }
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    self.titleButtonView.messageButton.selected = YES;
-}
+
+
 
 -(void)setupNav{
     
@@ -89,11 +70,45 @@
     self.titleButtonView = titleButtonView;
     [self.titleButtonView.messageButton addTarget:self action:@selector(messageButtonOnclick) forControlEvents:UIControlEventTouchUpInside];
     [self.titleButtonView.systemButton addTarget:self action:@selector(systemButtonOnclick) forControlEvents:UIControlEventTouchUpInside];
+
+}
+-(void)setupTableView{
+    UITableView *systemTableview = [[UITableView alloc]init];
+    systemTableview.frame = self.view.frame;
+    systemTableview.backgroundColor = HyColor(239, 239, 239);
+    systemTableview.separatorStyle = NO;
+    systemTableview.delegate = self;
+    systemTableview.dataSource = self;
+    systemTableview.allowsSelection = NO;
+    [self.view addSubview:systemTableview];
+    
+    UITableView *messagetableview = [[UITableView alloc]init];
+    messagetableview.frame = self.view.frame;
+    messagetableview.backgroundColor = HyColor(239, 239, 239);
+    messagetableview.separatorStyle = NO;
+    messagetableview.delegate = self;
+    messagetableview.dataSource = self;
+    [self.view addSubview:messagetableview];
+    
+    self.systemTableview = systemTableview;
+    self.messageTableview = messagetableview;
+}
+-(void)setupHttp{
     
     
+    self.messageTableview.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
+    self.systemTableview.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
 
     
+    [self.messageTableview.mj_header beginRefreshing];
+    [self.systemTableview.mj_header beginRefreshing];
+}
+-(void)loadNewData{
+    //    [self.messageTableview.mj_header beginRefreshing];
+    //    [self.systemTableview.mj_header beginRefreshing];
     
+    [self.messageTableview.mj_header endRefreshing];
+    [self.systemTableview.mj_header endRefreshing];
 }
 
 //导航栏按钮
@@ -101,14 +116,10 @@
     NSLog(@"left");
 }
 -(void)messageButtonOnclick{
-    self.titleButtonView.messageButton.selected = YES;
-    self.titleButtonView.systemButton.selected = NO;
     self.messageTableview.hidden = NO;
     self.systemTableview.hidden = YES;
 }
 -(void)systemButtonOnclick{
-    self.titleButtonView.messageButton.selected = NO;
-    self.titleButtonView.systemButton.selected = YES;
     self.messageTableview.hidden = YES;
     self.systemTableview.hidden = NO;
 }
