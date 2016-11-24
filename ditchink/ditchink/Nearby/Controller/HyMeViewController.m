@@ -10,12 +10,15 @@
 #import "HyNearbyTopView.h"
 
 #import "HyNearbyPersonTableViewCell.h"
+#import "HyNearByThingTableViewCell.h"
+#import "HyNearbyThingcellFrame.h"
 
 #import "MJRefresh.h"
 
 @interface HyMeViewController ()<UITableViewDelegate,UITableViewDataSource,HyNearbyTopViewDelegate>
 
 @property(nonatomic,copy)NSMutableArray *NearPersonDetailArray;
+@property(nonatomic, strong)NSMutableArray *NearThingFramesArray;
 @property(nonatomic,strong)HyNearbyTopView *topView;
 @property(nonatomic,strong)UITableView *nearbyPersonTableView;
 @property(nonatomic,assign)int selectedBtnTag;
@@ -29,6 +32,13 @@
         _NearPersonDetailArray = [NSMutableArray array];
     }
     return _NearPersonDetailArray;
+}
+- (NSMutableArray *)NearThingFramesArray
+{
+    if (_NearThingFramesArray == nil) {
+        _NearThingFramesArray = [NSMutableArray array];
+    }
+    return _NearThingFramesArray;
 }
 
 - (void)viewDidLoad {
@@ -91,8 +101,10 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (self.selectedBtnTag ==0) {
+//        return self.NearPersonDetailArray.count;
         return 3;
     }else if (self.selectedBtnTag ==1){
+//        return self.NearThingFramesArray.count;
         return 1;
     }
     return 0;
@@ -101,19 +113,26 @@
     if (self.selectedBtnTag ==0) {
         return 140;
     }else if (self.selectedBtnTag ==1){
-        return 70;
+//        HyNearbyThingcellFrame * NearbyThingcellFrame = self.NearThingFramesArray[indexPath.row];
+        HyNearbyThingcellFrame * NearbyThingcellFrame = [[HyNearbyThingcellFrame alloc]init];
+        NearbyThingcellFrame.NearbyThingModel = [[HyNearbyThingModel alloc]init];
+        return NearbyThingcellFrame.cellHeight;
+//       return 70;
     }
     
     return 0;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [[UITableViewCell alloc]init];
+    
     if (self.selectedBtnTag == 0) {
         HyNearbyPersonTableViewCell *cell = [HyNearbyPersonTableViewCell cellWithTableView:tableView];
 //        cell.NearbyPersonModel = self.NearPersonDetailArray[indexPath.row];;
             return  cell;
     }else if (self.selectedBtnTag == 1){
-        
+        HyNearByThingTableViewCell *cell = [HyNearByThingTableViewCell cellWithTableView:tableView];
+//        cell.NearbyThingcellFrame = self.NearThingFramesArray[indexPath.row];
+        return  cell;
     }else if (self.selectedBtnTag == 2){
         
     }else if (self.selectedBtnTag == 3){

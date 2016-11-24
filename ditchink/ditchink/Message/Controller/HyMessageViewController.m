@@ -16,9 +16,12 @@
 
 #import "MJRefresh.h"
 
+#import "HySweepViewController.h"
+
 @interface HyMessageViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong)HyTitleButtonView *titleButtonView;
+@property (nonatomic,strong)HySearchBar *SearchBar;
 @property (nonatomic,strong)UITableView *messageTableview;
 @property (nonatomic,strong)UITableView *systemTableview;
 
@@ -53,7 +56,9 @@
     
 }
 
-
+//-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+//    [self.SearchBar resignFirstResponder];
+//}
 
 -(void)setupNav{
     
@@ -140,11 +145,12 @@
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     UIView *messageSeachView = [[UIView alloc]init];
     messageSeachView.backgroundColor = [UIColor whiteColor];
-    HySearchBar *bar = [[HySearchBar alloc]init];
-    bar.frame = CGRectMake(10, 5, [UIScreen mainScreen].bounds.size.width-20, 25);
-    bar.background = [UIImage imageNamed:@"icon-searchbackgroundlightgray"];
-    bar.contentMode = UIViewContentModeCenter;
-    [messageSeachView addSubview:bar];
+    HySearchBar *SearchBar = [[HySearchBar alloc]init];
+    SearchBar.frame = CGRectMake(10, 5, [UIScreen mainScreen].bounds.size.width-20, 25);
+    SearchBar.background = [UIImage imageNamed:@"icon-searchbackgroundlightgray"];
+    SearchBar.contentMode = UIViewContentModeCenter;
+    [messageSeachView addSubview:SearchBar];
+    self.SearchBar = SearchBar;
     
     return messageSeachView;
     
@@ -177,7 +183,13 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [tableView deselectRowAtIndexPath:indexPath animated:YES]; 
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if ([tableView isEqual:self.messageTableview]) {
+
+        
+    }else if([tableView isEqual:self.systemTableview]){
+
+    }
 }
 
 

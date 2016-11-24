@@ -24,6 +24,14 @@
 		04F343971DE59B480055364D /* HyNearbyPersonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F343951DE59B480055364D /* HyNearbyPersonTableViewCell.m */; };
 		04F343981DE59B480055364D /* HyNearbyPersonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F343961DE59B480055364D /* HyNearbyPersonTableViewCell.xib */; };
 		04F3439B1DE5A2760055364D /* HyNearbyPersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3439A1DE5A2760055364D /* HyNearbyPersonModel.m */; };
+		04F3439F1DE5ABE80055364D /* HySweepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3439D1DE5ABE80055364D /* HySweepViewController.m */; };
+		04F343A01DE5ABE80055364D /* HySweepViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F3439E1DE5ABE80055364D /* HySweepViewController.xib */; };
+		04F343A71DE670C10055364D /* HyNearByThingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F343A51DE670C10055364D /* HyNearByThingTableViewCell.m */; };
+		04F343A81DE670C10055364D /* HyNearByThingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F343A61DE670C10055364D /* HyNearByThingTableViewCell.xib */; };
+		04F343AB1DE675730055364D /* HyNearbyThingcellFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F343AA1DE675730055364D /* HyNearbyThingcellFrame.m */; };
+		04F343AE1DE6772B0055364D /* HyNearbyThingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F343AD1DE6772B0055364D /* HyNearbyThingModel.m */; };
+		04F343B11DE67BFB0055364D /* HyNearbyThingTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F343B01DE67BFB0055364D /* HyNearbyThingTopView.m */; };
+		04F343B41DE67C1E0055364D /* HyNearbyThingWriteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F343B31DE67C1E0055364D /* HyNearbyThingWriteView.m */; };
 		04F3BFD81DC5879300E427E1 /* HyTitleButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3BFD71DC5879300E427E1 /* HyTitleButtonView.m */; };
 		04F3BFDC1DC6DC7500E427E1 /* HyMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3BFDA1DC6DC7500E427E1 /* HyMessageTableViewCell.m */; };
 		04F3BFDD1DC6DC7500E427E1 /* HyMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F3BFDB1DC6DC7500E427E1 /* HyMessageTableViewCell.xib */; };
@@ -99,6 +107,20 @@
 		04F343961DE59B480055364D /* HyNearbyPersonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyNearbyPersonTableViewCell.xib; sourceTree = "<group>"; };
 		04F343991DE5A2760055364D /* HyNearbyPersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyNearbyPersonModel.h; sourceTree = "<group>"; };
 		04F3439A1DE5A2760055364D /* HyNearbyPersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyNearbyPersonModel.m; sourceTree = "<group>"; };
+		04F3439C1DE5ABE80055364D /* HySweepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HySweepViewController.h; sourceTree = "<group>"; };
+		04F3439D1DE5ABE80055364D /* HySweepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HySweepViewController.m; sourceTree = "<group>"; };
+		04F3439E1DE5ABE80055364D /* HySweepViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HySweepViewController.xib; sourceTree = "<group>"; };
+		04F343A41DE670C10055364D /* HyNearByThingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyNearByThingTableViewCell.h; sourceTree = "<group>"; };
+		04F343A51DE670C10055364D /* HyNearByThingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyNearByThingTableViewCell.m; sourceTree = "<group>"; };
+		04F343A61DE670C10055364D /* HyNearByThingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyNearByThingTableViewCell.xib; sourceTree = "<group>"; };
+		04F343A91DE675730055364D /* HyNearbyThingcellFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyNearbyThingcellFrame.h; sourceTree = "<group>"; };
+		04F343AA1DE675730055364D /* HyNearbyThingcellFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyNearbyThingcellFrame.m; sourceTree = "<group>"; };
+		04F343AC1DE6772B0055364D /* HyNearbyThingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyNearbyThingModel.h; sourceTree = "<group>"; };
+		04F343AD1DE6772B0055364D /* HyNearbyThingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyNearbyThingModel.m; sourceTree = "<group>"; };
+		04F343AF1DE67BFB0055364D /* HyNearbyThingTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyNearbyThingTopView.h; sourceTree = "<group>"; };
+		04F343B01DE67BFB0055364D /* HyNearbyThingTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyNearbyThingTopView.m; sourceTree = "<group>"; };
+		04F343B21DE67C1E0055364D /* HyNearbyThingWriteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyNearbyThingWriteView.h; sourceTree = "<group>"; };
+		04F343B31DE67C1E0055364D /* HyNearbyThingWriteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyNearbyThingWriteView.m; sourceTree = "<group>"; };
 		04F3BFD61DC5879300E427E1 /* HyTitleButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyTitleButtonView.h; sourceTree = "<group>"; };
 		04F3BFD71DC5879300E427E1 /* HyTitleButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyTitleButtonView.m; sourceTree = "<group>"; };
 		04F3BFD91DC6DC7500E427E1 /* HyMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyMessageTableViewCell.h; sourceTree = "<group>"; };
@@ -296,6 +318,9 @@
 			children = (
 				044D58B21DB22CA200450FF6 /* HyMessageViewController.h */,
 				044D58B31DB22CA200450FF6 /* HyMessageViewController.m */,
+				04F3439C1DE5ABE80055364D /* HySweepViewController.h */,
+				04F3439D1DE5ABE80055364D /* HySweepViewController.m */,
+				04F3439E1DE5ABE80055364D /* HySweepViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -346,6 +371,10 @@
 			children = (
 				04F343991DE5A2760055364D /* HyNearbyPersonModel.h */,
 				04F3439A1DE5A2760055364D /* HyNearbyPersonModel.m */,
+				04F343A91DE675730055364D /* HyNearbyThingcellFrame.h */,
+				04F343AA1DE675730055364D /* HyNearbyThingcellFrame.m */,
+				04F343AC1DE6772B0055364D /* HyNearbyThingModel.h */,
+				04F343AD1DE6772B0055364D /* HyNearbyThingModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -358,6 +387,13 @@
 				04F343941DE59B480055364D /* HyNearbyPersonTableViewCell.h */,
 				04F343951DE59B480055364D /* HyNearbyPersonTableViewCell.m */,
 				04F343961DE59B480055364D /* HyNearbyPersonTableViewCell.xib */,
+				04F343A41DE670C10055364D /* HyNearByThingTableViewCell.h */,
+				04F343A51DE670C10055364D /* HyNearByThingTableViewCell.m */,
+				04F343A61DE670C10055364D /* HyNearByThingTableViewCell.xib */,
+				04F343AF1DE67BFB0055364D /* HyNearbyThingTopView.h */,
+				04F343B01DE67BFB0055364D /* HyNearbyThingTopView.m */,
+				04F343B21DE67C1E0055364D /* HyNearbyThingWriteView.h */,
+				04F343B31DE67C1E0055364D /* HyNearbyThingWriteView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -540,7 +576,9 @@
 				E4A457B71DDB0F2C00BE597E /* headerImage.xib in Resources */,
 				E4A457BB1DDB0F2C00BE597E /* HyCusLifeCell.xib in Resources */,
 				044D58681DB1F4DE00450FF6 /* Assets.xcassets in Resources */,
+				04F343A01DE5ABE80055364D /* HySweepViewController.xib in Resources */,
 				E4A457B51DDB0F2C00BE597E /* HyHomeViewController.xib in Resources */,
+				04F343A81DE670C10055364D /* HyNearByThingTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,19 +653,24 @@
 			files = (
 				044D58A51DB2156B00450FF6 /* HyTabBar.m in Sources */,
 				044D58BD1DB2305D00450FF6 /* HyMeViewController.m in Sources */,
+				04F3439F1DE5ABE80055364D /* HySweepViewController.m in Sources */,
 				044D58A21DB2001100450FF6 /* HyTabBarController.m in Sources */,
 				044D58AC1DB22BA100450FF6 /* HyNavigationController.m in Sources */,
 				E4A457BA1DDB0F2C00BE597E /* HyCusLifeCell.m in Sources */,
 				E4A457BC1DDB0F2C00BE597E /* HyCustomCell.m in Sources */,
 				04F3BFD81DC5879300E427E1 /* HyTitleButtonView.m in Sources */,
+				04F343AE1DE6772B0055364D /* HyNearbyThingModel.m in Sources */,
 				E4A457BE1DDB0F2C00BE597E /* HyHomeModel.m in Sources */,
 				044D585D1DB1F4DE00450FF6 /* AppDelegate.m in Sources */,
 				04F343901DDAEFCD0055364D /* HyNearbyTopView.m in Sources */,
 				E4A457BF1DDB0F2C00BE597E /* HySearchBar.m in Sources */,
 				E4A457B81DDB0F2C00BE597E /* HyCusBtnCell.m in Sources */,
 				04F343971DE59B480055364D /* HyNearbyPersonTableViewCell.m in Sources */,
+				04F343A71DE670C10055364D /* HyNearByThingTableViewCell.m in Sources */,
 				04F3BFDC1DC6DC7500E427E1 /* HyMessageTableViewCell.m in Sources */,
+				04F343B11DE67BFB0055364D /* HyNearbyThingTopView.m in Sources */,
 				04F3BFE51DC769B100E427E1 /* HyMessageModel.m in Sources */,
+				04F343B41DE67C1E0055364D /* HyNearbyThingWriteView.m in Sources */,
 				044D585A1DB1F4DE00450FF6 /* main.m in Sources */,
 				E4A457B41DDB0F2C00BE597E /* HyHomeViewController.m in Sources */,
 				04F3BFE11DC7558D00E427E1 /* HySystemViewTableViewCell.m in Sources */,
@@ -637,6 +680,7 @@
 				04F3BFE81DC769CF00E427E1 /* HySystemModel.m in Sources */,
 				044D58A91DB2219A00450FF6 /* HyTabBarButton.m in Sources */,
 				044D58661DB1F4DE00450FF6 /* ditchink.xcdatamodeld in Sources */,
+				04F343AB1DE675730055364D /* HyNearbyThingcellFrame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
