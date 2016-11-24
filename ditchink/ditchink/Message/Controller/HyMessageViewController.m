@@ -26,7 +26,8 @@
 @property (nonatomic,strong)UITableView *systemTableview;
 
 @property (nonatomic,copy)NSMutableArray *messageArray;
-@property (nonatomic,copy)NSMutableArray *systemArray;
+//@property (nonatomic,copy)NSMutableArray *systemArray;
+@property (nonatomic,copy)NSMutableArray *systemCellFramesArray;
 @end
 
 @implementation HyMessageViewController
@@ -37,11 +38,17 @@
     }
     return _messageArray;
 }
--(NSMutableArray *)systemArray{
-    if (_systemArray == nil) {
-        _systemArray = [NSMutableArray array];
+//-(NSMutableArray *)systemArray{
+//    if (_systemArray == nil) {
+//    _systemArray = [NSMutableArray array];
+//    }
+//    return _systemArray;
+//}
+-(NSMutableArray *)systemCellFramesArray{
+    if (_systemCellFramesArray == nil) {
+        _systemCellFramesArray = [NSMutableArray array];
     }
-    return _systemArray;
+    return _systemCellFramesArray;
 }
 
 - (void)viewDidLoad {
@@ -100,7 +107,7 @@
 }
 -(void)setupHttp{
     
-    
+
     self.messageTableview.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
     self.systemTableview.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
 
@@ -109,11 +116,42 @@
     [self.systemTableview.mj_header beginRefreshing];
 }
 -(void)loadNewData{
-    //    [self.messageTableview.mj_header beginRefreshing];
-    //    [self.systemTableview.mj_header beginRefreshing];
+
     
+    
+    [self messagePlistGet];
+    [self systemPlistGet];
     [self.messageTableview.mj_header endRefreshing];
     [self.systemTableview.mj_header endRefreshing];
+}
+
+//从plist文件中获取数据
+-(void)messagePlistGet{
+    [self.messageArray removeAllObjects];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Message_message.plist" ofType:nil];
+    NSArray *dictArray = [NSArray arrayWithContentsOfFile:path];
+    for (NSDictionary *dict in dictArray) {
+        
+        HyMessageModel *model = [HyMessageModel ModelWithDict:dict];
+        [self.messageArray addObject:model];
+    }
+    [self.messageTableview reloadData];
+}
+-(void)systemPlistGet{
+    [self.systemCellFramesArray removeAllObjects];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Message_system.plist" ofType:nil];
+    NSArray *dictArray = [NSArray arrayWithContentsOfFile:path];
+    
+    for (NSDictionary *keyValues in dictArray) {
+        
+        HySystemModel *model = [HySystemModel ModelWithDict:keyValues];
+        HySystemCellFrame *SystemCellFrame = [[HySystemCellFrame alloc]init];
+        SystemCellFrame.SystemModel = model;
+        [self.systemCellFramesArray addObject:SystemCellFrame];
+        
+    }
+
+    [self.systemTableview reloadData];
 }
 
 //导航栏按钮
@@ -129,19 +167,7 @@
     self.systemTableview.hidden = NO;
 }
 
-
-
--(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 35;
-}
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if ([tableView isEqual:self.messageTableview]) {
-        return 70;
-    }else if([tableView isEqual:self.systemTableview]){
-        return 130;
-    }
-    return 0;
-}
+//搜索栏
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     UIView *messageSeachView = [[UIView alloc]init];
     messageSeachView.backgroundColor = [UIColor whiteColor];
@@ -156,14 +182,26 @@
     
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 35;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if ([tableView isEqual:self.messageTableview]) {
+        return 70;
+    }else if([tableView isEqual:self.systemTableview]){
 
+        HySystemCellFrame *SystemCellFrame = self.systemCellFramesArray[indexPath.row];
+        return SystemCellFrame.cellHeight;
+    }
+    return 0;
+}
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if ([tableView isEqual:self.messageTableview]) {
-        return 3;
-//        return self.messageArray.count;
+//        return 3;
+        return self.messageArray.count;
     }else if([tableView isEqual:self.systemTableview]){
-        return 2;
-//        return self.systemArray.count;
+//        return 2;
+        return self.systemCellFramesArray.count;
     }
     return 0;
 }
@@ -172,11 +210,11 @@
     
     if ([tableView isEqual:self.messageTableview]) {
         HyMessageTableViewCell *cell = [HyMessageTableViewCell cellWithTableView:self.messageTableview];
-//        cell.messageModel = self.messageArray[indexPath.row];
+        cell.messageModel = self.messageArray[indexPath.row];
         return cell;
     }else if([tableView isEqual:self.systemTableview]){
         HySystemViewTableViewCell *cell = [HySystemViewTableViewCell cellWithTableView:self.systemTableview];
-//        cell.systemModel = self.systemArray[indexPath.row];
+        cell.SystemCellFrame = self.systemCellFramesArray[indexPath.row];
         return cell;
     }
     return cell;

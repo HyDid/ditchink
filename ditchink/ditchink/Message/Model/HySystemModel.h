@@ -15,4 +15,6 @@
 @property (nonatomic,copy)NSString *topicalStr;
 @property (nonatomic,copy)NSString *detailsStr;
 
++(instancetype) ModelWithDict:(NSDictionary *)dict;
+-(instancetype) initWithDict:(NSDictionary *)dict;
 @end

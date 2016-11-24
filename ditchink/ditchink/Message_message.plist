@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>iconStr</key>
+		<string>icon-dabing</string>
+		<key>nameStr</key>
+		<string>大兵</string>
+		<key>detailsStr</key>
+		<string>我们家孩子特别叛逆</string>
+		<key>timeStr</key>
+		<string>10:22</string>
+	</dict>
+	<dict>
+		<key>iconStr</key>
+		<string>icon-xiaozhi</string>
+		<key>nameStr</key>
+		<string>大李</string>
+		<key>detailsStr</key>
+		<string>我们家孩子也特别叛逆</string>
+		<key>timeStr</key>
+		<string>10:23</string>
+	</dict>
+</array>
+</plist>

@@ -10,7 +10,12 @@
 
 @interface HyMessageModel : NSObject
 
+@property (nonatomic,copy)NSString *iconStr;
 @property (nonatomic,copy)NSString *nameStr;
 @property (nonatomic,copy)NSString *timeStr;
 @property (nonatomic,copy)NSString *detailsStr;
+
++(instancetype) ModelWithDict:(NSDictionary *)dict;
+-(instancetype) initWithDict:(NSDictionary *)dict;
+
 @end

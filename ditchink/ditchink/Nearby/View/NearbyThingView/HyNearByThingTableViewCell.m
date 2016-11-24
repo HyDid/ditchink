@@ -35,7 +35,7 @@
         [self setupTopView];
         
         
-        [self setupStatusToolbar];
+        [self setupWriteView];
     }
     return self;
 }
@@ -50,7 +50,7 @@
     self.topView = topView;
 }
 
-- (void)setupStatusToolbar
+- (void)setupWriteView
 {
     HyNearbyThingWriteView *WriteView = [[HyNearbyThingWriteView alloc] init];
     [self.contentView addSubview:WriteView];

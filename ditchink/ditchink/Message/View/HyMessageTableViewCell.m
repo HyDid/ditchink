@@ -31,6 +31,7 @@
 }
 
 -(void)setMessageModel:(HyMessageModel *)messageModel{
+    self.iconView.image = [UIImage imageNamed:messageModel.iconStr];
     self.nameLable.text = messageModel.nameStr;
     self.timeLable.text = messageModel.timeStr;
     self.detailsLable.text = messageModel.detailsStr;
