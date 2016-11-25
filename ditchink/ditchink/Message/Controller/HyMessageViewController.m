@@ -61,11 +61,12 @@
     //加载数据
     [self setupHttp];
     
+
+    //[self addMengView];
+
+    
 }
 
-//-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-//    [self.SearchBar resignFirstResponder];
-//}
 
 -(void)setupNav{
     
@@ -175,9 +176,9 @@
     SearchBar.frame = CGRectMake(10, 5, [UIScreen mainScreen].bounds.size.width-20, 25);
     SearchBar.background = [UIImage imageNamed:@"icon-searchbackgroundlightgray"];
     SearchBar.contentMode = UIViewContentModeCenter;
-    [messageSeachView addSubview:SearchBar];
-    self.SearchBar = SearchBar;
     
+    self.SearchBar = SearchBar;
+    [messageSeachView addSubview:SearchBar];
     return messageSeachView;
     
 }
@@ -197,10 +198,8 @@
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if ([tableView isEqual:self.messageTableview]) {
-//        return 3;
         return self.messageArray.count;
     }else if([tableView isEqual:self.systemTableview]){
-//        return 2;
         return self.systemCellFramesArray.count;
     }
     return 0;
@@ -229,6 +228,39 @@
 
     }
 }
+
+//添加蒙版
+-(UIView *)addMengView
+{
+    UIView * mengView = [[UIView alloc] initWithFrame:CGRectMake(0, 25, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    mengView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.1];
+    mengView.tag = 1;
+    [self.messageTableview addSubview:mengView];
+    UIView * mengView2 = [[UIView alloc] initWithFrame:CGRectMake(0, 25, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    mengView2.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.1];
+    mengView2.tag = 2;
+    [self.systemTableview addSubview:mengView2];
+    
+//    [self.view insertSubview:mengView atIndex:3];
+    
+    UITapGestureRecognizer * tapGestureRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(mengViewOnclick)];
+    tapGestureRecognizer.cancelsTouchesInView = NO;
+    [mengView addGestureRecognizer:tapGestureRecognizer];
+    
+    return mengView;
+}
+//移除蒙版
+-(void)mengViewRemoveSubView
+{
+    UIView * reView = [self.view.window viewWithTag:1];
+    [reView removeFromSuperview];
+    UIView * reView2 = [self.view.window viewWithTag:2];
+    [reView2 removeFromSuperview];
+}
+-(void)mengViewOnclick{
+    NSLog(@"mengViewOnclick");
+}
+
 
 
 @end

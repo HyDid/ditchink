@@ -131,10 +131,8 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (self.selectedBtnTag ==0) {
         return self.NearPersonDetailArray.count;
-//        return 3;
     }else if (self.selectedBtnTag ==1){
         return self.NearThingFramesArray.count;
- //       return 1;
     }
     return 0;
 }
@@ -143,9 +141,7 @@
         return 140;
     }else if (self.selectedBtnTag ==1){
         HyNearbyThingcellFrame * NearbyThingcellFrame = self.NearThingFramesArray[indexPath.row];
-
         return NearbyThingcellFrame.cellHeight;
-//       return 70;
     }
     
     return 0;

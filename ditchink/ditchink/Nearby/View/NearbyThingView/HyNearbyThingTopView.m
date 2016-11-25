@@ -56,7 +56,7 @@
         /** 6.时间 */
         UILabel *timeLabel = [[UILabel alloc] init];
         timeLabel.textColor = [UIColor lightGrayColor];
-        timeLabel.font = [UIFont systemFontOfSize:11];
+        timeLabel.font = [UIFont systemFontOfSize:10];
         timeLabel.backgroundColor = [UIColor clearColor];
         [self addSubview:timeLabel];
         self.timeLabel = timeLabel;

@@ -8,11 +8,14 @@
 
 #import "HySearchBar.h"
 
+@interface HySearchBar()<UITextFieldDelegate>
+@end
 @implementation HySearchBar
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
+    self.delegate = self;
     if (self) {
         self.font = [UIFont systemFontOfSize:15];
         self.placeholder = @"请输入您要搜索的内容";
@@ -25,11 +28,13 @@
         UIImageView *searchIcon = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 60, 20)];
         searchIcon.image = [UIImage imageNamed:@"icon-search"];
         searchIcon.contentMode = UIViewContentModeCenter;
-
+        UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 60, 20)];
+        [searchIcon addSubview:btn];
         self.leftView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
         self.leftViewMode = UITextFieldViewModeAlways;
         self.rightView = searchIcon;
         self.rightViewMode = UITextFieldViewModeAlways;
+        
     }
     return self;
 }
@@ -47,6 +52,19 @@
     CGFloat h = 30;
     return CGRectMake(x, y, w, h);
 }
+
+#pragma mark -文本输入框代理
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    
+    NSLog(@"%@",self.text);
+    self.text = @"";
+    [self resignFirstResponder];
+    return YES;
+}
+
+
 
 
 
