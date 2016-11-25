@@ -39,21 +39,24 @@
         UILabel *nameLabel = [[UILabel alloc] init];
 
         nameLabel.backgroundColor = [UIColor clearColor];
+        nameLabel.font = [UIFont systemFontOfSize:14];
         [self addSubview:nameLabel];
         self.nameLabel = nameLabel;
         
         /** 正文\内容 */
         UILabel *contentLabel = [[UILabel alloc] init];
         contentLabel.numberOfLines = 0;
-        contentLabel.textColor = HyColor(39, 39, 39);
-
+        contentLabel.textColor = [UIColor lightGrayColor];
+        contentLabel.font = [UIFont systemFontOfSize:12];
         contentLabel.backgroundColor = [UIColor clearColor];
+ //       [contentLabel sizeToFit];
         [self addSubview:contentLabel];
         self.contentLabel = contentLabel;
         
         /** 6.时间 */
         UILabel *timeLabel = [[UILabel alloc] init];
-        timeLabel.textColor = HyColor(240, 140, 19);
+        timeLabel.textColor = [UIColor lightGrayColor];
+        timeLabel.font = [UIFont systemFontOfSize:11];
         timeLabel.backgroundColor = [UIColor clearColor];
         [self addSubview:timeLabel];
         self.timeLabel = timeLabel;
@@ -69,6 +72,7 @@
     
     // 2.头像
 //    [self.iconView setImageWithURL:[NSURL URLWithString:user.profile_image_url] placeholderImage:[UIImage imageWithName:NearbyThingModel.iconViewStr]];
+    [self.iconView setImage:[UIImage imageNamed:NearbyThingModel.iconViewStr]];
     self.iconView.frame = self.NearbyThingcellFrame.iconViewF;
     
     // 3.昵称
@@ -81,10 +85,7 @@
 
     // 5.时间
     self.timeLabel.text = NearbyThingModel.timeLabelStr;
-    CGFloat timeLabelX = self.NearbyThingcellFrame.nameLabelF.origin.x;
-    CGFloat timeLabelY = CGRectGetMaxY(self.NearbyThingcellFrame.nameLabelF) + 5 * 0.5;
-    CGSize timeLabelSize = [NearbyThingModel.timeLabelStr sizeWithFont:[UIFont systemFontOfSize:12]];
-    self.timeLabel.frame = (CGRect){{timeLabelX, timeLabelY}, timeLabelSize};
+    self.timeLabel.frame = self.NearbyThingcellFrame.timeLabelF;
     
     
 }

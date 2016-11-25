@@ -92,20 +92,49 @@
 
 }
 -(void)loadNewData{
-
-    
+    [self NearbyPersonPlistGet];
+    [self NearbyThingPlistGet];
     [self.nearbyPersonTableView.mj_header endRefreshing];
+
+}
+-(void)NearbyPersonPlistGet{
+    [self.NearPersonDetailArray removeAllObjects];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Nearby_person.plist" ofType:nil];
+    NSArray *dictArray = [NSArray arrayWithContentsOfFile:path];
+    for (NSDictionary *dict in dictArray) {
+        HyNearbyPersonModel *model = [HyNearbyPersonModel ModelWithDict:dict];
+        [self.NearPersonDetailArray addObject:model];
+    }
+    
+    [self.nearbyPersonTableView reloadData];
+    
+}
+-(void)NearbyThingPlistGet{
+    [self.NearThingFramesArray removeAllObjects];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Nearby_thing.plist" ofType:nil];
+    NSArray *dictArray = [NSArray arrayWithContentsOfFile:path];
+    
+    for (NSDictionary *keyValues in dictArray) {
+        
+        HyNearbyThingModel *model = [HyNearbyThingModel ModelWithDict:keyValues];
+        HyNearbyThingcellFrame *NearbyThingcellFrame = [[HyNearbyThingcellFrame alloc]init];
+        NearbyThingcellFrame.NearbyThingModel = model;
+        [self.NearThingFramesArray addObject:NearbyThingcellFrame];
+        
+    }
+    
+    [self.nearbyPersonTableView reloadData];
 
 }
 
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (self.selectedBtnTag ==0) {
-//        return self.NearPersonDetailArray.count;
-        return 3;
+        return self.NearPersonDetailArray.count;
+//        return 3;
     }else if (self.selectedBtnTag ==1){
-//        return self.NearThingFramesArray.count;
-        return 1;
+        return self.NearThingFramesArray.count;
+ //       return 1;
     }
     return 0;
 }
@@ -113,9 +142,8 @@
     if (self.selectedBtnTag ==0) {
         return 140;
     }else if (self.selectedBtnTag ==1){
-//        HyNearbyThingcellFrame * NearbyThingcellFrame = self.NearThingFramesArray[indexPath.row];
-        HyNearbyThingcellFrame * NearbyThingcellFrame = [[HyNearbyThingcellFrame alloc]init];
-        NearbyThingcellFrame.NearbyThingModel = [[HyNearbyThingModel alloc]init];
+        HyNearbyThingcellFrame * NearbyThingcellFrame = self.NearThingFramesArray[indexPath.row];
+
         return NearbyThingcellFrame.cellHeight;
 //       return 70;
     }
@@ -127,11 +155,11 @@
     
     if (self.selectedBtnTag == 0) {
         HyNearbyPersonTableViewCell *cell = [HyNearbyPersonTableViewCell cellWithTableView:tableView];
-//        cell.NearbyPersonModel = self.NearPersonDetailArray[indexPath.row];;
+        cell.NearbyPersonModel = self.NearPersonDetailArray[indexPath.row];;
             return  cell;
     }else if (self.selectedBtnTag == 1){
         HyNearByThingTableViewCell *cell = [HyNearByThingTableViewCell cellWithTableView:tableView];
-//        cell.NearbyThingcellFrame = self.NearThingFramesArray[indexPath.row];
+        cell.NearbyThingcellFrame = self.NearThingFramesArray[indexPath.row];
         return  cell;
     }else if (self.selectedBtnTag == 2){
         

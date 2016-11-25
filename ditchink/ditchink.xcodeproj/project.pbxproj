@@ -26,9 +26,11 @@
 		04584B441DE6D03300ED2651 /* HyNearByThingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04584B3C1DE6D03300ED2651 /* HyNearByThingTableViewCell.xib */; };
 		04584B451DE6D03300ED2651 /* HyNearbyThingTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04584B3E1DE6D03300ED2651 /* HyNearbyThingTopView.m */; };
 		04584B461DE6D03300ED2651 /* HyNearbyThingWriteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04584B401DE6D03300ED2651 /* HyNearbyThingWriteView.m */; };
-		04584B481DE6D44F00ED2651 /* Message_message.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04584B471DE6D44F00ED2651 /* Message_message.plist */; };
-		04584B4A1DE6DFCA00ED2651 /* Message_system.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04584B491DE6DFCA00ED2651 /* Message_system.plist */; };
 		04584B4D1DE6F6F000ED2651 /* HySystemCellFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 04584B4C1DE6F6F000ED2651 /* HySystemCellFrame.m */; };
+		04584B561DE7C3EB00ED2651 /* Message_message.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04584B541DE7C3EB00ED2651 /* Message_message.plist */; };
+		04584B571DE7C3EB00ED2651 /* Message_system.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04584B551DE7C3EB00ED2651 /* Message_system.plist */; };
+		04584B591DE7C40D00ED2651 /* Nearby_thing.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04584B581DE7C40D00ED2651 /* Nearby_thing.plist */; };
+		04584B5B1DE803B400ED2651 /* Nearby_person.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04584B5A1DE803B400ED2651 /* Nearby_person.plist */; };
 		04F343901DDAEFCD0055364D /* HyNearbyTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3438F1DDAEFCD0055364D /* HyNearbyTopView.m */; };
 		04F3439B1DE5A2760055364D /* HyNearbyPersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3439A1DE5A2760055364D /* HyNearbyPersonModel.m */; };
 		04F3439F1DE5ABE80055364D /* HySweepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3439D1DE5ABE80055364D /* HySweepViewController.m */; };
@@ -112,10 +114,12 @@
 		04584B3E1DE6D03300ED2651 /* HyNearbyThingTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyNearbyThingTopView.m; sourceTree = "<group>"; };
 		04584B3F1DE6D03300ED2651 /* HyNearbyThingWriteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyNearbyThingWriteView.h; sourceTree = "<group>"; };
 		04584B401DE6D03300ED2651 /* HyNearbyThingWriteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyNearbyThingWriteView.m; sourceTree = "<group>"; };
-		04584B471DE6D44F00ED2651 /* Message_message.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Message_message.plist; sourceTree = "<group>"; };
-		04584B491DE6DFCA00ED2651 /* Message_system.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Message_system.plist; sourceTree = "<group>"; };
 		04584B4B1DE6F6F000ED2651 /* HySystemCellFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HySystemCellFrame.h; sourceTree = "<group>"; };
 		04584B4C1DE6F6F000ED2651 /* HySystemCellFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HySystemCellFrame.m; sourceTree = "<group>"; };
+		04584B541DE7C3EB00ED2651 /* Message_message.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Message_message.plist; sourceTree = "<group>"; };
+		04584B551DE7C3EB00ED2651 /* Message_system.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Message_system.plist; sourceTree = "<group>"; };
+		04584B581DE7C40D00ED2651 /* Nearby_thing.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Nearby_thing.plist; sourceTree = "<group>"; };
+		04584B5A1DE803B400ED2651 /* Nearby_person.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Nearby_person.plist; sourceTree = "<group>"; };
 		04F3438E1DDAEFCD0055364D /* HyNearbyTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyNearbyTopView.h; sourceTree = "<group>"; };
 		04F3438F1DDAEFCD0055364D /* HyNearbyTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyNearbyTopView.m; sourceTree = "<group>"; };
 		04F343991DE5A2760055364D /* HyNearbyPersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyNearbyPersonModel.h; sourceTree = "<group>"; };
@@ -230,8 +234,7 @@
 		044D58581DB1F4DE00450FF6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				04584B491DE6DFCA00ED2651 /* Message_system.plist */,
-				04584B471DE6D44F00ED2651 /* Message_message.plist */,
+				04584B531DE7C3EB00ED2651 /* custemPlist */,
 				E4375B701DC1AFB9009AF40D /* home.plist */,
 				044D58641DB1F4DE00450FF6 /* ditchink.xcdatamodeld */,
 				044D586C1DB1F4DE00450FF6 /* Info.plist */,
@@ -396,6 +399,17 @@
 				04584B401DE6D03300ED2651 /* HyNearbyThingWriteView.m */,
 			);
 			path = NearbyThingView;
+			sourceTree = "<group>";
+		};
+		04584B531DE7C3EB00ED2651 /* custemPlist */ = {
+			isa = PBXGroup;
+			children = (
+				04584B541DE7C3EB00ED2651 /* Message_message.plist */,
+				04584B551DE7C3EB00ED2651 /* Message_system.plist */,
+				04584B581DE7C40D00ED2651 /* Nearby_thing.plist */,
+				04584B5A1DE803B400ED2651 /* Nearby_person.plist */,
+			);
+			path = custemPlist;
 			sourceTree = "<group>";
 		};
 		04F3438C1DDAEFAE0055364D /* Model */ = {
@@ -594,15 +608,17 @@
 				E4A457B91DDB0F2C00BE597E /* HyCusBtnCell.xib in Resources */,
 				04F3BFDD1DC6DC7500E427E1 /* HyMessageTableViewCell.xib in Resources */,
 				044D586B1DB1F4DE00450FF6 /* LaunchScreen.storyboard in Resources */,
+				04584B5B1DE803B400ED2651 /* Nearby_person.plist in Resources */,
+				04584B561DE7C3EB00ED2651 /* Message_message.plist in Resources */,
+				04584B571DE7C3EB00ED2651 /* Message_system.plist in Resources */,
 				E4A457BD1DDB0F2C00BE597E /* HyCustomCell.xib in Resources */,
-				04584B4A1DE6DFCA00ED2651 /* Message_system.plist in Resources */,
 				04F3BFE21DC7558D00E427E1 /* HySystemViewTableViewCell.xib in Resources */,
 				E4375B711DC1AFB9009AF40D /* home.plist in Resources */,
 				E4A457B71DDB0F2C00BE597E /* headerImage.xib in Resources */,
 				E4A457BB1DDB0F2C00BE597E /* HyCusLifeCell.xib in Resources */,
 				044D58681DB1F4DE00450FF6 /* Assets.xcassets in Resources */,
 				E4A457B51DDB0F2C00BE597E /* HyHomeViewController.xib in Resources */,
-				04584B481DE6D44F00ED2651 /* Message_message.plist in Resources */,
+				04584B591DE7C40D00ED2651 /* Nearby_thing.plist in Resources */,
 				04584B441DE6D03300ED2651 /* HyNearByThingTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

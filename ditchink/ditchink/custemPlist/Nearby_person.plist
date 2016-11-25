@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>nearIconStr</key>
+		<string>icon-xiaozhi</string>
+		<key>nearnameStr</key>
+		<string>小志爸爸</string>
+		<key>nearLocationStr</key>
+		<string>距离您1.98km</string>
+		<key>nearChildStr</key>
+		<string>小志：19岁 大一 白羊座</string>
+		<key>nearQuestionStr</key>
+		<string>问题：叛逆，不爱学习，只热衷于电脑游戏</string>
+	</dict>
+	<dict>
+		<key>nearIconStr</key>
+		<string>icon-xiaoli</string>
+		<key>nearnameStr</key>
+		<string>小李爸爸</string>
+		<key>nearLocationStr</key>
+		<string>距离您2.88km</string>
+		<key>nearChildStr</key>
+		<string>小李：19岁 大一 白羊座</string>
+		<key>nearQuestionStr</key>
+		<string>问题：叛逆，不爱学习，只热衷于电脑游戏</string>
+	</dict>
+</array>
+</plist>

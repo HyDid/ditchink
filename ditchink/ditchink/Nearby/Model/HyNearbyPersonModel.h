@@ -14,4 +14,7 @@
 @property (nonatomic,copy)NSString *nearLocationStr;
 @property (nonatomic,copy)NSString *nearChildStr;
 @property (nonatomic,copy)NSString *nearQuestionStr;
+
++(instancetype) ModelWithDict:(NSDictionary *)dict;
+-(instancetype) initWithDict:(NSDictionary *)dict;
 @end

@@ -19,4 +19,7 @@
 /** 时间 */
 @property (nonatomic, copy) NSString *timeLabelStr;
 
++(instancetype) ModelWithDict:(NSDictionary *)dict;
+-(instancetype) initWithDict:(NSDictionary *)dict;
+
 @end
