@@ -63,7 +63,7 @@
 
 -(void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection{
     
-    NSString *zhQRCode = nil;
+//    NSString *zhQRCode = nil;
     for (AVMetadataObject *meatdata in metadataObjects) {
         if ([meatdata.type isEqualToString:AVMetadataObjectTypeQRCode]) {
  //           zhQRCode = [(AVMetadataMachineReadableCodeObject *)meatdata stringvalue];

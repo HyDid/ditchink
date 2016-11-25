@@ -31,8 +31,14 @@
         _detaileViewF = CGRectMake(0, 49, cellW, 20);
     }else if (SystemModel.detailsStr.length > 27 && SystemModel.detailsStr.length <= 54 ){
         _detaileViewF = CGRectMake(0, 49, cellW, 40);
-    }else if (SystemModel.detailsStr.length > 54){
+    }else if (SystemModel.detailsStr.length > 54 && SystemModel.detailsStr.length <= 81){
+        _detaileViewF = CGRectMake(0, 49, cellW, 60);
+    }else if (SystemModel.detailsStr.length > 81 && SystemModel.detailsStr.length <= 108){
         _detaileViewF = CGRectMake(0, 49, cellW, 80);
+    }else if (SystemModel.detailsStr.length > 108 && SystemModel.detailsStr.length <= 135){
+        _detaileViewF = CGRectMake(0, 49, cellW, 100);
+    }else if (SystemModel.detailsStr.length > 135 ){
+        _detaileViewF = CGRectMake(0, 49, cellW, 120);
     }
     
     

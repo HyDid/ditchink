@@ -82,10 +82,7 @@
 //    detaileView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     paragraphStyle.lineSpacing = 25;// 字体的行间距
-    NSDictionary *attributes = @{
-                                 NSFontAttributeName:[UIFont systemFontOfSize:12],
-                                 NSParagraphStyleAttributeName:paragraphStyle
-                                 };
+//    NSDictionary *attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:12],NSParagraphStyleAttributeName:paragraphStyle};
     detaileView.attributedText = [[NSAttributedString alloc]init];
 //    detaileView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
     [self.contentView addSubview:detaileView];
