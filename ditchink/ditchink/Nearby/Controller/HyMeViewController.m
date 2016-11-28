@@ -23,6 +23,7 @@
 @property(nonatomic, strong)NSMutableArray *NearThingFramesArray;
 @property(nonatomic, strong)NSMutableArray *NearCircleArray;
 @property(nonatomic, strong)NSMutableArray *NearCircleMeArray;
+@property(nonatomic, strong)NSMutableArray *NearCircleMoreArray;
 @property(nonatomic,strong)HyNearbyTopView *topView;
 @property(nonatomic,strong)UITableView *nearbyPersonTableView;
 @property(nonatomic,assign)int selectedBtnTag;
@@ -58,7 +59,13 @@
     }
     return _NearCircleMeArray;
 }
-
+- (NSMutableArray *)NearCircleMoreArray
+{
+    if (_NearCircleMoreArray == nil) {
+        _NearCircleMoreArray = [NSMutableArray array];
+    }
+    return _NearCircleMoreArray;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     //设置导航栏
@@ -116,6 +123,7 @@
     [self NearbyThingPlistGet];
     [self NearbyCirclePlistGet];
     [self NearbyCircleMePlistGet];
+    [self NearbyCircleMorePlistGet];
     [self.nearbyPersonTableView.mj_header endRefreshing];
 
 }
@@ -167,6 +175,18 @@
     for (NSDictionary *dict in dictArray) {
         HyNearbyCircleModel *model = [HyNearbyCircleModel ModelWithDict:dict];
         [self.NearCircleMeArray addObject:model];
+    }
+    
+    [self.nearbyPersonTableView reloadData];
+    
+}
+-(void)NearbyCircleMorePlistGet{
+    [self.NearCircleMoreArray removeAllObjects];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Nearby_circleMore.plist" ofType:nil];
+    NSArray *dictArray = [NSArray arrayWithContentsOfFile:path];
+    for (NSDictionary *dict in dictArray) {
+        HyNearbyCircleModel *model = [HyNearbyCircleModel ModelWithDict:dict];
+        [self.NearCircleMoreArray addObject:model];
     }
     
     [self.nearbyPersonTableView reloadData];
@@ -253,6 +273,10 @@
         return 1;
     }else if (self.selectedBtnTag == 2){
         return 4;
+    }else if (self.selectedBtnTag == 3){
+        return 1;
+    }else{
+        return 1;
     }
     return 0;
 }
@@ -280,22 +304,30 @@
             default:
                 break;
         }
+    }else if (self.selectedBtnTag ==3){
+        return self.NearCircleMoreArray.count;
+    }else{
+        
     }
     return 0;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (self.selectedBtnTag ==0) {
+    if (self.selectedBtnTag == 0) {
         return 140;
-    }else if (self.selectedBtnTag ==1){
+    }else if (self.selectedBtnTag == 1){
         HyNearbyThingcellFrame * NearbyThingcellFrame = self.NearThingFramesArray[indexPath.row];
         return NearbyThingcellFrame.cellHeight;
-    }else if (self.selectedBtnTag ==2){
+    }else if (self.selectedBtnTag == 2){
 
         if (indexPath.section == 2) {
             return 50;
         }else{
             return 40;
         }
+        
+    }else if (self.selectedBtnTag == 3){
+        
+        return 40;
         
     }
     
@@ -334,8 +366,10 @@
         
         
     }else if (self.selectedBtnTag == 3){
-        [self.nearbyPersonTableView setAllowsSelection:NO];
-        
+        [self.nearbyPersonTableView setAllowsSelection:YES];
+        HyNearbyCircleTableViewCell *cell = [HyNearbyCircleTableViewCell cellWithTableView:tableView];
+        cell.CircleModel = self.NearCircleMoreArray[indexPath.row];
+        return cell;
     }else{
         
     }

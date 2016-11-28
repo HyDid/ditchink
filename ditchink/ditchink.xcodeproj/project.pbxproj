@@ -14,6 +14,7 @@
 		0443A54D1DEC2A960003DAFD /* Nearby_circleMe.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0443A54C1DEC2A960003DAFD /* Nearby_circleMe.plist */; };
 		0443A5511DEC2BEA0003DAFD /* HyNearbyCircleAddTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443A54F1DEC2BEA0003DAFD /* HyNearbyCircleAddTableViewCell.m */; };
 		0443A5521DEC2BEA0003DAFD /* HyNearbyCircleAddTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0443A5501DEC2BEA0003DAFD /* HyNearbyCircleAddTableViewCell.xib */; };
+		0443A5591DEC412D0003DAFD /* Nearby_circleMore.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0443A5581DEC412D0003DAFD /* Nearby_circleMore.plist */; };
 		044D585A1DB1F4DE00450FF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D58591DB1F4DE00450FF6 /* main.m */; };
 		044D585D1DB1F4DE00450FF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D585C1DB1F4DE00450FF6 /* AppDelegate.m */; };
 		044D58661DB1F4DE00450FF6 /* ditchink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 044D58641DB1F4DE00450FF6 /* ditchink.xcdatamodeld */; };
@@ -94,6 +95,7 @@
 		0443A54E1DEC2BEA0003DAFD /* HyNearbyCircleAddTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyNearbyCircleAddTableViewCell.h; sourceTree = "<group>"; };
 		0443A54F1DEC2BEA0003DAFD /* HyNearbyCircleAddTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyNearbyCircleAddTableViewCell.m; sourceTree = "<group>"; };
 		0443A5501DEC2BEA0003DAFD /* HyNearbyCircleAddTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyNearbyCircleAddTableViewCell.xib; sourceTree = "<group>"; };
+		0443A5581DEC412D0003DAFD /* Nearby_circleMore.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Nearby_circleMore.plist; sourceTree = "<group>"; };
 		044D58551DB1F4DE00450FF6 /* 沟思.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "沟思.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		044D58591DB1F4DE00450FF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		044D585B1DB1F4DE00450FF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -440,6 +442,7 @@
 				04584B5A1DE803B400ED2651 /* Nearby_person.plist */,
 				0443A54A1DEC281A0003DAFD /* Nearby_circle.plist */,
 				0443A54C1DEC2A960003DAFD /* Nearby_circleMe.plist */,
+				0443A5581DEC412D0003DAFD /* Nearby_circleMore.plist */,
 			);
 			path = custemPlist;
 			sourceTree = "<group>";
@@ -640,6 +643,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04584B421DE6D03300ED2651 /* HyNearbyPersonTableViewCell.xib in Resources */,
+				0443A5591DEC412D0003DAFD /* Nearby_circleMore.plist in Resources */,
 				E4A457B91DDB0F2C00BE597E /* HyCusBtnCell.xib in Resources */,
 				04F3BFDD1DC6DC7500E427E1 /* HyMessageTableViewCell.xib in Resources */,
 				0443A54B1DEC281A0003DAFD /* Nearby_circle.plist in Resources */,
