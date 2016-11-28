@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HyNearbyCircleTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="375" height="39"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-heart" translatesAutoresizingMaskIntoConstraints="NO" id="Odr-FH-eWt">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="CCM-XA-Pd1"/>
+                            <constraint firstAttribute="width" constant="34" id="Hrh-Rk-e45"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="亲情碎碎念" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDd-ed-Mpd">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="7X3-LM-yby"/>
+                            <constraint firstAttribute="height" constant="20" id="uKI-kD-wVV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="回圈后第一站" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btv-y8-CGe">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="241" id="OwP-gX-8Gc"/>
+                            <constraint firstAttribute="height" constant="20" id="hxA-7F-0CF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.63523703813552856" green="0.63533073663711548" blue="0.63521647453308105" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日：2134" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fce-Q8-hTj">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="ANK-gV-VSd"/>
+                            <constraint firstAttribute="width" constant="80" id="Xm5-Hh-kA5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" red="0.0" green="0.71973544359207153" blue="0.63034307956695557" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6vd-Y5-8qW">
+                        <color key="backgroundColor" red="0.93717271089553833" green="0.93730741739273071" blue="0.93714326620101929" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="JNf-nI-Nkk"/>
+                            <constraint firstAttribute="width" constant="320" id="d8Z-6P-aaJ"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m32-Te-Unv">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Jt0-q7-fnM"/>
+                            <constraint firstAttribute="width" constant="25" id="nna-s4-lna"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="icon-smallmore"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="m32-Te-Unv" secondAttribute="trailing" constant="5" id="47S-vT-jFc"/>
+                    <constraint firstItem="Fce-Q8-hTj" firstAttribute="leading" secondItem="Odr-FH-eWt" secondAttribute="trailing" constant="103" id="5rH-MJ-FZZ"/>
+                    <constraint firstItem="Btv-y8-CGe" firstAttribute="leading" secondItem="Odr-FH-eWt" secondAttribute="trailing" constant="13" id="NyT-n0-eB8"/>
+                    <constraint firstAttribute="trailing" secondItem="6vd-Y5-8qW" secondAttribute="trailing" id="PUe-qI-3u4"/>
+                    <constraint firstItem="Odr-FH-eWt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="WZd-jr-cqY"/>
+                    <constraint firstItem="Odr-FH-eWt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="a17-74-P0q"/>
+                    <constraint firstItem="Btv-y8-CGe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="eTE-YN-3QY"/>
+                    <constraint firstItem="m32-Te-Unv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="iTn-aL-qJU"/>
+                    <constraint firstAttribute="bottom" secondItem="6vd-Y5-8qW" secondAttribute="bottom" constant="-1" id="p2G-yJ-FI9"/>
+                    <constraint firstItem="Fce-Q8-hTj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="sVL-UW-Yqm"/>
+                    <constraint firstItem="bDd-ed-Mpd" firstAttribute="leading" secondItem="Odr-FH-eWt" secondAttribute="trailing" constant="13" id="tv9-SA-lI5"/>
+                    <constraint firstItem="bDd-ed-Mpd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="tyh-xs-rfN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="CircleAddBtn" destination="m32-Te-Unv" id="Hwm-DS-szv"/>
+                <outlet property="IconView" destination="Odr-FH-eWt" id="olW-mH-yqQ"/>
+                <outlet property="detailLab" destination="Btv-y8-CGe" id="QuF-7u-mtq"/>
+                <outlet property="marryLab" destination="Fce-Q8-hTj" id="OrA-WO-bLv"/>
+                <outlet property="nameLab" destination="bDd-ed-Mpd" id="GBw-j4-5SX"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-heart" width="38" height="38"/>
+        <image name="icon-smallmore" width="26" height="26"/>
+    </resources>
+</document>

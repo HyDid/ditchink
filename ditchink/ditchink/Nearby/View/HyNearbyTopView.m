@@ -9,7 +9,7 @@
 #import "HyNearbyTopView.h"
 
 @interface HyNearbyTopView()
-@property (weak, nonatomic)UIButton *selectedButton;
+
 @end
 
 @implementation HyNearbyTopView
@@ -86,6 +86,7 @@ static int n = 4;
     
     if ([self.delegate respondsToSelector:@selector(HyNearbyTopView:didSelectedButtonFrom:to:)]) {
         [self.delegate HyNearbyTopView:self didSelectedButtonFrom:(int)self.selectedButton.tag to:(int)btn.tag];
+        
     }
     
     

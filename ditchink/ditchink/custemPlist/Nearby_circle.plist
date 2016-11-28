@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>IconViewStr</key>
+		<string>icon-heart</string>
+		<key>nameLabStr</key>
+		<string>亲情碎碎念</string>
+		<key>detailLabStr</key>
+		<string>回圈后第一帖~求教如何像孩子表达爱意</string>
+		<key>marryLabStr</key>
+		<string>今日：5775</string>
+	</dict>
+	<dict>
+		<key>IconViewStr</key>
+		<string>icon-heart</string>
+		<key>nameLabStr</key>
+		<string>健康调理区</string>
+		<key>detailLabStr</key>
+		<string>阿迪嗦嘎的撒个是的噶是的噶速度高速东莞</string>
+		<key>marryLabStr</key>
+		<string>今日：545</string>
+	</dict>
+	<dict>
+		<key>IconViewStr</key>
+		<string>icon-dog</string>
+		<key>nameLabStr</key>
+		<string>亲情碎碎念</string>
+		<key>detailLabStr</key>
+		<string>阿迪噶发的嘎哈的发生发的哈高速快速健康恢复</string>
+		<key>marryLabStr</key>
+		<string>今日：573475</string>
+	</dict>
+</array>
+</plist>

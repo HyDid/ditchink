@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>IconViewStr</key>
+		<string>icon-heart</string>
+		<key>nameLabStr</key>
+		<string>亲情碎碎念</string>
+		<key>detailLabStr</key>
+		<string>回圈后第一帖~求教如何像孩子表达爱意</string>
+		<key>marryLabStr</key>
+		<string>今日：5775</string>
+	</dict>
+</array>
+</plist>

@@ -17,6 +17,8 @@
 
 @interface HyNearbyTopView : UIView
 
+@property (weak, nonatomic)UIButton *selectedButton;
+
 @property (nonatomic, weak) UIButton *personButton;
 @property (nonatomic, weak) UIButton *thingButton;
 @property (nonatomic, weak) UIButton *mineButton;
