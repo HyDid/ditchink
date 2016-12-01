@@ -62,7 +62,7 @@
     // 时间
     CGFloat timeLabelX = iconViewX;
     CGFloat timeLabelY = MAX(CGRectGetMaxY(_contentLabelF), CGRectGetMaxY(_iconViewF)) + 5 * 0.5;
-    CGSize timeLabelSize = [NearbyThingModel.timeLabelStr sizeWithFont:[UIFont systemFontOfSize:12]];
+  //  CGSize timeLabelSize = [NearbyThingModel.timeLabelStr sizeWithFont:[UIFont systemFontOfSize:12]];
  //   _timeLabelF = (CGRect){{timeLabelX, timeLabelY}, timeLabelSize};
     _timeLabelF = CGRectMake(timeLabelX, timeLabelY, 100, 20);
 

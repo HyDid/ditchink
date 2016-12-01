@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0422E3D41DF0146B00FE32AA /* HyNearbyAddCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E3D31DF0146B00FE32AA /* HyNearbyAddCircleViewController.m */; };
+		0422E3DB1DF01C9300FE32AA /* HyChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E3DA1DF01C9300FE32AA /* HyChatViewController.m */; };
 		0443A5451DEC1D950003DAFD /* HyNearbyCircleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443A5431DEC1D950003DAFD /* HyNearbyCircleTableViewCell.m */; };
 		0443A5461DEC1D950003DAFD /* HyNearbyCircleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0443A5441DEC1D950003DAFD /* HyNearbyCircleTableViewCell.xib */; };
 		0443A5491DEC247D0003DAFD /* HyNearbyCircleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443A5481DEC247D0003DAFD /* HyNearbyCircleModel.m */; };
@@ -85,6 +87,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0422E3D21DF0146B00FE32AA /* HyNearbyAddCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyNearbyAddCircleViewController.h; sourceTree = "<group>"; };
+		0422E3D31DF0146B00FE32AA /* HyNearbyAddCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyNearbyAddCircleViewController.m; sourceTree = "<group>"; };
+		0422E3D91DF01C9300FE32AA /* HyChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyChatViewController.h; sourceTree = "<group>"; };
+		0422E3DA1DF01C9300FE32AA /* HyChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyChatViewController.m; sourceTree = "<group>"; };
 		0443A5421DEC1D950003DAFD /* HyNearbyCircleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyNearbyCircleTableViewCell.h; sourceTree = "<group>"; };
 		0443A5431DEC1D950003DAFD /* HyNearbyCircleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyNearbyCircleTableViewCell.m; sourceTree = "<group>"; };
 		0443A5441DEC1D950003DAFD /* HyNearbyCircleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyNearbyCircleTableViewCell.xib; sourceTree = "<group>"; };
@@ -212,6 +218,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0422E3D51DF01C7D00FE32AA /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				0422E3D61DF01C7D00FE32AA /* Controller */,
+				0422E3D71DF01C7D00FE32AA /* Model */,
+				0422E3D81DF01C7D00FE32AA /* View */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		0422E3D61DF01C7D00FE32AA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0422E3D91DF01C9300FE32AA /* HyChatViewController.h */,
+				0422E3DA1DF01C9300FE32AA /* HyChatViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0422E3D71DF01C7D00FE32AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0422E3D81DF01C7D00FE32AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0443A5411DEC1D6A0003DAFD /* NearbyCircleView */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +289,7 @@
 		044D58571DB1F4DE00450FF6 /* ditchink */ = {
 			isa = PBXGroup;
 			children = (
+				0422E3D51DF01C7D00FE32AA /* Chat */,
 				E4A4579E1DDB0F2C00BE597E /* Home */,
 				044D589F1DB1FFA200450FF6 /* Welcome */,
 				044D58921DB1FEDE00450FF6 /* Main */,
@@ -341,6 +381,8 @@
 			children = (
 				044D58BA1DB2305C00450FF6 /* HyMeViewController.h */,
 				044D58BB1DB2305D00450FF6 /* HyMeViewController.m */,
+				0422E3D21DF0146B00FE32AA /* HyNearbyAddCircleViewController.h */,
+				0422E3D31DF0146B00FE32AA /* HyNearbyAddCircleViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -756,9 +798,11 @@
 				04F3BFDC1DC6DC7500E427E1 /* HyMessageTableViewCell.m in Sources */,
 				04584B451DE6D03300ED2651 /* HyNearbyThingTopView.m in Sources */,
 				04F3BFE51DC769B100E427E1 /* HyMessageModel.m in Sources */,
+				0422E3D41DF0146B00FE32AA /* HyNearbyAddCircleViewController.m in Sources */,
 				04584B461DE6D03300ED2651 /* HyNearbyThingWriteView.m in Sources */,
 				044D585A1DB1F4DE00450FF6 /* main.m in Sources */,
 				04584B4D1DE6F6F000ED2651 /* HySystemCellFrame.m in Sources */,
+				0422E3DB1DF01C9300FE32AA /* HyChatViewController.m in Sources */,
 				E4A457B41DDB0F2C00BE597E /* HyHomeViewController.m in Sources */,
 				0443A5491DEC247D0003DAFD /* HyNearbyCircleModel.m in Sources */,
 				04F3BFE11DC7558D00E427E1 /* HySystemViewTableViewCell.m in Sources */,

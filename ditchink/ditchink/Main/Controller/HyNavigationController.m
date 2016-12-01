@@ -21,20 +21,36 @@
     [self setupNavBarTheme];
     
     // 2.设置导航栏按钮的主题
-//    [self setupBarButtonTheme];
+    [self setupBarButtonTheme];
 }
-//+ (void)setupBarButtonTheme
-//{
-//    UIBarButtonItem *barItem = [UIBarButtonItem appearance];
-//    
-//    //设置按钮的背景
-//
-//        [barItem setBackgroundImage:[UIImage imageNamed:@"icon-top"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-//        [barItem setBackgroundImage:[UIImage imageNamed:@"icon-top"] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
-//        [barItem setBackgroundImage:[UIImage imageNamed:@"icon-top"] forState:UIControlStateDisabled barMetrics:UIBarMetricsDefault];
-//
-//    
-//}
++ (void)setupBarButtonTheme
+{
+    UIBarButtonItem *barItem = [UIBarButtonItem appearance];
+    
+    //设置按钮的背景
+    [barItem setTintColor:[UIColor whiteColor]];
+    UIImage *backButtonImage = [[UIImage imageNamed:@"icon-scan.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 30, 0, 0)];
+    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
+    //将返回按钮的文字position设置不在屏幕上显示
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(NSIntegerMin, NSIntegerMin) forBarMetrics:UIBarMetricsDefault];
+    
+    NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
+    attrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
+    //    attrs[NSFontAttributeName] = [UIFont fontWithName:@"Helvetica" size:18];
+    attrs[NSFontAttributeName] = [UIFont systemFontOfSize:19 weight:20];
+
+    [barItem setTitleTextAttributes:attrs forState:UIControlStateNormal];
+    
+    
+    
+    [barItem setBackgroundImage:[UIImage imageNamed:@"icon-top"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [barItem setBackgroundImage:[UIImage imageNamed:@"icon-top"] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+    [barItem setBackgroundImage:[UIImage imageNamed:@"icon-top"] forState:UIControlStateDisabled barMetrics:UIBarMetricsDefault];
+
+    
+    
+}
 
 + (void)setupNavBarTheme
 {

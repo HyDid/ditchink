@@ -15,6 +15,8 @@
 #import "HyNearbyCircleTableViewCell.h"
 #import "HyNearbyCircleAddTableViewCell.h"
 
+#import "HyNearbyAddCircleViewController.h"
+
 #import "MJRefresh.h"
 
 @interface HyMeViewController ()<UITableViewDelegate,UITableViewDataSource,HyNearbyTopViewDelegate>
@@ -80,12 +82,12 @@
 }
 -(void)setupNav{
     
-    UIButton *rightBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
-    [rightBtn setTitle:@"发表" forState:UIControlStateNormal];
-    rightBtn.titleLabel.font = [UIFont systemFontOfSize:14];
-
-    [rightBtn addTarget:self action:@selector(NavrightBtn) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightBtn];
+//    UIButton *rightBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
+//    [rightBtn setTitle:@"发表" forState:UIControlStateNormal];
+//    rightBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+//
+//    [rightBtn addTarget:self action:@selector(NavrightBtn) forControlEvents:UIControlEventTouchUpInside];
+//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightBtn];
     //设置导航栏下四个按钮
     HyNearbyTopView *topView = [[HyNearbyTopView alloc]initWithFrame:CGRectMake(0, 0,SCREEN_WIDTH, SCREEN_WIDTH/10)];
     topView.backgroundColor = HyColor(239, 239, 239);
@@ -396,10 +398,15 @@
 
         }else if (indexPath.section == 3) {
         
+            HyNearbyAddCircleViewController *AddCircleViewController = [[HyNearbyAddCircleViewController alloc]init];
+            [self.navigationController pushViewController:AddCircleViewController animated:YES];
+
+            
         }
         
         
     }else if (self.selectedBtnTag == 3){
+        
         
     }else{
         
@@ -408,9 +415,9 @@
 }
 
 
--(void)NavrightBtn{
-    NSLog(@"发表");
-}
+//-(void)NavrightBtn{
+//    NSLog(@"发表");
+//}
 
 // delegate
 - (void)HyNearbyTopView:(HyNearbyTopView *)NearbyTopView didSelectedButtonFrom:(int)from to:(int)to{

@@ -16,7 +16,9 @@
 
 #import "MJRefresh.h"
 
+#import "HyChatViewController.h"
 #import "HySweepViewController.h"
+
 
 @interface HyMessageViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -122,6 +124,7 @@
     
     [self messagePlistGet];
     [self systemPlistGet];
+    
     [self.messageTableview.mj_header endRefreshing];
     [self.systemTableview.mj_header endRefreshing];
 }
@@ -223,7 +226,10 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if ([tableView isEqual:self.messageTableview]) {
 
-        
+        HyMessageModel *messageModel = self.messageArray[indexPath.row];
+        HyChatViewController *ChatViewController = [[HyChatViewController alloc]init];
+        ChatViewController.titleNameStr = messageModel.nameStr;
+        [self.navigationController pushViewController:ChatViewController animated:YES];
     }else if([tableView isEqual:self.systemTableview]){
 
     }
