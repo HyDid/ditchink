@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		0422E3D41DF0146B00FE32AA /* HyNearbyAddCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E3D31DF0146B00FE32AA /* HyNearbyAddCircleViewController.m */; };
 		0422E3DB1DF01C9300FE32AA /* HyChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E3DA1DF01C9300FE32AA /* HyChatViewController.m */; };
+		0422E3E01DF50E2800FE32AA /* HynearCircleDarentangTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E3DE1DF50E2800FE32AA /* HynearCircleDarentangTableViewCell.m */; };
+		0422E3E11DF50E2800FE32AA /* HynearCircleDarentangTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0422E3DF1DF50E2800FE32AA /* HynearCircleDarentangTableViewCell.xib */; };
+		0422E3E51DF50FE400FE32AA /* HyNearCircleZhidingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E3E31DF50FE400FE32AA /* HyNearCircleZhidingTableViewCell.m */; };
+		0422E3E61DF50FE400FE32AA /* HyNearCircleZhidingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0422E3E41DF50FE400FE32AA /* HyNearCircleZhidingTableViewCell.xib */; };
+		0422E3EA1DF53B1200FE32AA /* HyNearCircleTalkTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E3E81DF53B1200FE32AA /* HyNearCircleTalkTableViewCell.m */; };
+		0422E3EB1DF53B1200FE32AA /* HyNearCircleTalkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0422E3E91DF53B1200FE32AA /* HyNearCircleTalkTableViewCell.xib */; };
+		0422E3ED1DF53F2700FE32AA /* Nearby_circleAddTalk.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0422E3EC1DF53F2700FE32AA /* Nearby_circleAddTalk.plist */; };
+		0422E3F01DF53FFA00FE32AA /* HyNearbyCircleTalkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E3EF1DF53FFA00FE32AA /* HyNearbyCircleTalkModel.m */; };
+		0422E3F21DF54A6200FE32AA /* addTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0422E3F11DF54A6200FE32AA /* addTextView.xib */; };
+		0422E3F51DF54AAE00FE32AA /* addTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E3F41DF54AAE00FE32AA /* addTextView.m */; };
 		0443A5451DEC1D950003DAFD /* HyNearbyCircleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443A5431DEC1D950003DAFD /* HyNearbyCircleTableViewCell.m */; };
 		0443A5461DEC1D950003DAFD /* HyNearbyCircleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0443A5441DEC1D950003DAFD /* HyNearbyCircleTableViewCell.xib */; };
 		0443A5491DEC247D0003DAFD /* HyNearbyCircleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443A5481DEC247D0003DAFD /* HyNearbyCircleModel.m */; };
@@ -91,6 +101,21 @@
 		0422E3D31DF0146B00FE32AA /* HyNearbyAddCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyNearbyAddCircleViewController.m; sourceTree = "<group>"; };
 		0422E3D91DF01C9300FE32AA /* HyChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyChatViewController.h; sourceTree = "<group>"; };
 		0422E3DA1DF01C9300FE32AA /* HyChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyChatViewController.m; sourceTree = "<group>"; };
+		0422E3DD1DF50E2800FE32AA /* HynearCircleDarentangTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HynearCircleDarentangTableViewCell.h; sourceTree = "<group>"; };
+		0422E3DE1DF50E2800FE32AA /* HynearCircleDarentangTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HynearCircleDarentangTableViewCell.m; sourceTree = "<group>"; };
+		0422E3DF1DF50E2800FE32AA /* HynearCircleDarentangTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HynearCircleDarentangTableViewCell.xib; sourceTree = "<group>"; };
+		0422E3E21DF50FE400FE32AA /* HyNearCircleZhidingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyNearCircleZhidingTableViewCell.h; sourceTree = "<group>"; };
+		0422E3E31DF50FE400FE32AA /* HyNearCircleZhidingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyNearCircleZhidingTableViewCell.m; sourceTree = "<group>"; };
+		0422E3E41DF50FE400FE32AA /* HyNearCircleZhidingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyNearCircleZhidingTableViewCell.xib; sourceTree = "<group>"; };
+		0422E3E71DF53B1200FE32AA /* HyNearCircleTalkTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyNearCircleTalkTableViewCell.h; sourceTree = "<group>"; };
+		0422E3E81DF53B1200FE32AA /* HyNearCircleTalkTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyNearCircleTalkTableViewCell.m; sourceTree = "<group>"; };
+		0422E3E91DF53B1200FE32AA /* HyNearCircleTalkTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyNearCircleTalkTableViewCell.xib; sourceTree = "<group>"; };
+		0422E3EC1DF53F2700FE32AA /* Nearby_circleAddTalk.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Nearby_circleAddTalk.plist; sourceTree = "<group>"; };
+		0422E3EE1DF53FFA00FE32AA /* HyNearbyCircleTalkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyNearbyCircleTalkModel.h; sourceTree = "<group>"; };
+		0422E3EF1DF53FFA00FE32AA /* HyNearbyCircleTalkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyNearbyCircleTalkModel.m; sourceTree = "<group>"; };
+		0422E3F11DF54A6200FE32AA /* addTextView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = addTextView.xib; sourceTree = "<group>"; };
+		0422E3F31DF54AAE00FE32AA /* addTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addTextView.h; sourceTree = "<group>"; };
+		0422E3F41DF54AAE00FE32AA /* addTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addTextView.m; sourceTree = "<group>"; };
 		0443A5421DEC1D950003DAFD /* HyNearbyCircleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyNearbyCircleTableViewCell.h; sourceTree = "<group>"; };
 		0443A5431DEC1D950003DAFD /* HyNearbyCircleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyNearbyCircleTableViewCell.m; sourceTree = "<group>"; };
 		0443A5441DEC1D950003DAFD /* HyNearbyCircleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyNearbyCircleTableViewCell.xib; sourceTree = "<group>"; };
@@ -247,8 +272,27 @@
 		0422E3D81DF01C7D00FE32AA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0422E3F31DF54AAE00FE32AA /* addTextView.h */,
+				0422E3F41DF54AAE00FE32AA /* addTextView.m */,
+				0422E3F11DF54A6200FE32AA /* addTextView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0422E3DC1DF50DC400FE32AA /* NearbyCircleDatailView */ = {
+			isa = PBXGroup;
+			children = (
+				0422E3DD1DF50E2800FE32AA /* HynearCircleDarentangTableViewCell.h */,
+				0422E3DE1DF50E2800FE32AA /* HynearCircleDarentangTableViewCell.m */,
+				0422E3DF1DF50E2800FE32AA /* HynearCircleDarentangTableViewCell.xib */,
+				0422E3E21DF50FE400FE32AA /* HyNearCircleZhidingTableViewCell.h */,
+				0422E3E31DF50FE400FE32AA /* HyNearCircleZhidingTableViewCell.m */,
+				0422E3E41DF50FE400FE32AA /* HyNearCircleZhidingTableViewCell.xib */,
+				0422E3E71DF53B1200FE32AA /* HyNearCircleTalkTableViewCell.h */,
+				0422E3E81DF53B1200FE32AA /* HyNearCircleTalkTableViewCell.m */,
+				0422E3E91DF53B1200FE32AA /* HyNearCircleTalkTableViewCell.xib */,
+			);
+			path = NearbyCircleDatailView;
 			sourceTree = "<group>";
 		};
 		0443A5411DEC1D6A0003DAFD /* NearbyCircleView */ = {
@@ -485,6 +529,7 @@
 				0443A54A1DEC281A0003DAFD /* Nearby_circle.plist */,
 				0443A54C1DEC2A960003DAFD /* Nearby_circleMe.plist */,
 				0443A5581DEC412D0003DAFD /* Nearby_circleMore.plist */,
+				0422E3EC1DF53F2700FE32AA /* Nearby_circleAddTalk.plist */,
 			);
 			path = custemPlist;
 			sourceTree = "<group>";
@@ -500,6 +545,8 @@
 				04F343AD1DE6772B0055364D /* HyNearbyThingModel.m */,
 				0443A5471DEC247D0003DAFD /* HyNearbyCircleModel.h */,
 				0443A5481DEC247D0003DAFD /* HyNearbyCircleModel.m */,
+				0422E3EE1DF53FFA00FE32AA /* HyNearbyCircleTalkModel.h */,
+				0422E3EF1DF53FFA00FE32AA /* HyNearbyCircleTalkModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -512,6 +559,7 @@
 				04584B391DE6D03300ED2651 /* NearbyThingView */,
 				04584B351DE6D03300ED2651 /* NearbyPersonView */,
 				0443A5411DEC1D6A0003DAFD /* NearbyCircleView */,
+				0422E3DC1DF50DC400FE32AA /* NearbyCircleDatailView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -691,11 +739,14 @@
 				0443A54B1DEC281A0003DAFD /* Nearby_circle.plist in Resources */,
 				044D586B1DB1F4DE00450FF6 /* LaunchScreen.storyboard in Resources */,
 				04584B5B1DE803B400ED2651 /* Nearby_person.plist in Resources */,
+				0422E3E61DF50FE400FE32AA /* HyNearCircleZhidingTableViewCell.xib in Resources */,
+				0422E3E11DF50E2800FE32AA /* HynearCircleDarentangTableViewCell.xib in Resources */,
 				04584B561DE7C3EB00ED2651 /* Message_message.plist in Resources */,
 				0443A5521DEC2BEA0003DAFD /* HyNearbyCircleAddTableViewCell.xib in Resources */,
 				04584B571DE7C3EB00ED2651 /* Message_system.plist in Resources */,
 				0443A54D1DEC2A960003DAFD /* Nearby_circleMe.plist in Resources */,
 				E4A457BD1DDB0F2C00BE597E /* HyCustomCell.xib in Resources */,
+				0422E3EB1DF53B1200FE32AA /* HyNearCircleTalkTableViewCell.xib in Resources */,
 				04F3BFE21DC7558D00E427E1 /* HySystemViewTableViewCell.xib in Resources */,
 				0443A5461DEC1D950003DAFD /* HyNearbyCircleTableViewCell.xib in Resources */,
 				E4375B711DC1AFB9009AF40D /* home.plist in Resources */,
@@ -705,6 +756,8 @@
 				E4A457B51DDB0F2C00BE597E /* HyHomeViewController.xib in Resources */,
 				04584B591DE7C40D00ED2651 /* Nearby_thing.plist in Resources */,
 				04584B441DE6D03300ED2651 /* HyNearByThingTableViewCell.xib in Resources */,
+				0422E3ED1DF53F2700FE32AA /* Nearby_circleAddTalk.plist in Resources */,
+				0422E3F21DF54A6200FE32AA /* addTextView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -787,6 +840,7 @@
 				04584B431DE6D03300ED2651 /* HyNearByThingTableViewCell.m in Sources */,
 				E4A457BC1DDB0F2C00BE597E /* HyCustomCell.m in Sources */,
 				04F3BFD81DC5879300E427E1 /* HyTitleButtonView.m in Sources */,
+				0422E3E01DF50E2800FE32AA /* HynearCircleDarentangTableViewCell.m in Sources */,
 				04F343AE1DE6772B0055364D /* HyNearbyThingModel.m in Sources */,
 				E4A457BE1DDB0F2C00BE597E /* HyHomeModel.m in Sources */,
 				044D585D1DB1F4DE00450FF6 /* AppDelegate.m in Sources */,
@@ -802,14 +856,18 @@
 				04584B461DE6D03300ED2651 /* HyNearbyThingWriteView.m in Sources */,
 				044D585A1DB1F4DE00450FF6 /* main.m in Sources */,
 				04584B4D1DE6F6F000ED2651 /* HySystemCellFrame.m in Sources */,
+				0422E3F51DF54AAE00FE32AA /* addTextView.m in Sources */,
 				0422E3DB1DF01C9300FE32AA /* HyChatViewController.m in Sources */,
 				E4A457B41DDB0F2C00BE597E /* HyHomeViewController.m in Sources */,
+				0422E3EA1DF53B1200FE32AA /* HyNearCircleTalkTableViewCell.m in Sources */,
+				0422E3F01DF53FFA00FE32AA /* HyNearbyCircleTalkModel.m in Sources */,
 				0443A5491DEC247D0003DAFD /* HyNearbyCircleModel.m in Sources */,
 				04F3BFE11DC7558D00E427E1 /* HySystemViewTableViewCell.m in Sources */,
 				04F3439B1DE5A2760055364D /* HyNearbyPersonModel.m in Sources */,
 				044D58B51DB22CA200450FF6 /* HyMessageViewController.m in Sources */,
 				E4A457B61DDB0F2C00BE597E /* headerImage.m in Sources */,
 				04F3BFE81DC769CF00E427E1 /* HySystemModel.m in Sources */,
+				0422E3E51DF50FE400FE32AA /* HyNearCircleZhidingTableViewCell.m in Sources */,
 				044D58A91DB2219A00450FF6 /* HyTabBarButton.m in Sources */,
 				044D58661DB1F4DE00450FF6 /* ditchink.xcdatamodeld in Sources */,
 				04F343AB1DE675730055364D /* HyNearbyThingcellFrame.m in Sources */,

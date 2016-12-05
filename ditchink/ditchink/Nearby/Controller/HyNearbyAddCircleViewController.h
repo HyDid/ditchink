@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HyNearbyCircleModel.h"
 
 @interface HyNearbyAddCircleViewController : UIViewController
-
+@property(nonatomic,strong)HyNearbyCircleModel *CircleModel;
 @end

@@ -12,7 +12,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *IconView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLab;
 @property (weak, nonatomic) IBOutlet UILabel *detailLab;
-@property (weak, nonatomic) IBOutlet UILabel *marryLab;
+
 
 @end
 @implementation HyNearbyCircleTableViewCell

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HynearCircleDarentangTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="375" height="39"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9SN-7S-cxd">
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-xiaoli" translatesAutoresizingMaskIntoConstraints="NO" id="LDE-L6-ubH">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Rh7-3p-A0P"/>
+                                    <constraint firstAttribute="width" constant="30" id="pWl-24-jcz"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-xiaoli" translatesAutoresizingMaskIntoConstraints="NO" id="Bar-LJ-EID">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Aax-Yy-mIJ"/>
+                                    <constraint firstAttribute="width" constant="30" id="sRP-zg-obK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bar-LJ-EID" firstAttribute="leading" secondItem="LDE-L6-ubH" secondAttribute="trailing" constant="10" id="LEK-wp-VZS"/>
+                            <constraint firstAttribute="width" constant="375" id="Seh-dQ-NRI"/>
+                            <constraint firstItem="Bar-LJ-EID" firstAttribute="top" secondItem="9SN-7S-cxd" secondAttribute="top" constant="5" id="hfi-0J-kId"/>
+                            <constraint firstAttribute="height" constant="40" id="i9R-ph-6yl"/>
+                            <constraint firstItem="LDE-L6-ubH" firstAttribute="leading" secondItem="9SN-7S-cxd" secondAttribute="leading" constant="80" id="iKC-ke-ocX"/>
+                            <constraint firstItem="LDE-L6-ubH" firstAttribute="top" secondItem="9SN-7S-cxd" secondAttribute="top" constant="5" id="nFN-Aa-nr8"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="达人堂" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMo-tL-XgA">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="M9k-dJ-G6G"/>
+                            <constraint firstAttribute="width" constant="60" id="pNe-4N-Zlc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.25398272275924683" green="0.77196866273880005" blue="0.70548397302627563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-xiaoli" translatesAutoresizingMaskIntoConstraints="NO" id="9NX-Ha-xiW">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Sow-2H-5Ww"/>
+                            <constraint firstAttribute="width" constant="30" id="atU-1d-vHJ"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SLK-RD-32N">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="1ct-ay-OSN"/>
+                            <constraint firstAttribute="height" constant="30" id="qzJ-go-cMC"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9SN-7S-cxd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6m5-e5-LrT"/>
+                    <constraint firstItem="9NX-Ha-xiW" firstAttribute="leading" secondItem="aMo-tL-XgA" secondAttribute="trailing" constant="90" id="DyJ-rI-hpD"/>
+                    <constraint firstItem="9SN-7S-cxd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PFH-La-JJq"/>
+                    <constraint firstItem="9SN-7S-cxd" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="QGE-cn-3le"/>
+                    <constraint firstItem="9NX-Ha-xiW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Qc9-qL-ZVf"/>
+                    <constraint firstItem="aMo-tL-XgA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="aft-4s-qBf"/>
+                    <constraint firstItem="SLK-RD-32N" firstAttribute="leading" secondItem="9NX-Ha-xiW" secondAttribute="trailing" constant="10" id="gwg-50-6vq"/>
+                    <constraint firstItem="aMo-tL-XgA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="qCv-Kh-iDQ"/>
+                    <constraint firstItem="SLK-RD-32N" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="woU-ju-vCB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-xiaoli" width="68" height="68"/>
+    </resources>
+</document>

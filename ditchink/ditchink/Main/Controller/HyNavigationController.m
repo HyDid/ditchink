@@ -29,7 +29,7 @@
     
     //设置按钮的背景
     [barItem setTintColor:[UIColor whiteColor]];
-    UIImage *backButtonImage = [[UIImage imageNamed:@"icon-scan.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 30, 0, 0)];
+    UIImage *backButtonImage = [[UIImage imageNamed:@"icon-zuo.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 30, 0, 0)];
     [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     
     //将返回按钮的文字position设置不在屏幕上显示

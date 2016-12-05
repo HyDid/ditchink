@@ -22,10 +22,10 @@
 @interface HyMeViewController ()<UITableViewDelegate,UITableViewDataSource,HyNearbyTopViewDelegate>
 
 @property(nonatomic,copy)NSMutableArray *NearPersonDetailArray;
-@property(nonatomic, strong)NSMutableArray *NearThingFramesArray;
-@property(nonatomic, strong)NSMutableArray *NearCircleArray;
-@property(nonatomic, strong)NSMutableArray *NearCircleMeArray;
-@property(nonatomic, strong)NSMutableArray *NearCircleMoreArray;
+@property(nonatomic,copy)NSMutableArray *NearThingFramesArray;
+@property(nonatomic,copy)NSMutableArray *NearCircleArray;
+@property(nonatomic,copy)NSMutableArray *NearCircleMeArray;
+@property(nonatomic,copy)NSMutableArray *NearCircleMoreArray;
 @property(nonatomic,strong)HyNearbyTopView *topView;
 @property(nonatomic,strong)UITableView *nearbyPersonTableView;
 @property(nonatomic,assign)int selectedBtnTag;
@@ -387,8 +387,11 @@
     }else if (self.selectedBtnTag == 2){
 
         
-        if (indexPath.section == 1) {
-           
+        if ((indexPath.section == 1)||(indexPath.section == 3)) {
+            HyNearbyCircleModel *CircleModel = self.NearCircleArray[indexPath.row];
+            HyNearbyAddCircleViewController *AddCircleViewController = [[HyNearbyAddCircleViewController alloc]init];
+            AddCircleViewController.CircleModel = CircleModel;
+            [self.navigationController pushViewController:AddCircleViewController animated:YES];
         }else if (indexPath.section == 2){
 
             [self.topView.selectedButton setSelected:NO];
@@ -396,17 +399,14 @@
             [self.topView setSelectedButton:self.topView.moreButton];
             [self HyNearbyTopView:self.topView didSelectedButtonFrom:2 to:3];
 
-        }else if (indexPath.section == 3) {
-        
-            HyNearbyAddCircleViewController *AddCircleViewController = [[HyNearbyAddCircleViewController alloc]init];
-            [self.navigationController pushViewController:AddCircleViewController animated:YES];
-
-            
         }
         
         
     }else if (self.selectedBtnTag == 3){
-        
+        HyNearbyCircleModel *CircleModel = self.NearCircleMoreArray[indexPath.row];
+        HyNearbyAddCircleViewController *AddCircleViewController = [[HyNearbyAddCircleViewController alloc]init];
+        AddCircleViewController.CircleModel = CircleModel;
+        [self.navigationController pushViewController:AddCircleViewController animated:YES];
         
     }else{
         

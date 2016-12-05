@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>titleLabStr</key>
+		<string>当你老了，头发白了。</string>
+		<key>fromLabStr</key>
+		<string>来自：balalea</string>
+		<key>timeLabStr</key>
+		<string>19min</string>
+	</dict>
+	<dict>
+		<key>titleLabStr</key>
+		<string>树欲静而风不止，子欲养而亲不待</string>
+		<key>fromLabStr</key>
+		<string>来自：哈哈哈</string>
+		<key>timeLabStr</key>
+		<string>42min</string>
+	</dict>
+	<dict>
+		<key>titleLabStr</key>
+		<string>按时付款沮丧卡就是你打开了那个快乐事多么可怜噶没事的顾客</string>
+		<key>fromLabStr</key>
+		<string>来自：bala</string>
+		<key>timeLabStr</key>
+		<string>刚刚</string>
+	</dict>
+</array>
+</plist>

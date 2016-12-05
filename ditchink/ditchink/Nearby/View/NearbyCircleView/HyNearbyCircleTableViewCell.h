@@ -11,5 +11,6 @@
 @interface HyNearbyCircleTableViewCell : UITableViewCell
 + (instancetype)cellWithTableView:(UITableView *)tableView;
 @property(nonatomic,strong)HyNearbyCircleModel *CircleModel;
+@property (weak, nonatomic) IBOutlet UILabel *marryLab;
 @property (weak, nonatomic) IBOutlet UIButton *CircleAddBtn;
 @end

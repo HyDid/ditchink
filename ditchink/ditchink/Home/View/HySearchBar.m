@@ -59,8 +59,9 @@
 {
     
     NSLog(@"%@",self.text);
-    self.text = @"";
-    [self resignFirstResponder];
+
+    self.text = nil;
+    [self endEditing:YES];
     return YES;
 }
 

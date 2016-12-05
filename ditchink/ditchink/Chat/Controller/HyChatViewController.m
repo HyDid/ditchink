@@ -7,9 +7,11 @@
 //
 
 #import "HyChatViewController.h"
+#import "addTextView.h"
 
-@interface HyChatViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface HyChatViewController ()<UITableViewDelegate,UITableViewDataSource,addTextViewDelegate>
 @property(nonatomic,strong)UITableView *ChatTableView;
+@property(nonatomic,strong)addTextView *editTextView;
 @end
 
 @implementation HyChatViewController
@@ -18,7 +20,11 @@
     [super viewDidLoad];
     [self setNav];
     [self setupTableView];
+    [self setupEditTextView];
+
+    
 }
+
 
 -(void)setNav{
     self.title=[NSString stringWithFormat:@"%@", self.titleNameStr];
@@ -43,6 +49,15 @@
     
 }
 
+-(void)setupEditTextView{
+    addTextView *editTextView = [[addTextView alloc]initWithFrame:CGRectMake(0, SCREEN_HEIGHT-65-40, SCREEN_WIDTH, 40)];
+    
+    editTextView.delegate = self;
+    
+    self.editTextView = editTextView;
+    [self.view addSubview:self.editTextView];
+}
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 0;
 }
@@ -54,6 +69,23 @@
 
 -(void)NavRightBtn{
     NSLog(@"NavRightBtn");
+}
+/**
+ *  当开始拖拽表格的时候就会调用
+ */
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    // 退出键盘
+    [self.view endEditing:YES];
+}
+
+
+-(void)EditTextView:(UITextField *)textField{
+    NSLog(@"+++++++%@",textField.text);
+}
+
+-(void)soundBtnOnclick:(UIButton *)Btn{
+    NSLog(@"sound");
 }
 
 @end
