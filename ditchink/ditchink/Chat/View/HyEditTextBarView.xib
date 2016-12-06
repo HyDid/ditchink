@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner">
+            <connections>
+                <outlet property="editTextField" destination="XcM-87-Og2" id="hOi-aC-OsK"/>
+                <outlet property="faceBtn" destination="33n-fb-VqN" id="iel-iz-MGn"/>
+                <outlet property="photoBtn" destination="1wQ-N2-5bV" id="XB8-VT-hSN"/>
+                <outlet property="soundBtn" destination="UMc-JX-iia" id="cRc-DU-XNi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="HyEditTextBarView" id="iCr-wg-Ym3" customClass="HyEditTextBarView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMc-JX-iia">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="NRi-qB-KR2"/>
+                        <constraint firstAttribute="width" constant="30" id="W6I-Jb-g1H"/>
+                    </constraints>
+                    <state key="normal" image="icon-yuyin"/>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" background="icon-chatbackground" translatesAutoresizingMaskIntoConstraints="NO" id="XcM-87-Og2">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="2FR-qa-hLH"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wQ-N2-5bV">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="TAk-ro-WGc"/>
+                        <constraint firstAttribute="height" constant="30" id="wt4-Fm-fLX"/>
+                    </constraints>
+                    <state key="normal" image="icon-chatphoto"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33n-fb-VqN">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="NFz-0N-oba"/>
+                        <constraint firstAttribute="height" constant="30" id="ncp-4Y-l5H"/>
+                    </constraints>
+                    <state key="normal" image="icon-biaoqing"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.90726524591445923" green="0.92170453071594238" blue="0.94750887155532837" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="33n-fb-VqN" firstAttribute="leading" secondItem="XcM-87-Og2" secondAttribute="trailing" constant="5" id="EUN-Dd-ZYg"/>
+                <constraint firstItem="XcM-87-Og2" firstAttribute="centerY" secondItem="iCr-wg-Ym3" secondAttribute="centerY" id="Hy9-gz-iZn"/>
+                <constraint firstAttribute="trailing" secondItem="1wQ-N2-5bV" secondAttribute="trailing" constant="5" id="Le1-tn-MEW"/>
+                <constraint firstItem="XcM-87-Og2" firstAttribute="leading" secondItem="UMc-JX-iia" secondAttribute="trailing" constant="5" id="WkR-eL-8S6"/>
+                <constraint firstItem="1wQ-N2-5bV" firstAttribute="centerY" secondItem="iCr-wg-Ym3" secondAttribute="centerY" id="cZC-fE-TSG"/>
+                <constraint firstItem="1wQ-N2-5bV" firstAttribute="leading" secondItem="33n-fb-VqN" secondAttribute="trailing" constant="5" id="cer-RT-moH"/>
+                <constraint firstItem="UMc-JX-iia" firstAttribute="leading" secondItem="iCr-wg-Ym3" secondAttribute="leading" constant="5" id="iKb-Hk-Wyx"/>
+                <constraint firstItem="33n-fb-VqN" firstAttribute="centerY" secondItem="iCr-wg-Ym3" secondAttribute="centerY" id="mea-mw-s0C"/>
+                <constraint firstItem="UMc-JX-iia" firstAttribute="centerY" secondItem="iCr-wg-Ym3" secondAttribute="centerY" id="vqY-Hq-Bqv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="59" y="56"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-biaoqing" width="27" height="27"/>
+        <image name="icon-chatbackground" width="269" height="33"/>
+        <image name="icon-chatphoto" width="27" height="27"/>
+        <image name="icon-yuyin" width="27" height="27"/>
+    </resources>
+</document>

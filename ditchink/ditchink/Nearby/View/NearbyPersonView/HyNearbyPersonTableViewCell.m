@@ -16,7 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *nearQuestionLab;
 @property (weak, nonatomic) IBOutlet UILabel *nearLocationLab;
 
-@property (weak, nonatomic) IBOutlet UIButton *nearBtn;
+
 
 @end
 

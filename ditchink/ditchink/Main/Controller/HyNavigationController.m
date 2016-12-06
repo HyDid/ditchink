@@ -57,6 +57,12 @@
 
     UINavigationBar *navBar = [UINavigationBar appearance];
     
+    CGRect frame = [navBar frame];
+    frame.size.height = 200;
+    [navBar setFrame:frame];
+    
+//    [navBar setFrame:CGRectMake(0, 0, SCREEN_WIDTH, 100)];
+    
     [navBar setBarTintColor:HyColor(88, 194, 174)];
     
     [navBar setTranslucent:NO];

@@ -13,4 +13,7 @@
 
 + (instancetype)cellWithTableView:(UITableView *)tableView;
 @property(nonatomic,strong)HyNearbyPersonModel *NearbyPersonModel;
+
+@property (weak, nonatomic) IBOutlet UIButton *nearBtn;
+
 @end

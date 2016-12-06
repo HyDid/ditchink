@@ -9,6 +9,8 @@
 #import "HyMeViewController.h"
 #import "HyNearbyTopView.h"
 
+#import "HyChatViewController.h"
+
 #import "HyNearbyPersonTableViewCell.h"
 #import "HyNearByThingTableViewCell.h"
 #import "HyNearbyThingcellFrame.h"
@@ -342,6 +344,8 @@
         [self.nearbyPersonTableView setAllowsSelection:NO];
         HyNearbyPersonTableViewCell *cell = [HyNearbyPersonTableViewCell cellWithTableView:tableView];
         cell.NearbyPersonModel = self.NearPersonDetailArray[indexPath.row];
+        cell.nearBtn.tag = indexPath.row;
+        [cell.nearBtn addTarget:self action:@selector(sendMessage:) forControlEvents:UIControlEventTouchUpInside];
             return  cell;
     }else if (self.selectedBtnTag == 1){
         [self.nearbyPersonTableView setAllowsSelection:NO];
@@ -414,6 +418,12 @@
 
 }
 
+-(void)sendMessage:(UIButton *)btn{
+    HyNearbyPersonModel *messageModel = self.NearPersonDetailArray[btn.tag];
+    HyChatViewController *ChatViewController = [[HyChatViewController alloc]init];
+    ChatViewController.titleNameStr = messageModel.nearnameStr;
+    [self.navigationController pushViewController:ChatViewController animated:YES];
+}
 
 //-(void)NavrightBtn{
 //    NSLog(@"发表");
