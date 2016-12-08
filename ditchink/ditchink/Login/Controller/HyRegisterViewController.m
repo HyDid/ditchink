@@ -41,11 +41,11 @@
     } failure:^(NSString *e) {
         NSLog(@"%@", e);
         
-        [SVProgressHUD showErrorWithStatus:@"注册失败"];
+        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"注册失败 - %@",e]];
         
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"注册失败 - %@", e] message:e delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil,nil];
-        
-        [alertView show];
+//        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"注册失败 - %@", e] message:e delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil,nil];
+//        
+//        [alertView show];
     }];
 
 }

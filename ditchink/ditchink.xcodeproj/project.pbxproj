@@ -135,6 +135,17 @@
 		0422E5381DF93D4A00FE32AA /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0422E5371DF93D4A00FE32AA /* ImageIO.framework */; };
 		0422E53A1DF93D5600FE32AA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0422E5391DF93D5600FE32AA /* QuartzCore.framework */; };
 		0422E53C1DF93DAC00FE32AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0422E53B1DF93DAC00FE32AA /* CoreGraphics.framework */; };
+		0422E5421DF96DB300FE32AA /* HyAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E53F1DF96DB300FE32AA /* HyAccountTool.m */; };
+		0422E5431DF96DB300FE32AA /* HyHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E5411DF96DB300FE32AA /* HyHttpTool.m */; };
+		0422E5491DF96E9D00FE32AA /* HyBaseParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E5461DF96E9D00FE32AA /* HyBaseParam.m */; };
+		0422E54A1DF96E9D00FE32AA /* HyBaseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E5481DF96E9D00FE32AA /* HyBaseResult.m */; };
+		0422E54E1DF96F6F00FE32AA /* HyLoginHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E54D1DF96F6F00FE32AA /* HyLoginHttpTool.m */; };
+		0422E57B1DF9716C00FE32AA /* HyForgetPasswordParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E56E1DF9716C00FE32AA /* HyForgetPasswordParam.m */; };
+		0422E57C1DF9716C00FE32AA /* HyForgetPasswordResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E5701DF9716C00FE32AA /* HyForgetPasswordResult.m */; };
+		0422E57D1DF9716C00FE32AA /* HyLoginParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E5731DF9716C00FE32AA /* HyLoginParam.m */; };
+		0422E57F1DF9716C00FE32AA /* HySignParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E5781DF9716C00FE32AA /* HySignParam.m */; };
+		0422E5801DF9716C00FE32AA /* HySignResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E57A1DF9716C00FE32AA /* HySignResult.m */; };
+		0422E5831DF9729400FE32AA /* HyLoginResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E5821DF9729400FE32AA /* HyLoginResult.m */; };
 		0443A5451DEC1D950003DAFD /* HyNearbyCircleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443A5431DEC1D950003DAFD /* HyNearbyCircleTableViewCell.m */; };
 		0443A5461DEC1D950003DAFD /* HyNearbyCircleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0443A5441DEC1D950003DAFD /* HyNearbyCircleTableViewCell.xib */; };
 		0443A5491DEC247D0003DAFD /* HyNearbyCircleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443A5481DEC247D0003DAFD /* HyNearbyCircleModel.m */; };
@@ -394,6 +405,28 @@
 		0422E5371DF93D4A00FE32AA /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		0422E5391DF93D5600FE32AA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0422E53B1DF93DAC00FE32AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0422E53E1DF96DB300FE32AA /* HyAccountTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyAccountTool.h; sourceTree = "<group>"; };
+		0422E53F1DF96DB300FE32AA /* HyAccountTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyAccountTool.m; sourceTree = "<group>"; };
+		0422E5401DF96DB300FE32AA /* HyHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyHttpTool.h; sourceTree = "<group>"; };
+		0422E5411DF96DB300FE32AA /* HyHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyHttpTool.m; sourceTree = "<group>"; };
+		0422E5451DF96E9D00FE32AA /* HyBaseParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyBaseParam.h; sourceTree = "<group>"; };
+		0422E5461DF96E9D00FE32AA /* HyBaseParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyBaseParam.m; sourceTree = "<group>"; };
+		0422E5471DF96E9D00FE32AA /* HyBaseResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyBaseResult.h; sourceTree = "<group>"; };
+		0422E5481DF96E9D00FE32AA /* HyBaseResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyBaseResult.m; sourceTree = "<group>"; };
+		0422E54C1DF96F6F00FE32AA /* HyLoginHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HyLoginHttpTool.h; path = ../HyLoginHttpTool.h; sourceTree = "<group>"; };
+		0422E54D1DF96F6F00FE32AA /* HyLoginHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HyLoginHttpTool.m; path = ../HyLoginHttpTool.m; sourceTree = "<group>"; };
+		0422E56D1DF9716C00FE32AA /* HyForgetPasswordParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyForgetPasswordParam.h; sourceTree = "<group>"; };
+		0422E56E1DF9716C00FE32AA /* HyForgetPasswordParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyForgetPasswordParam.m; sourceTree = "<group>"; };
+		0422E56F1DF9716C00FE32AA /* HyForgetPasswordResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyForgetPasswordResult.h; sourceTree = "<group>"; };
+		0422E5701DF9716C00FE32AA /* HyForgetPasswordResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyForgetPasswordResult.m; sourceTree = "<group>"; };
+		0422E5721DF9716C00FE32AA /* HyLoginParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyLoginParam.h; sourceTree = "<group>"; };
+		0422E5731DF9716C00FE32AA /* HyLoginParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyLoginParam.m; sourceTree = "<group>"; };
+		0422E5771DF9716C00FE32AA /* HySignParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HySignParam.h; sourceTree = "<group>"; };
+		0422E5781DF9716C00FE32AA /* HySignParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HySignParam.m; sourceTree = "<group>"; };
+		0422E5791DF9716C00FE32AA /* HySignResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HySignResult.h; sourceTree = "<group>"; };
+		0422E57A1DF9716C00FE32AA /* HySignResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HySignResult.m; sourceTree = "<group>"; };
+		0422E5811DF9729400FE32AA /* HyLoginResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyLoginResult.h; sourceTree = "<group>"; };
+		0422E5821DF9729400FE32AA /* HyLoginResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyLoginResult.m; sourceTree = "<group>"; };
 		0443A5421DEC1D950003DAFD /* HyNearbyCircleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyNearbyCircleTableViewCell.h; sourceTree = "<group>"; };
 		0443A5431DEC1D950003DAFD /* HyNearbyCircleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyNearbyCircleTableViewCell.m; sourceTree = "<group>"; };
 		0443A5441DEC1D950003DAFD /* HyNearbyCircleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyNearbyCircleTableViewCell.xib; sourceTree = "<group>"; };
@@ -600,6 +633,7 @@
 		0422E41C1DF9368500FE32AA /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				0422E54B1DF96F4700FE32AA /* Tool */,
 				0422E41D1DF9368500FE32AA /* Controller */,
 				0422E41E1DF9368500FE32AA /* Model */,
 				0422E41F1DF9368500FE32AA /* View */,
@@ -987,6 +1021,81 @@
 			path = UserChatView;
 			sourceTree = "<group>";
 		};
+		0422E53D1DF96D9600FE32AA /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				0422E53E1DF96DB300FE32AA /* HyAccountTool.h */,
+				0422E53F1DF96DB300FE32AA /* HyAccountTool.m */,
+				0422E5401DF96DB300FE32AA /* HyHttpTool.h */,
+				0422E5411DF96DB300FE32AA /* HyHttpTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		0422E5441DF96E8E00FE32AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0422E5451DF96E9D00FE32AA /* HyBaseParam.h */,
+				0422E5461DF96E9D00FE32AA /* HyBaseParam.m */,
+				0422E5471DF96E9D00FE32AA /* HyBaseResult.h */,
+				0422E5481DF96E9D00FE32AA /* HyBaseResult.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0422E54B1DF96F4700FE32AA /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				0422E54C1DF96F6F00FE32AA /* HyLoginHttpTool.h */,
+				0422E54D1DF96F6F00FE32AA /* HyLoginHttpTool.m */,
+				0422E56B1DF9716C00FE32AA /* Model */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		0422E56B1DF9716C00FE32AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0422E56C1DF9716C00FE32AA /* ForgetModel */,
+				0422E5711DF9716C00FE32AA /* LoginModel */,
+				0422E5761DF9716C00FE32AA /* SignModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0422E56C1DF9716C00FE32AA /* ForgetModel */ = {
+			isa = PBXGroup;
+			children = (
+				0422E56D1DF9716C00FE32AA /* HyForgetPasswordParam.h */,
+				0422E56E1DF9716C00FE32AA /* HyForgetPasswordParam.m */,
+				0422E56F1DF9716C00FE32AA /* HyForgetPasswordResult.h */,
+				0422E5701DF9716C00FE32AA /* HyForgetPasswordResult.m */,
+			);
+			path = ForgetModel;
+			sourceTree = "<group>";
+		};
+		0422E5711DF9716C00FE32AA /* LoginModel */ = {
+			isa = PBXGroup;
+			children = (
+				0422E5721DF9716C00FE32AA /* HyLoginParam.h */,
+				0422E5731DF9716C00FE32AA /* HyLoginParam.m */,
+				0422E5811DF9729400FE32AA /* HyLoginResult.h */,
+				0422E5821DF9729400FE32AA /* HyLoginResult.m */,
+			);
+			path = LoginModel;
+			sourceTree = "<group>";
+		};
+		0422E5761DF9716C00FE32AA /* SignModel */ = {
+			isa = PBXGroup;
+			children = (
+				0422E5771DF9716C00FE32AA /* HySignParam.h */,
+				0422E5781DF9716C00FE32AA /* HySignParam.m */,
+				0422E5791DF9716C00FE32AA /* HySignResult.h */,
+				0422E57A1DF9716C00FE32AA /* HySignResult.m */,
+			);
+			path = SignModel;
+			sourceTree = "<group>";
+		};
 		0443A5411DEC1D6A0003DAFD /* NearbyCircleView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1075,6 +1184,8 @@
 		044D58921DB1FEDE00450FF6 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				0422E5441DF96E8E00FE32AA /* Model */,
+				0422E53D1DF96D9600FE32AA /* Tool */,
 				044D585B1DB1F4DE00450FF6 /* AppDelegate.h */,
 				044D585C1DB1F4DE00450FF6 /* AppDelegate.m */,
 				044D58931DB1FEDE00450FF6 /* Controller */,
@@ -1649,27 +1760,37 @@
 				E4A457BE1DDB0F2C00BE597E /* HyHomeModel.m in Sources */,
 				0422E4141DF6893300FE32AA /* NSString+Extension.m in Sources */,
 				044D585D1DB1F4DE00450FF6 /* AppDelegate.m in Sources */,
+				0422E54A1DF96E9D00FE32AA /* HyBaseResult.m in Sources */,
 				04F343901DDAEFCD0055364D /* HyNearbyTopView.m in Sources */,
 				0422E4231DF937B400FE32AA /* HyLoginViewController.m in Sources */,
 				0422E4131DF6893300FE32AA /* UIImage+Extension.m in Sources */,
 				E4A457BF1DDB0F2C00BE597E /* HySearchBar.m in Sources */,
 				04584B411DE6D03300ED2651 /* HyNearbyPersonTableViewCell.m in Sources */,
+				0422E5801DF9716C00FE32AA /* HySignResult.m in Sources */,
 				0443A5451DEC1D950003DAFD /* HyNearbyCircleTableViewCell.m in Sources */,
 				0422E40D1DF6890700FE32AA /* MJMessageCell.m in Sources */,
 				E4A457B81DDB0F2C00BE597E /* HyCusBtnCell.m in Sources */,
 				04F3BFDC1DC6DC7500E427E1 /* HyMessageTableViewCell.m in Sources */,
+				0422E57C1DF9716C00FE32AA /* HyForgetPasswordResult.m in Sources */,
+				0422E5831DF9729400FE32AA /* HyLoginResult.m in Sources */,
 				04584B451DE6D03300ED2651 /* HyNearbyThingTopView.m in Sources */,
 				04F3BFE51DC769B100E427E1 /* HyMessageModel.m in Sources */,
 				0422E3D41DF0146B00FE32AA /* HyNearbyAddCircleViewController.m in Sources */,
+				0422E57D1DF9716C00FE32AA /* HyLoginParam.m in Sources */,
+				0422E5431DF96DB300FE32AA /* HyHttpTool.m in Sources */,
+				0422E5421DF96DB300FE32AA /* HyAccountTool.m in Sources */,
 				04584B461DE6D03300ED2651 /* HyNearbyThingWriteView.m in Sources */,
 				044D585A1DB1F4DE00450FF6 /* main.m in Sources */,
 				0422E40A1DF688F000FE32AA /* MJMessageFrame.m in Sources */,
 				04584B4D1DE6F6F000ED2651 /* HySystemCellFrame.m in Sources */,
+				0422E57F1DF9716C00FE32AA /* HySignParam.m in Sources */,
 				0422E3DB1DF01C9300FE32AA /* HyChatViewController.m in Sources */,
 				E4A457B41DDB0F2C00BE597E /* HyHomeViewController.m in Sources */,
+				0422E57B1DF9716C00FE32AA /* HyForgetPasswordParam.m in Sources */,
 				0422E3EA1DF53B1200FE32AA /* HyNearCircleTalkTableViewCell.m in Sources */,
 				0422E3F01DF53FFA00FE32AA /* HyNearbyCircleTalkModel.m in Sources */,
 				0422E4091DF688F000FE32AA /* MJMessage.m in Sources */,
+				0422E5491DF96E9D00FE32AA /* HyBaseParam.m in Sources */,
 				0443A5491DEC247D0003DAFD /* HyNearbyCircleModel.m in Sources */,
 				04F3BFE11DC7558D00E427E1 /* HySystemViewTableViewCell.m in Sources */,
 				04F3439B1DE5A2760055364D /* HyNearbyPersonModel.m in Sources */,
@@ -1681,6 +1802,7 @@
 				044D58661DB1F4DE00450FF6 /* ditchink.xcdatamodeld in Sources */,
 				0422E4021DF680B000FE32AA /* HyEditTextBarView.m in Sources */,
 				04F343AB1DE675730055364D /* HyNearbyThingcellFrame.m in Sources */,
+				0422E54E1DF96F6F00FE32AA /* HyLoginHttpTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

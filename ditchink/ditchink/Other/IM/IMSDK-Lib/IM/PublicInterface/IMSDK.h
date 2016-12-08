@@ -59,7 +59,7 @@
 /**
  @method
  @brief 程序已加载完成时调用
- @param appkey       应用标识，不能为空，开发者需要填写从IMSDK.im官网注册时获取的appkey
+ @param appKey       应用标识，不能为空，开发者需要填写从IMSDK.im官网注册时获取的appkey
  */
 - (void)initWithAppKey:(NSString *)appKey;
 

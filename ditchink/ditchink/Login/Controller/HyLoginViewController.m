@@ -55,6 +55,7 @@
     [g_pIMMyself loginWithTimeoutInterval:0 success:^{
         
         [SVProgressHUD showSuccessWithStatus:@"登陆成功"];
+        [self.navigationController popViewControllerAnimated:YES];
         
     } failure:^(NSString *e) {
         NSLog(@"%@", e);
