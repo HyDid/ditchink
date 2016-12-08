@@ -14,7 +14,7 @@
 
 #import "HyEditTextBarView.h"
 
-@interface HyChatViewController ()<UITableViewDelegate,UITableViewDataSource,HyEditTextBarViewDelegate>
+@interface HyChatViewController ()<UITableViewDelegate,UITableViewDataSource,HyEditTextBarViewDelegate,IMMyselfDelegate>
 @property(nonatomic,strong)UITableView *ChatTableView;
 @property(nonatomic,strong)HyEditTextBarView *editTextBarView;
 
@@ -35,30 +35,33 @@
 - (NSMutableArray *)messageFrames
 {
     if (_messageFrames == nil) {
-        NSArray *dictArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"messages.plist" ofType:nil]];
         
-        NSMutableArray *mfArray = [NSMutableArray array];
-        
-        for (NSDictionary *dict in dictArray) {
-            // 消息模型
-            MJMessage *msg = [MJMessage messageWithDict:dict];
-            
-            // 取出上一个模型
-            MJMessageFrame *lastMf = [mfArray lastObject];
-            MJMessage *lastMsg = lastMf.message;
-            
-            // 判断两个消息的时间是否一致
-            msg.hideTime = [msg.time isEqualToString:lastMsg.time];
-            
-            // frame模型
-            MJMessageFrame *mf = [[MJMessageFrame alloc] init];
-            mf.message = msg;
-            
-            // 添加模型
-            [mfArray addObject:mf];
-        }
-        
-        _messageFrames = mfArray;
+        _messageFrames = [NSMutableArray array];
+//初始化假数据
+//        NSArray *dictArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"messages.plist" ofType:nil]];
+//        
+//        NSMutableArray *mfArray = [NSMutableArray array];
+//        
+//        for (NSDictionary *dict in dictArray) {
+//            // 消息模型
+//            MJMessage *msg = [MJMessage messageWithDict:dict];
+//            
+//            // 取出上一个模型
+//            MJMessageFrame *lastMf = [mfArray lastObject];
+//            MJMessage *lastMsg = lastMf.message;
+//            
+//            // 判断两个消息的时间是否一致
+//            msg.hideTime = [msg.time isEqualToString:lastMsg.time];
+//            
+//            // frame模型
+//            MJMessageFrame *mf = [[MJMessageFrame alloc] init];
+//            mf.message = msg;
+//            
+//            // 添加模型
+//            [mfArray addObject:mf];
+//        }
+//        
+//        _messageFrames = mfArray;
     }
     return _messageFrames;
 }
@@ -70,6 +73,8 @@
     [self setNav];
     [self setupTableView];
     [self setupeditTextBarView];
+    
+    [g_pIMMyself setDelegate:self];
 
 }
 
@@ -144,10 +149,26 @@
     // 1.自己发一条消息
     [self addMessage:textField.text type:MJMessageTypeMe];
     
-    // 2.自动回复一条消息
-    NSString *reply = [self replayWithText:textField.text];
-    [self addMessage:reply type:MJMessageTypeOther];
+    NSString *strCid = self.titleNameStr;
+    NSString *strMsg = [textField text];
+    
+    NSLog( @"send text - %@|%@", strCid, strMsg);
+    
+    [g_pIMMyself sendText:strMsg toUser:strCid success:^{
+        NSLog(@"send to %@ success", strCid);
+        
+    } failure:^(NSString *e) {
+        NSLog(@"%@", e);
+        
+        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"发送失败 - %@",e]];
+        
+    } ];
+    
+//    // 2.自动回复一条消息
+//    NSString *reply = [self replayWithText:textField.text];
+//    [self addMessage:reply type:MJMessageTypeOther];
 }
+
 /**
  *  发送一条消息
  */
@@ -204,6 +225,13 @@
 }
 
 
+//IM delegate
+- (void)didReceiveText:(NSString *)text fromCustomUserID:(NSString *)customUserID serverSendTime:(UInt32)timeIntervalSince1970 {
+    
+    NSString *reply = text;
+    [self addMessage:reply type:MJMessageTypeOther];
+    
+}
 
 
 -(void)soundBtnOnclick:(UIButton *)Btn{

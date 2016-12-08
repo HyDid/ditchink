@@ -19,6 +19,8 @@
 #import "HyChatViewController.h"
 #import "HySweepViewController.h"
 
+#import "HyLoginViewController.h"
+
 
 @interface HyMessageViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -160,7 +162,8 @@
 
 //导航栏按钮
 -(void)NavLeftBtn{
-    NSLog(@"left");
+    HyLoginViewController *LoginViewController = [[HyLoginViewController alloc]init];
+    [self.navigationController pushViewController:LoginViewController animated:YES];
 }
 -(void)messageButtonOnclick{
     self.messageTableview.hidden = NO;

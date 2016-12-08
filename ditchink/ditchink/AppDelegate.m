@@ -9,6 +9,10 @@
 #import "AppDelegate.h"
 #import "HyTabBarController.h"
 
+//IM即时通讯（爱萌）
+#import "IMSDK.h"
+#import "IMMyself.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +21,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    //初始化IM（app_key）
+    [g_pIMSDK initWithAppKey:IMDeveloper_APPKey];
     
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
@@ -31,6 +38,8 @@
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
+    
+    
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
 }
