@@ -20,8 +20,9 @@
 #import "HyNearbyAddCircleViewController.h"
 
 #import "MJRefresh.h"
+#import "IMMyself+Around.h"
 
-@interface HyMeViewController ()<UITableViewDelegate,UITableViewDataSource,HyNearbyTopViewDelegate>
+@interface HyMeViewController ()<UITableViewDelegate,UITableViewDataSource,HyNearbyTopViewDelegate,IMAroundDelegate>
 
 @property(nonatomic,copy)NSMutableArray *NearPersonDetailArray;
 @property(nonatomic,copy)NSMutableArray *NearThingFramesArray;
@@ -79,8 +80,6 @@
     //加载数据
     [self setupHttp];
     
-
-    
 }
 -(void)setupNav{
     
@@ -133,16 +132,52 @@
 }
 -(void)NearbyPersonPlistGet{
     [self.NearPersonDetailArray removeAllObjects];
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Nearby_person.plist" ofType:nil];
-    NSArray *dictArray = [NSArray arrayWithContentsOfFile:path];
-    for (NSDictionary *dict in dictArray) {
-        HyNearbyPersonModel *model = [HyNearbyPersonModel ModelWithDict:dict];
-        [self.NearPersonDetailArray addObject:model];
-    }
+    
+    [g_pIMMyself setAroundDelegate:self];        //为IMMyself对象设置周围用户功能代理
+    [g_pIMMyself update];                        //更新地理位置信息，获取第一页周围用户列表
+    
+    
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"Nearby_person.plist" ofType:nil];
+//    NSArray *dictArray = [NSArray arrayWithContentsOfFile:path];
+//    for (NSDictionary *dict in dictArray) {
+//        HyNearbyPersonModel *model = [HyNearbyPersonModel ModelWithDict:dict];
+//        [self.NearPersonDetailArray addObject:model];
+//    }
     
     [self.nearbyPersonTableView reloadData];
     
 }
+
+/*更新当前用户地理位置信息，并获取周围用户成功回调API*/
+- (void)didUpdate:(NSArray *)aroundUserLocationList {
+    
+    NSLog(@"aroundUserLocationList:%@",aroundUserLocationList);
+    
+    [self.NearPersonDetailArray removeAllObjects];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Nearby_person.plist" ofType:nil];
+    NSArray *dictArray = [NSArray arrayWithContentsOfFile:path];
+
+    for (IMUserLocation *UserLocationmodel in aroundUserLocationList) {
+        NSLog(@"%@",UserLocationmodel.customUserID);
+        
+    for (NSDictionary *dict in dictArray) {
+        HyNearbyPersonModel *NearbyPersonModel = [HyNearbyPersonModel ModelWithDict:dict];
+        NearbyPersonModel.nearnameStr = UserLocationmodel.customUserID;
+        [self.NearPersonDetailArray addObject:NearbyPersonModel];
+        }
+        
+    }
+    
+    [self.nearbyPersonTableView reloadData];
+}
+
+/*更新当前用户地理位置信息，并获取周围用户失败回调API*/
+- (void)updateFailedWithError:(NSString *)error {
+    NSLog(@"update failed with error:%@",error);
+}
+
+
 -(void)NearbyThingPlistGet{
     [self.NearThingFramesArray removeAllObjects];
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Nearby_thing.plist" ofType:nil];

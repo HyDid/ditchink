@@ -14,17 +14,5 @@
 		<key>nearQuestionStr</key>
 		<string>问题：叛逆，不爱学习，只热衷于电脑游戏</string>
 	</dict>
-	<dict>
-		<key>nearIconStr</key>
-		<string>icon-xiaoli</string>
-		<key>nearnameStr</key>
-		<string>小李爸爸</string>
-		<key>nearLocationStr</key>
-		<string>距离您2.88km</string>
-		<key>nearChildStr</key>
-		<string>小李：19岁 大一 白羊座</string>
-		<key>nearQuestionStr</key>
-		<string>问题：叛逆，不爱学习，只热衷于电脑游戏</string>
-	</dict>
 </array>
 </plist>

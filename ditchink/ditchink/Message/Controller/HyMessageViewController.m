@@ -144,7 +144,9 @@
     [self.messageTableview reloadData];
 }
 -(void)systemPlistGet{
+    
     [self.systemCellFramesArray removeAllObjects];
+    
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Message_system.plist" ofType:nil];
     NSArray *dictArray = [NSArray arrayWithContentsOfFile:path];
     
