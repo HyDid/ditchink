@@ -22,7 +22,7 @@
 
 @implementation AppDelegate
 
-
+BOOL whetherHaveNetwork;
 
 
 #pragma mark - 懒加载
