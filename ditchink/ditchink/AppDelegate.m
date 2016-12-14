@@ -15,10 +15,25 @@
 
 @interface AppDelegate ()
 
+/** 网络状态检查者 */
+@property(nonatomic, strong) AFNetworkReachabilityManager *networkMonitorManager;
+
 @end
 
 @implementation AppDelegate
 
+
+
+
+#pragma mark - 懒加载
+- (AFNetworkReachabilityManager *)networkMonitorManager {
+    
+    if (!_networkMonitorManager) {
+        _networkMonitorManager = [AFNetworkReachabilityManager sharedManager];
+        [_networkMonitorManager startMonitoring];  //开始监听
+    }
+    return _networkMonitorManager;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
@@ -30,6 +45,21 @@
     HyTabBarController *con = [[HyTabBarController alloc] init];
     self.window.rootViewController = con;
     [self.window makeKeyAndVisible];
+    
+    
+    // 开启网络监听
+    [self.networkMonitorManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        
+        if (status == AFNetworkReachabilityStatusNotReachable) {// 没有网络
+            whetherHaveNetwork = NO;
+            NSLog(@"没有网络:ifHaveNetwork = %d", whetherHaveNetwork);
+        }else{// 有网络
+            whetherHaveNetwork = YES;
+            NSLog(@"有网络:ifHaveNetwork = %d", whetherHaveNetwork);
+        }
+    }];
+    
+    
     return YES;
 }
 -(void)applicationDidReceiveMemoryWarning:(UIApplication *)application{

@@ -18,21 +18,28 @@
     
     mgr.requestSerializer.timeoutInterval = 10;
     
-    [mgr POST:url parameters:param progress:^(NSProgress * _Nonnull uploadProgress) {
+    if (whetherHaveNetwork) {
         
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
-        NSLog(@"%@-----------------------------------HyHttpTool",responseObject);
-        if (success) {
-            success(responseObject);
-        }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-        NSLog(@"%@-----------------------------------HyHttpTool",error);
-        if (failure) {
+        [mgr POST:url parameters:param progress:^(NSProgress * _Nonnull uploadProgress) {
             
-            failure(error);
-        }
-    }];
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            
+            NSLog(@"%@-----------------------------------HyHttpTool",responseObject);
+            if (success) {
+                success(responseObject);
+            }
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
+            NSLog(@"%@-----------------------------------HyHttpTool",error);
+            if (failure) {
+                
+                failure(error);
+            }
+        }];
+    }else{
+        [SVProgressHUD showErrorWithStatus:@"无网络连接"];
+    }
+    
+    
 }
 @end
