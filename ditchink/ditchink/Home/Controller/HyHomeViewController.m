@@ -14,6 +14,8 @@
 #import "HyCusBtnCell.h" // 按钮cell
 #import "headerImage.h" // 图片轮播
 
+#import "HyLoginViewController.h"
+
 
 @interface HyHomeViewController () <UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic,strong) HySearchBar *bar;
@@ -31,10 +33,14 @@
     //设置导航栏
     [self setupNav];
 //    self.tableView.rowHeight = 61;
+
+
     
     self.tableView.sectionFooterHeight = 2.0;
+    self.tableView.bounces = NO;
     
     //设置headerView （添加图片轮播）
+    
     self.tableView.tableHeaderView = [headerImage headerImage];
 }
 
@@ -166,6 +172,8 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 //    NSLog(@"cell = %ld",(long)indexPath.row);
     
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
     if (indexPath.section == 1) {
         NSLog(@"life cell = %ld",(long)indexPath.row);
     }else if (indexPath.section == 2) {
@@ -216,7 +224,10 @@
 
 //导航栏左侧按钮
 -(void)NavLeftBtn{
-    NSLog(@"left");
+    HyLoginViewController *LoginViewController = [[HyLoginViewController alloc]init];
+    [self presentViewController:LoginViewController animated:YES completion:^{
+        
+    }];
 }
 //导航栏右侧按钮
 -(void)NavRightBtn{

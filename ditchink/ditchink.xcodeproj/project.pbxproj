@@ -560,6 +560,141 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04177F611ED5A5780031249A /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				04177F6A1ED5A5780031249A /* Conversation */,
+				04177F6E1ED5A5780031249A /* Doctor */,
+				04177F661ED5A5780031249A /* Case */,
+				04177F621ED5A5780031249A /* Book */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		04177F621ED5A5780031249A /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				04177F631ED5A5780031249A /* Controller */,
+				04177F641ED5A5780031249A /* Model */,
+				04177F651ED5A5780031249A /* View */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		04177F631ED5A5780031249A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04177F641ED5A5780031249A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04177F651ED5A5780031249A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04177F661ED5A5780031249A /* Case */ = {
+			isa = PBXGroup;
+			children = (
+				04177F671ED5A5780031249A /* Controller */,
+				04177F681ED5A5780031249A /* Model */,
+				04177F691ED5A5780031249A /* View */,
+			);
+			path = Case;
+			sourceTree = "<group>";
+		};
+		04177F671ED5A5780031249A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04177F681ED5A5780031249A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04177F691ED5A5780031249A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04177F6A1ED5A5780031249A /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				04177F6B1ED5A5780031249A /* Controller */,
+				04177F6C1ED5A5780031249A /* Model */,
+				04177F6D1ED5A5780031249A /* View */,
+			);
+			path = Conversation;
+			sourceTree = "<group>";
+		};
+		04177F6B1ED5A5780031249A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04177F6C1ED5A5780031249A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04177F6D1ED5A5780031249A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04177F6E1ED5A5780031249A /* Doctor */ = {
+			isa = PBXGroup;
+			children = (
+				04177F6F1ED5A5780031249A /* Controller */,
+				04177F701ED5A5780031249A /* Model */,
+				04177F711ED5A5780031249A /* View */,
+			);
+			path = Doctor;
+			sourceTree = "<group>";
+		};
+		04177F6F1ED5A5780031249A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04177F701ED5A5780031249A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04177F711ED5A5780031249A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0422E3D51DF01C7D00FE32AA /* Chat */ = {
 			isa = PBXGroup;
 			children = (
@@ -1134,10 +1269,10 @@
 		044D58571DB1F4DE00450FF6 /* ditchink */ = {
 			isa = PBXGroup;
 			children = (
+				04177F611ED5A5780031249A /* HomePage */,
 				0422E41C1DF9368500FE32AA /* Login */,
 				0422E3D51DF01C7D00FE32AA /* Chat */,
 				E4A4579E1DDB0F2C00BE597E /* Home */,
-				044D589F1DB1FFA200450FF6 /* Welcome */,
 				044D58921DB1FEDE00450FF6 /* Main */,
 				044D589A1DB1FEDE00450FF6 /* Message */,
 				044D58961DB1FEDE00450FF6 /* Nearby */,
@@ -1293,13 +1428,6 @@
 				044D58A61DB215FD00450FF6 /* PrefixHeader.pch */,
 			);
 			path = Other;
-			sourceTree = "<group>";
-		};
-		044D589F1DB1FFA200450FF6 /* Welcome */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Welcome;
 			sourceTree = "<group>";
 		};
 		04584B351DE6D03300ED2651 /* NearbyPersonView */ = {
@@ -1501,11 +1629,12 @@
 		044D584D1DB1F4DE00450FF6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = LiHongYu;
 				TargetAttributes = {
 					044D58541DB1F4DE00450FF6 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 77UD393KBV;
 						ProvisioningStyle = Automatic;
 					};
 					044D58701DB1F4DE00450FF6 = {
@@ -1867,6 +1996,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1914,6 +2044,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1942,9 +2073,12 @@
 			baseConfigurationReference = C9E0B158292A533E12A5675F /* Pods-ditchink.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 77UD393KBV;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ditchink/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = ditchink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1982,9 +2116,12 @@
 			baseConfigurationReference = F9F846419A68F9148CC26410 /* Pods-ditchink.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 77UD393KBV;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ditchink/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = ditchink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

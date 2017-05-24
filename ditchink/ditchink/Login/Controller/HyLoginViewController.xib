@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HyLoginViewController">
             <connections>
                 <outlet property="LoginBtn" destination="9CI-Ca-lnB" id="iIQ-fv-cda"/>
+                <outlet property="back" destination="2hW-Xd-23f" id="kr9-Mj-z5N"/>
                 <outlet property="logoutBtn" destination="DDg-cc-EBB" id="0x9-FT-Lju"/>
                 <outlet property="nameTextField" destination="VZ0-PY-rdS" id="9zD-x3-hvW"/>
                 <outlet property="passwordTextField" destination="LF8-qY-Ckb" id="HVz-rc-9WR"/>
@@ -21,38 +25,99 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VZ0-PY-rdS">
-                    <frame key="frameInset" minX="70" minY="111" width="223" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <nil key="textColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LF8-qY-Ckb">
-                    <frame key="frameInset" minX="70" minY="165" width="223" height="30"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-green" translatesAutoresizingMaskIntoConstraints="NO" id="tgO-UR-g3v">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   密码" textAlignment="natural" minimumFontSize="17" background="icon-button" translatesAutoresizingMaskIntoConstraints="NO" id="LF8-qY-Ckb">
+                    <rect key="frame" x="70" y="181" width="223" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0h-IG-kPr">
-                    <frame key="frameInset" minX="102" minY="240" width="31" height="30"/>
+                    <rect key="frame" x="70" y="288" width="223" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="注册"/>
+                    <state key="normal" title="注册" backgroundImage="icon-button">
+                        <color key="titleColor" red="0.1046250314" green="0.70685297250000001" blue="0.63142251969999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9CI-Ca-lnB">
-                    <frame key="frameInset" minX="244" minY="240" width="31" height="30"/>
+                    <rect key="frame" x="70" y="235" width="223" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="登录"/>
+                    <state key="normal" title="登录" backgroundImage="icon-button">
+                        <color key="titleColor" red="0.1046250314" green="0.70685297250000001" blue="0.63142251969999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDg-cc-EBB">
-                    <frame key="frameInset" minX="244" minY="314" width="31" height="30"/>
+                    <rect key="frame" x="70" y="340" width="223" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="注销"/>
+                    <state key="normal" title="注销" backgroundImage="icon-button">
+                        <color key="titleColor" red="0.1046250314" green="0.70685297250000001" blue="0.63142251969999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="还没有账号？注册一个吧" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53u-qL-csg">
+                    <rect key="frame" x="92" y="386" width="191" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="————  其他登录方式  ————" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfO-hW-PRC">
+                    <rect key="frame" x="72" y="442" width="230" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogv-ne-MCl">
+                    <rect key="frame" x="101" y="479" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="icon-weixin"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkj-fU-WmR">
+                    <rect key="frame" x="218" y="479" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="icon-weixin"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hW-Xd-23f">
+                    <rect key="frame" x="30" y="26" width="31" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="5oN-b9-uU6"/>
+                        <constraint firstAttribute="width" constant="31" id="f1p-Wt-vTT"/>
+                    </constraints>
+                    <state key="normal" title="返回"/>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   用户名" textAlignment="natural" minimumFontSize="17" background="icon-button" translatesAutoresizingMaskIntoConstraints="NO" id="VZ0-PY-rdS">
+                    <rect key="frame" x="76" y="133" width="223" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="223" id="G8s-tN-Ate"/>
+                        <constraint firstAttribute="height" constant="40" id="gsO-AZ-EQm"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VZ0-PY-rdS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="133" id="50U-eb-wOl"/>
+                <constraint firstItem="2hW-Xd-23f" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="AoR-50-QDi"/>
+                <constraint firstItem="2hW-Xd-23f" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="26" id="CoS-Wa-bAl"/>
+                <constraint firstAttribute="trailing" secondItem="tgO-UR-g3v" secondAttribute="trailing" id="Dtj-Bi-jp6"/>
+                <constraint firstAttribute="bottom" secondItem="tgO-UR-g3v" secondAttribute="bottom" id="G2X-xB-NeE"/>
+                <constraint firstItem="tgO-UR-g3v" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HH4-DE-Aqv"/>
+                <constraint firstItem="VZ0-PY-rdS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IJ3-Ll-F0N"/>
+                <constraint firstItem="tgO-UR-g3v" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Moh-s7-bxd"/>
+                <constraint firstItem="tgO-UR-g3v" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="r64-k0-t4n"/>
+                <constraint firstItem="tgO-UR-g3v" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="z9k-86-YDo"/>
+            </constraints>
             <point key="canvasLocation" x="34.5" y="53.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="icon-button" width="279" height="49"/>
+        <image name="icon-green" width="382" height="656"/>
+        <image name="icon-weixin" width="50" height="51"/>
+    </resources>
 </document>

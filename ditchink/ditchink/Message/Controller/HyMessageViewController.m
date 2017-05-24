@@ -68,8 +68,8 @@
 
     //[self addMengView];
 
-    
 }
+
 
 
 -(void)setupNav{
@@ -165,7 +165,9 @@
 //导航栏按钮
 -(void)NavLeftBtn{
     HyLoginViewController *LoginViewController = [[HyLoginViewController alloc]init];
-    [self.navigationController pushViewController:LoginViewController animated:YES];
+    [self presentViewController:LoginViewController animated:YES completion:^{
+        
+    }];
 }
 -(void)messageButtonOnclick{
     self.messageTableview.hidden = NO;

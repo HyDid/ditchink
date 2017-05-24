@@ -36,7 +36,7 @@
         cell = [[[NSBundle mainBundle] loadNibNamed:@"HyCusBtnCell" owner:nil options:nil]lastObject];
     }
     [cell.iconView1 setBackgroundImage:[UIImage imageNamed:@"icon-parents"] forState:UIControlStateNormal];
-    cell.titleView1.text = @"家长交流";
+    cell.titleView1.text = @"情景对话";
     
     [cell.iconView2 setBackgroundImage:[UIImage imageNamed:@"icon-specialist"] forState:UIControlStateNormal];
     cell.titleView2.text = @"专家咨询";

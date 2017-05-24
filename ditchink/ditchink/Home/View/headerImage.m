@@ -32,8 +32,9 @@
     [super awakeFromNib];
     
     // 放图片
+
     CGFloat imgH = self.scrollView.frame.size.height;
-    CGFloat imgW = self.scrollView.frame.size.width;
+    CGFloat imgW = [UIScreen mainScreen].bounds.size.width;
     CGFloat imgY = 0;
     
     for (int i = 0; i<imageCount; i++) {

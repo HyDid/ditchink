@@ -22,6 +22,8 @@
     
     // 2.设置导航栏按钮的主题
     [self setupBarButtonTheme];
+    
+    
 }
 + (void)setupBarButtonTheme
 {

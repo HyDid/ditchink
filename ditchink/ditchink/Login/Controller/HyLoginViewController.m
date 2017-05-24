@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *registerBtn;
 @property (weak, nonatomic) IBOutlet UIButton *LoginBtn;
 @property (weak, nonatomic) IBOutlet UIButton *logoutBtn;
+@property (weak, nonatomic) IBOutlet UIButton *back;
 
 @end
 
@@ -25,19 +26,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
-    
-    
-    //设置导航栏
     [self setupNav];
     [self.registerBtn addTarget:self action:@selector(registerBtnOnclick:) forControlEvents:UIControlEventTouchUpInside];
     [self.LoginBtn addTarget:self action:@selector(LoginBtnOnclick:) forControlEvents:UIControlEventTouchUpInside];
     [self.logoutBtn addTarget:self action:@selector(logoutBtnOnclick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.back addTarget:self action:@selector(backBtnOnclick) forControlEvents:UIControlEventTouchUpInside];
+
+    
 }
 
 -(void)setupNav{
-   // [self.navigationController.navigationBar setHidden:YES];
+    [self.navigationController.navigationBar setHidden:YES];
 }
+-(void)viewWillDisappear:(BOOL)animated{
+    [self.navigationController.navigationBar setHidden:NO];
+}
+-(void)backBtnOnclick{
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+}
+
 
 -(void)registerBtnOnclick:(UIButton *)registerBtn{
     HyRegisterViewController *RegisterViewController = [[HyRegisterViewController alloc]init];
