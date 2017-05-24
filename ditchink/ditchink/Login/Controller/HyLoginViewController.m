@@ -42,15 +42,16 @@
     [self.navigationController.navigationBar setHidden:NO];
 }
 -(void)backBtnOnclick{
-    [self dismissViewControllerAnimated:YES completion:^{
-        
-    }];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
 -(void)registerBtnOnclick:(UIButton *)registerBtn{
     HyRegisterViewController *RegisterViewController = [[HyRegisterViewController alloc]init];
-    [self.navigationController pushViewController:RegisterViewController animated:YES];
+    
+    [self presentViewController:RegisterViewController animated:YES completion:^{
+        
+    }];
 }
 -(void)LoginBtnOnclick:(UIButton *)LoginBtn{
     NSString *strCid = [_nameTextField text];
@@ -64,14 +65,15 @@
     [g_pIMMyself loginWithTimeoutInterval:0 success:^{
         
         [SVProgressHUD showSuccessWithStatus:@"登陆成功"];
-        [self.navigationController popViewControllerAnimated:YES];
+        [self backBtnOnclick];
+
         
     } failure:^(NSString *e) {
         NSLog(@"%@", e);
         
         [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"登录失败 - %@",e]];
 //        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"注册失败 - %@", e] message:e delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil,nil];
-//        
+     
 //        [alertView show];
     }];
 }

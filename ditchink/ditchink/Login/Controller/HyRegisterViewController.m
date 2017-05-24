@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UIButton *registerBtn;
+@property (weak, nonatomic) IBOutlet UIButton *back;
 
 @end
 
@@ -22,8 +23,11 @@
     [super viewDidLoad];
     
     [self.registerBtn addTarget:self action:@selector(registerBtnOnclick:) forControlEvents:UIControlEventTouchUpInside];
-    
-    }
+    [self.back addTarget:self action:@selector(backBtnOnclick) forControlEvents:UIControlEventTouchUpInside];
+}
+-(void)backBtnOnclick{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 -(void)registerBtnOnclick:(UIButton *)registerBtn{
     NSString *strCid = self.nameTextField.text;
@@ -36,7 +40,7 @@
     [g_pIMMyself setPassword:strPwd];
     [g_pIMMyself registerWithTimeoutInterval:0 success:^{
         
-        [self.navigationController popViewControllerAnimated:YES];
+        [self backBtnOnclick];
         
     } failure:^(NSString *e) {
         NSLog(@"%@", e);
