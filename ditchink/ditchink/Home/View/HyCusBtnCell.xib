@@ -33,9 +33,6 @@
                                 <rect key="frame" x="17" y="8" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="highlighted" image="icon-parents-click"/>
-                                <connections>
-                                    <action selector="icon1:" destination="Vzw-Z8-18z" eventType="touchUpInside" id="ueB-JG-cPB"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -48,9 +45,6 @@
                                 <rect key="frame" x="17" y="8" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="highlighted" image="icon-specialist-click"/>
-                                <connections>
-                                    <action selector="icon2:" destination="Vzw-Z8-18z" eventType="touchUpInside" id="CUL-JI-JYz"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdI-YW-ZOf">
                                 <rect key="frame" x="0.0" y="74" width="94" height="21"/>
@@ -70,9 +64,6 @@
                                 <rect key="frame" x="17" y="8" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="highlighted" image="icon-case-click"/>
-                                <connections>
-                                    <action selector="icon3:" destination="Vzw-Z8-18z" eventType="touchUpInside" id="tWe-7A-fQf"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFb-hD-Sts">
                                 <rect key="frame" x="0.0" y="74" width="94" height="21"/>
@@ -92,9 +83,6 @@
                                 <rect key="frame" x="17" y="8" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="highlighted" image="icon-book-click"/>
-                                <connections>
-                                    <action selector="icon4:" destination="Vzw-Z8-18z" eventType="touchUpInside" id="HKO-5E-4Bn"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCq-Zs-WlQ">
                                 <rect key="frame" x="0.0" y="74" width="94" height="21"/>

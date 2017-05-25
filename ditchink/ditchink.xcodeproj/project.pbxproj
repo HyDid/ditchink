@@ -146,6 +146,14 @@
 		0422E57F1DF9716C00FE32AA /* HySignParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E5781DF9716C00FE32AA /* HySignParam.m */; };
 		0422E5801DF9716C00FE32AA /* HySignResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E57A1DF9716C00FE32AA /* HySignResult.m */; };
 		0422E5831DF9729400FE32AA /* HyLoginResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E5821DF9729400FE32AA /* HyLoginResult.m */; };
+		0424B1141ED5B0720069ACCF /* HyConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424B1121ED5B0720069ACCF /* HyConversationViewController.m */; };
+		0424B1151ED5B0720069ACCF /* HyConversationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0424B1131ED5B0720069ACCF /* HyConversationViewController.xib */; };
+		0424B1191ED5B08E0069ACCF /* HyDoctorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424B1171ED5B08E0069ACCF /* HyDoctorViewController.m */; };
+		0424B11A1ED5B08E0069ACCF /* HyDoctorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0424B1181ED5B08E0069ACCF /* HyDoctorViewController.xib */; };
+		0424B11E1ED5B0A10069ACCF /* HyCaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424B11C1ED5B0A10069ACCF /* HyCaseViewController.m */; };
+		0424B11F1ED5B0A10069ACCF /* HyCaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0424B11D1ED5B0A10069ACCF /* HyCaseViewController.xib */; };
+		0424B1231ED5B0B00069ACCF /* HyBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424B1211ED5B0B00069ACCF /* HyBookViewController.m */; };
+		0424B1241ED5B0B00069ACCF /* HyBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0424B1221ED5B0B00069ACCF /* HyBookViewController.xib */; };
 		0443A5451DEC1D950003DAFD /* HyNearbyCircleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443A5431DEC1D950003DAFD /* HyNearbyCircleTableViewCell.m */; };
 		0443A5461DEC1D950003DAFD /* HyNearbyCircleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0443A5441DEC1D950003DAFD /* HyNearbyCircleTableViewCell.xib */; };
 		0443A5491DEC247D0003DAFD /* HyNearbyCircleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443A5481DEC247D0003DAFD /* HyNearbyCircleModel.m */; };
@@ -427,6 +435,18 @@
 		0422E57A1DF9716C00FE32AA /* HySignResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HySignResult.m; sourceTree = "<group>"; };
 		0422E5811DF9729400FE32AA /* HyLoginResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyLoginResult.h; sourceTree = "<group>"; };
 		0422E5821DF9729400FE32AA /* HyLoginResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyLoginResult.m; sourceTree = "<group>"; };
+		0424B1111ED5B0720069ACCF /* HyConversationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyConversationViewController.h; sourceTree = "<group>"; };
+		0424B1121ED5B0720069ACCF /* HyConversationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyConversationViewController.m; sourceTree = "<group>"; };
+		0424B1131ED5B0720069ACCF /* HyConversationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyConversationViewController.xib; sourceTree = "<group>"; };
+		0424B1161ED5B08E0069ACCF /* HyDoctorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyDoctorViewController.h; sourceTree = "<group>"; };
+		0424B1171ED5B08E0069ACCF /* HyDoctorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyDoctorViewController.m; sourceTree = "<group>"; };
+		0424B1181ED5B08E0069ACCF /* HyDoctorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyDoctorViewController.xib; sourceTree = "<group>"; };
+		0424B11B1ED5B0A10069ACCF /* HyCaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyCaseViewController.h; sourceTree = "<group>"; };
+		0424B11C1ED5B0A10069ACCF /* HyCaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyCaseViewController.m; sourceTree = "<group>"; };
+		0424B11D1ED5B0A10069ACCF /* HyCaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyCaseViewController.xib; sourceTree = "<group>"; };
+		0424B1201ED5B0B00069ACCF /* HyBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyBookViewController.h; sourceTree = "<group>"; };
+		0424B1211ED5B0B00069ACCF /* HyBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyBookViewController.m; sourceTree = "<group>"; };
+		0424B1221ED5B0B00069ACCF /* HyBookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyBookViewController.xib; sourceTree = "<group>"; };
 		0443A5421DEC1D950003DAFD /* HyNearbyCircleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyNearbyCircleTableViewCell.h; sourceTree = "<group>"; };
 		0443A5431DEC1D950003DAFD /* HyNearbyCircleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyNearbyCircleTableViewCell.m; sourceTree = "<group>"; };
 		0443A5441DEC1D950003DAFD /* HyNearbyCircleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyNearbyCircleTableViewCell.xib; sourceTree = "<group>"; };
@@ -584,6 +604,9 @@
 		04177F631ED5A5780031249A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0424B1201ED5B0B00069ACCF /* HyBookViewController.h */,
+				0424B1211ED5B0B00069ACCF /* HyBookViewController.m */,
+				0424B1221ED5B0B00069ACCF /* HyBookViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -615,6 +638,9 @@
 		04177F671ED5A5780031249A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0424B11B1ED5B0A10069ACCF /* HyCaseViewController.h */,
+				0424B11C1ED5B0A10069ACCF /* HyCaseViewController.m */,
+				0424B11D1ED5B0A10069ACCF /* HyCaseViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -646,6 +672,9 @@
 		04177F6B1ED5A5780031249A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0424B1111ED5B0720069ACCF /* HyConversationViewController.h */,
+				0424B1121ED5B0720069ACCF /* HyConversationViewController.m */,
+				0424B1131ED5B0720069ACCF /* HyConversationViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -677,6 +706,9 @@
 		04177F6F1ED5A5780031249A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0424B1161ED5B08E0069ACCF /* HyDoctorViewController.h */,
+				0424B1171ED5B08E0069ACCF /* HyDoctorViewController.m */,
+				0424B1181ED5B08E0069ACCF /* HyDoctorViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1689,6 +1721,7 @@
 				0422E4D11DF93CE200FE32AA /* dt_aom@2x.png in Resources */,
 				0422E52F1DF93CE200FE32AA /* IM_press_audio@2x.png in Resources */,
 				0422E52E1DF93CE200FE32AA /* IM_picture_icon.png in Resources */,
+				0424B11F1ED5B0A10069ACCF /* HyCaseViewController.xib in Resources */,
 				0422E4E01DF93CE200FE32AA /* dt_guz@2x.png in Resources */,
 				04F3BFDD1DC6DC7500E427E1 /* HyMessageTableViewCell.xib in Resources */,
 				0422E4F51DF93CE200FE32AA /* dt_qin@2x.png in Resources */,
@@ -1698,6 +1731,7 @@
 				0422E5211DF93CE200FE32AA /* DTKeyboard_normal@2x.png in Resources */,
 				0422E51F1DF93CE200FE32AA /* DTFace_selected@2x.png in Resources */,
 				0422E52A1DF93CE200FE32AA /* IM_chat_failed@2x.png in Resources */,
+				0424B1151ED5B0720069ACCF /* HyConversationViewController.xib in Resources */,
 				0422E5181DF93CE200FE32AA /* amp2.png in Resources */,
 				0422E5141DF93CE200FE32AA /* IM_login_user_highlighted@2x.png in Resources */,
 				0422E5201DF93CE200FE32AA /* DTImageMask@2x.png in Resources */,
@@ -1755,6 +1789,7 @@
 				0443A54D1DEC2A960003DAFD /* Nearby_circleMe.plist in Resources */,
 				0422E5021DF93CE200FE32AA /* dt_xia@2x.png in Resources */,
 				E4A457BD1DDB0F2C00BE597E /* HyCustomCell.xib in Resources */,
+				0424B11A1ED5B08E0069ACCF /* HyDoctorViewController.xib in Resources */,
 				0422E3EB1DF53B1200FE32AA /* HyNearCircleTalkTableViewCell.xib in Resources */,
 				0422E4E21DF93CE200FE32AA /* dt_han@2x.png in Resources */,
 				0422E5291DF93CE200FE32AA /* IM_camera_icon.png in Resources */,
@@ -1768,6 +1803,7 @@
 				0422E4F21DF93CE200FE32AA /* dt_liw@2x.png in Resources */,
 				0422E4291DF9397200FE32AA /* HyRegisterViewController.xib in Resources */,
 				0422E4DD1DF93CE200FE32AA /* dt_fan@2x.png in Resources */,
+				0424B1241ED5B0B00069ACCF /* HyBookViewController.xib in Resources */,
 				0422E4D41DF93CE200FE32AA /* dt_bix.gif in Resources */,
 				E4375B711DC1AFB9009AF40D /* home.plist in Resources */,
 				0422E5261DF93CE200FE32AA /* IM_audio_play1@2x.png in Resources */,
@@ -1873,6 +1909,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0424B1141ED5B0720069ACCF /* HyConversationViewController.m in Sources */,
 				0443A5511DEC2BEA0003DAFD /* HyNearbyCircleAddTableViewCell.m in Sources */,
 				044D58A51DB2156B00450FF6 /* HyTabBar.m in Sources */,
 				044D58BD1DB2305D00450FF6 /* HyMeViewController.m in Sources */,
@@ -1890,6 +1927,7 @@
 				0422E4141DF6893300FE32AA /* NSString+Extension.m in Sources */,
 				044D585D1DB1F4DE00450FF6 /* AppDelegate.m in Sources */,
 				0422E54A1DF96E9D00FE32AA /* HyBaseResult.m in Sources */,
+				0424B1231ED5B0B00069ACCF /* HyBookViewController.m in Sources */,
 				04F343901DDAEFCD0055364D /* HyNearbyTopView.m in Sources */,
 				0422E4231DF937B400FE32AA /* HyLoginViewController.m in Sources */,
 				0422E4131DF6893300FE32AA /* UIImage+Extension.m in Sources */,
@@ -1897,6 +1935,7 @@
 				04584B411DE6D03300ED2651 /* HyNearbyPersonTableViewCell.m in Sources */,
 				0422E5801DF9716C00FE32AA /* HySignResult.m in Sources */,
 				0443A5451DEC1D950003DAFD /* HyNearbyCircleTableViewCell.m in Sources */,
+				0424B11E1ED5B0A10069ACCF /* HyCaseViewController.m in Sources */,
 				0422E40D1DF6890700FE32AA /* MJMessageCell.m in Sources */,
 				E4A457B81DDB0F2C00BE597E /* HyCusBtnCell.m in Sources */,
 				04F3BFDC1DC6DC7500E427E1 /* HyMessageTableViewCell.m in Sources */,
@@ -1919,6 +1958,7 @@
 				0422E3EA1DF53B1200FE32AA /* HyNearCircleTalkTableViewCell.m in Sources */,
 				0422E3F01DF53FFA00FE32AA /* HyNearbyCircleTalkModel.m in Sources */,
 				0422E4091DF688F000FE32AA /* MJMessage.m in Sources */,
+				0424B1191ED5B08E0069ACCF /* HyDoctorViewController.m in Sources */,
 				0422E5491DF96E9D00FE32AA /* HyBaseParam.m in Sources */,
 				0443A5491DEC247D0003DAFD /* HyNearbyCircleModel.m in Sources */,
 				04F3BFE11DC7558D00E427E1 /* HySystemViewTableViewCell.m in Sources */,

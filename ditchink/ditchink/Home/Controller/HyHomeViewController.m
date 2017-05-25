@@ -14,7 +14,13 @@
 #import "HyCusBtnCell.h" // 按钮cell
 #import "headerImage.h" // 图片轮播
 
+//页面跳转
 #import "HyLoginViewController.h"
+#import "HyConversationViewController.h"
+#import "HyDoctorViewController.h"
+#import "HyCaseViewController.h"
+#import "HyBookViewController.h"
+//#import "HySweepViewController.h"
 
 
 @interface HyHomeViewController () <UITableViewDataSource,UITableViewDelegate>
@@ -127,6 +133,10 @@
                     // 创建cell 设置数据
                     HyCusBtnCell *cell1 = [HyCusBtnCell cellWithTableView:tableView];
                     cell1.selectionStyle = UITableViewCellSelectionStyleNone;
+                    [cell1.iconView1 addTarget:self action:@selector(iconView1) forControlEvents:UIControlEventTouchUpInside];
+                    [cell1.iconView2 addTarget:self action:@selector(iconView2) forControlEvents:UIControlEventTouchUpInside];
+                    [cell1.iconView3 addTarget:self action:@selector(iconView3) forControlEvents:UIControlEventTouchUpInside];
+                    [cell1.iconView4 addTarget:self action:@selector(iconView4) forControlEvents:UIControlEventTouchUpInside];
                     return cell1;
                     break;
                 }
@@ -150,6 +160,26 @@
         }
     }
     return cell1;
+}
+-(void)iconView1{
+    HyConversationViewController *vc = [[HyConversationViewController alloc]init];
+    vc.title = @"情景对话";
+    [self.navigationController pushViewController:vc animated:YES];
+}
+-(void)iconView2{
+    HyDoctorViewController *vc = [[HyDoctorViewController alloc]init];
+    vc.title = @"专家咨询";
+    [self.navigationController pushViewController:vc animated:YES];
+}
+-(void)iconView3{
+    HyCaseViewController *vc = [[HyCaseViewController alloc]init];
+    vc.title = @"案例介绍";
+    [self.navigationController pushViewController:vc animated:YES];
+}
+-(void)iconView4{
+    HyBookViewController *vc = [[HyBookViewController alloc]init];
+    vc.title = @"图书推荐";
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 // 最上方的section距离顶部距离
@@ -232,6 +262,8 @@
 //导航栏右侧按钮
 -(void)NavRightBtn{
     NSLog(@"right");
+//    HySweepViewController *vc = [[HySweepViewController alloc]init];
+//    [self.navigationController pushViewController:vc animated:YES];
 }
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     [self.bar resignFirstResponder];

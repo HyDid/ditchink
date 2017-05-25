@@ -42,12 +42,6 @@
     }
     return _messageArray;
 }
-//-(NSMutableArray *)systemArray{
-//    if (_systemArray == nil) {
-//    _systemArray = [NSMutableArray array];
-//    }
-//    return _systemArray;
-//}
 -(NSMutableArray *)systemCellFramesArray{
     if (_systemCellFramesArray == nil) {
         _systemCellFramesArray = [NSMutableArray array];
@@ -91,39 +85,37 @@
 }
 -(void)setupTableView{
     UITableView *systemTableview = [[UITableView alloc]init];
-    systemTableview.frame = self.view.frame;
-    systemTableview.backgroundColor = HyColor(239, 239, 239);
-    systemTableview.separatorStyle = NO;
-    systemTableview.delegate = self;
-    systemTableview.dataSource = self;
+    [self setupTableView:systemTableview];
     systemTableview.allowsSelection = NO;
     [self.view addSubview:systemTableview];
     
+    
     UITableView *messagetableview = [[UITableView alloc]init];
-    messagetableview.frame = self.view.frame;
-    messagetableview.backgroundColor = HyColor(239, 239, 239);
-    messagetableview.separatorStyle = NO;
-    messagetableview.delegate = self;
-    messagetableview.dataSource = self;
+    [self setupTableView:messagetableview];
     [self.view addSubview:messagetableview];
     
     self.systemTableview = systemTableview;
     self.messageTableview = messagetableview;
 }
+
+-(void)setupTableView:(UITableView *)tableview{
+    tableview.frame = self.view.frame;
+    tableview.backgroundColor = HyColor(239, 239, 239);
+    tableview.separatorStyle = NO;
+    tableview.delegate = self;
+    tableview.dataSource = self;
+}
+
 -(void)setupHttp{
     
-
     self.messageTableview.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
     self.systemTableview.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
 
-    
     [self.messageTableview.mj_header beginRefreshing];
     [self.systemTableview.mj_header beginRefreshing];
 }
 -(void)loadNewData{
 
-    
-    
     [self messagePlistGet];
     [self systemPlistGet];
     

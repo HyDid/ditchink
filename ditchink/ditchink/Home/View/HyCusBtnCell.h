@@ -14,6 +14,11 @@
 
 +(instancetype) cellWithTableView:(UITableView *)tableView;
 
+@property (weak, nonatomic) IBOutlet UIButton *iconView1;
+@property (weak, nonatomic) IBOutlet UIButton *iconView2;
+@property (weak, nonatomic) IBOutlet UIButton *iconView3;
+@property (weak, nonatomic) IBOutlet UIButton *iconView4;
+
 @property(nonatomic,strong) HyFourBtnModel *modelbtn;
 
 @end

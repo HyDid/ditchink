@@ -40,7 +40,7 @@
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
     attrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
     //    attrs[NSFontAttributeName] = [UIFont fontWithName:@"Helvetica" size:18];
-    attrs[NSFontAttributeName] = [UIFont systemFontOfSize:19 weight:20];
+    attrs[NSFontAttributeName] = [UIFont systemFontOfSize:17 weight:20];
 
     [barItem setTitleTextAttributes:attrs forState:UIControlStateNormal];
     

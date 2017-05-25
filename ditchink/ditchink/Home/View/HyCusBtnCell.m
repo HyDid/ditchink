@@ -10,19 +10,13 @@
 //#import "HyFourBtnModel.h"
 
 @interface HyCusBtnCell()
-@property (weak, nonatomic) IBOutlet UIButton *iconView1;
+
 @property (weak, nonatomic) IBOutlet UILabel *titleView1;
-@property (weak, nonatomic) IBOutlet UIButton *iconView2;
 @property (weak, nonatomic) IBOutlet UILabel *titleView2;
-@property (weak, nonatomic) IBOutlet UIButton *iconView3;
 @property (weak, nonatomic) IBOutlet UILabel *titleView3;
-@property (weak, nonatomic) IBOutlet UIButton *iconView4;
 @property (weak, nonatomic) IBOutlet UILabel *titleView4;
 
-- (IBAction)icon1:(id)sender;
-- (IBAction)icon2:(id)sender;
-- (IBAction)icon3:(id)sender;
-- (IBAction)icon4:(id)sender;
+
 
 
 @end
@@ -49,19 +43,4 @@
     return cell;
 }
 
-- (IBAction)icon1:(id)sender {
-    NSLog(@"家长交流");
-}
-
-- (IBAction)icon2:(id)sender {
-    NSLog(@"专家咨询");
-}
-
-- (IBAction)icon3:(id)sender {
-    NSLog(@"案例介绍");
-}
-
-- (IBAction)icon4:(id)sender {
-    NSLog(@"图书推荐");
-}
 @end
