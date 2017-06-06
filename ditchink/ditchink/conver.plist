@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>icon</key>
+		<string>icon-person</string>
+		<key>name</key>
+		<string>机器人模式</string>
+		<key>level</key>
+		<string>4</string>
+		<key>str</key>
+		<string>在线模拟对话</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon-person</string>
+		<key>name</key>
+		<string>真人模式</string>
+		<key>level</key>
+		<string>5</string>
+		<key>str</key>
+		<string>实时线上互动，为您提供真实对话场景</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon-exer</string>
+		<key>name</key>
+		<string>谨慎场景模拟</string>
+		<key>level</key>
+		<string>2</string>
+		<key>str</key>
+		<string>全民健身，如何训练自己与周边的人共同互动</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon-exer</string>
+		<key>name</key>
+		<string>健身场景模拟</string>
+		<key>level</key>
+		<string>2</string>
+		<key>str</key>
+		<string>全民健身，如何训练自己与周边的人共同互动</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon-exer</string>
+		<key>name</key>
+		<string>健身场景模拟</string>
+		<key>level</key>
+		<string>2</string>
+		<key>str</key>
+		<string>全民健身，如何训练自己与周边的人共同互动</string>
+	</dict>
+</array>
+</plist>

@@ -185,6 +185,10 @@
 		04584B571DE7C3EB00ED2651 /* Message_system.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04584B551DE7C3EB00ED2651 /* Message_system.plist */; };
 		04584B591DE7C40D00ED2651 /* Nearby_thing.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04584B581DE7C40D00ED2651 /* Nearby_thing.plist */; };
 		04584B5B1DE803B400ED2651 /* Nearby_person.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04584B5A1DE803B400ED2651 /* Nearby_person.plist */; };
+		0493CC6A1EE6704000DC8EB7 /* HyConverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0493CC691EE6704000DC8EB7 /* HyConverView.m */; };
+		0493CC701EE672B400DC8EB7 /* HyConver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0493CC6F1EE672B400DC8EB7 /* HyConver.m */; };
+		0493CC741EE674D800DC8EB7 /* conver.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0493CC731EE674D800DC8EB7 /* conver.plist */; };
+		0493CC761EE6756C00DC8EB7 /* HyConverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0493CC751EE6756C00DC8EB7 /* HyConverView.xib */; };
 		04F343901DDAEFCD0055364D /* HyNearbyTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3438F1DDAEFCD0055364D /* HyNearbyTopView.m */; };
 		04F3439B1DE5A2760055364D /* HyNearbyPersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3439A1DE5A2760055364D /* HyNearbyPersonModel.m */; };
 		04F3439F1DE5ABE80055364D /* HySweepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3439D1DE5ABE80055364D /* HySweepViewController.m */; };
@@ -500,6 +504,12 @@
 		04584B551DE7C3EB00ED2651 /* Message_system.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Message_system.plist; sourceTree = "<group>"; };
 		04584B581DE7C40D00ED2651 /* Nearby_thing.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Nearby_thing.plist; sourceTree = "<group>"; };
 		04584B5A1DE803B400ED2651 /* Nearby_person.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Nearby_person.plist; sourceTree = "<group>"; };
+		0493CC681EE6704000DC8EB7 /* HyConverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyConverView.h; sourceTree = "<group>"; };
+		0493CC691EE6704000DC8EB7 /* HyConverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyConverView.m; sourceTree = "<group>"; };
+		0493CC6E1EE672B400DC8EB7 /* HyConver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyConver.h; sourceTree = "<group>"; };
+		0493CC6F1EE672B400DC8EB7 /* HyConver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyConver.m; sourceTree = "<group>"; };
+		0493CC731EE674D800DC8EB7 /* conver.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = conver.plist; sourceTree = "<group>"; };
+		0493CC751EE6756C00DC8EB7 /* HyConverView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyConverView.xib; sourceTree = "<group>"; };
 		04F3438E1DDAEFCD0055364D /* HyNearbyTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyNearbyTopView.h; sourceTree = "<group>"; };
 		04F3438F1DDAEFCD0055364D /* HyNearbyTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyNearbyTopView.m; sourceTree = "<group>"; };
 		04F343991DE5A2760055364D /* HyNearbyPersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyNearbyPersonModel.h; sourceTree = "<group>"; };
@@ -682,6 +692,8 @@
 		04177F6C1ED5A5780031249A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0493CC6E1EE672B400DC8EB7 /* HyConver.h */,
+				0493CC6F1EE672B400DC8EB7 /* HyConver.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -689,6 +701,9 @@
 		04177F6D1ED5A5780031249A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0493CC681EE6704000DC8EB7 /* HyConverView.h */,
+				0493CC691EE6704000DC8EB7 /* HyConverView.m */,
+				0493CC751EE6756C00DC8EB7 /* HyConverView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1326,6 +1341,7 @@
 				044D58641DB1F4DE00450FF6 /* ditchink.xcdatamodeld */,
 				044D586C1DB1F4DE00450FF6 /* Info.plist */,
 				044D58591DB1F4DE00450FF6 /* main.m */,
+				0493CC731EE674D800DC8EB7 /* conver.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1713,6 +1729,7 @@
 				0422E50B1DF93CE200FE32AA /* emoticon_delete_button@2x.png in Resources */,
 				04584B421DE6D03300ED2651 /* HyNearbyPersonTableViewCell.xib in Resources */,
 				0443A5591DEC412D0003DAFD /* Nearby_circleMore.plist in Resources */,
+				0493CC741EE674D800DC8EB7 /* conver.plist in Resources */,
 				0422E4D71DF93CE200FE32AA /* dt_byi@2x.png in Resources */,
 				0422E4241DF937B400FE32AA /* HyLoginViewController.xib in Resources */,
 				E4A457B91DDB0F2C00BE597E /* HyCusBtnCell.xib in Resources */,
@@ -1751,6 +1768,7 @@
 				0422E4D91DF93CE200FE32AA /* dt_dab@2x.png in Resources */,
 				0422E4D21DF93CE200FE32AA /* dt_bia@2x.png in Resources */,
 				0422E5041DF93CE200FE32AA /* dt_xuu@2x.png in Resources */,
+				0493CC761EE6756C00DC8EB7 /* HyConverView.xib in Resources */,
 				0422E5001DF93CE200FE32AA /* dt_wos@2x.png in Resources */,
 				0422E5091DF93CE200FE32AA /* dt_zhu@2x.png in Resources */,
 				0422E52B1DF93CE200FE32AA /* IM_head_default.png in Resources */,
@@ -1955,10 +1973,12 @@
 				0422E3DB1DF01C9300FE32AA /* HyChatViewController.m in Sources */,
 				E4A457B41DDB0F2C00BE597E /* HyHomeViewController.m in Sources */,
 				0422E57B1DF9716C00FE32AA /* HyForgetPasswordParam.m in Sources */,
+				0493CC701EE672B400DC8EB7 /* HyConver.m in Sources */,
 				0422E3EA1DF53B1200FE32AA /* HyNearCircleTalkTableViewCell.m in Sources */,
 				0422E3F01DF53FFA00FE32AA /* HyNearbyCircleTalkModel.m in Sources */,
 				0422E4091DF688F000FE32AA /* MJMessage.m in Sources */,
 				0424B1191ED5B08E0069ACCF /* HyDoctorViewController.m in Sources */,
+				0493CC6A1EE6704000DC8EB7 /* HyConverView.m in Sources */,
 				0422E5491DF96E9D00FE32AA /* HyBaseParam.m in Sources */,
 				0443A5491DEC247D0003DAFD /* HyNearbyCircleModel.m in Sources */,
 				04F3BFE11DC7558D00E427E1 /* HySystemViewTableViewCell.m in Sources */,
