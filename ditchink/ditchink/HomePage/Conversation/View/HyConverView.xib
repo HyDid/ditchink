@@ -49,7 +49,7 @@
                         <constraint firstAttribute="width" constant="60" id="e8L-BJ-OgT"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                    <state key="normal" title="开始" backgroundImage="icon-button">
+                    <state key="normal" title="开始" backgroundImage="icon-button2">
                         <color key="titleColor" red="0.1046250314" green="0.70685297250000001" blue="0.63142251969999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </state>
                 </button>
@@ -89,6 +89,6 @@
         </view>
     </objects>
     <resources>
-        <image name="icon-button" width="57" height="23"/>
+        <image name="icon-button2" width="57" height="23"/>
     </resources>
 </document>
