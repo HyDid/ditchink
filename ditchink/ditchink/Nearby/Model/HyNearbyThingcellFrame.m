@@ -65,7 +65,6 @@
   //  CGSize timeLabelSize = [NearbyThingModel.timeLabelStr sizeWithFont:[UIFont systemFontOfSize:12]];
  //   _timeLabelF = (CGRect){{timeLabelX, timeLabelY}, timeLabelSize};
     _timeLabelF = CGRectMake(timeLabelX, timeLabelY, 100, 20);
-
     
     topViewH = CGRectGetMaxY(_timeLabelF);
     

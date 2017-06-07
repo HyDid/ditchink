@@ -151,19 +151,34 @@
     UITableViewCell *cell = [[UITableViewCell alloc]init];
     
     if (indexPath.section == 0) {
-        HyNearbyCircleTableViewCell *NearbyCircleTableViewCell = [HyNearbyCircleTableViewCell cellWithTableView:self.AddCircleTableView];
+        static NSString *ID = @"NearbyCircleTableViewCell";
+        HyNearbyCircleTableViewCell *NearbyCircleTableViewCell = [tableView dequeueReusableCellWithIdentifier:ID];
+        if (!NearbyCircleTableViewCell) {
+            NearbyCircleTableViewCell = [HyNearbyCircleTableViewCell cellWithTableView:self.AddCircleTableView];
+        }
         [NearbyCircleTableViewCell.marryLab removeFromSuperview];
         NearbyCircleTableViewCell.CircleModel = self.CircleModel;
         return NearbyCircleTableViewCell;
     }else if (indexPath.section == 1){
-        
-        HynearCircleDarentangTableViewCell *nearCircleDarentangTableViewCell = [HynearCircleDarentangTableViewCell cellWithTableView:self.AddCircleTableView];
-        return nearCircleDarentangTableViewCell;
+        static NSString *ID = @"NearCircleDarentangTableViewCell";
+        HynearCircleDarentangTableViewCell *NearCircleDarentangTableViewCell = [tableView dequeueReusableCellWithIdentifier:ID];
+        if (!NearCircleDarentangTableViewCell) {
+            NearCircleDarentangTableViewCell = [HynearCircleDarentangTableViewCell cellWithTableView:self.AddCircleTableView];
+        }
+        return NearCircleDarentangTableViewCell;
     }else if (indexPath.section == 2){
-        HyNearCircleZhidingTableViewCell *NearCircleZhidingTableViewCell = [HyNearCircleZhidingTableViewCell cellWithTableView:self.AddCircleTableView];
+        static NSString *ID = @"NearCircleZhidingTableViewCell";
+        HyNearCircleZhidingTableViewCell *NearCircleZhidingTableViewCell = [tableView dequeueReusableCellWithIdentifier:ID];
+        if (!NearCircleZhidingTableViewCell) {
+            NearCircleZhidingTableViewCell = [HyNearCircleZhidingTableViewCell cellWithTableView:self.AddCircleTableView];
+        }
         return NearCircleZhidingTableViewCell;
     }else if (indexPath.section == 3){
-        HyNearCircleTalkTableViewCell *NearCircleTalkTableViewCell = [HyNearCircleTalkTableViewCell cellWithTableView:self.AddCircleTableView];
+        static NSString *ID = @"NearCircleTalkTableViewCell";
+        HyNearCircleTalkTableViewCell *NearCircleTalkTableViewCell = [tableView dequeueReusableCellWithIdentifier:ID];
+        if (!NearCircleTalkTableViewCell) {
+            NearCircleTalkTableViewCell = [HyNearCircleTalkTableViewCell cellWithTableView:self.AddCircleTableView];
+        }
         NearCircleTalkTableViewCell.TalkModel = self.talkArray[indexPath.row];
         return NearCircleTalkTableViewCell;
         
