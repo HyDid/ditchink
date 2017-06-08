@@ -16,9 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [SVProgressHUD showErrorWithStatus:@"暂未开放"];
+     [SVProgressHUD showErrorWithStatus:@"暂未开放"];
+    
+    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(abc) userInfo:nil repeats:NO];
 }
-
+-(void)abc{
+    [SVProgressHUD dismiss];
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 
 @end
