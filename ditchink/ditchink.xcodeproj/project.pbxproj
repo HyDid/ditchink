@@ -25,7 +25,6 @@
 		0422E4131DF6893300FE32AA /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E4101DF6893300FE32AA /* UIImage+Extension.m */; };
 		0422E4141DF6893300FE32AA /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E4121DF6893300FE32AA /* NSString+Extension.m */; };
 		0422E4161DF69F9400FE32AA /* messages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0422E4151DF69F9400FE32AA /* messages.plist */; };
-		0422E4181DF69F9C00FE32AA /* autoreply.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0422E4171DF69F9C00FE32AA /* autoreply.plist */; };
 		0422E41B1DF6AA5400FE32AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0422E4191DF6AA5400FE32AA /* LaunchScreen.storyboard */; };
 		0422E4231DF937B400FE32AA /* HyLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E4211DF937B400FE32AA /* HyLoginViewController.m */; };
 		0422E4241DF937B400FE32AA /* HyLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0422E4221DF937B400FE32AA /* HyLoginViewController.xib */; };
@@ -154,6 +153,7 @@
 		0424B11F1ED5B0A10069ACCF /* HyCaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0424B11D1ED5B0A10069ACCF /* HyCaseViewController.xib */; };
 		0424B1231ED5B0B00069ACCF /* HyBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424B1211ED5B0B00069ACCF /* HyBookViewController.m */; };
 		0424B1241ED5B0B00069ACCF /* HyBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0424B1221ED5B0B00069ACCF /* HyBookViewController.xib */; };
+		04397D461EFA684F0062B626 /* autoreply.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04397D451EFA684F0062B626 /* autoreply.plist */; };
 		0443A5451DEC1D950003DAFD /* HyNearbyCircleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443A5431DEC1D950003DAFD /* HyNearbyCircleTableViewCell.m */; };
 		0443A5461DEC1D950003DAFD /* HyNearbyCircleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0443A5441DEC1D950003DAFD /* HyNearbyCircleTableViewCell.xib */; };
 		0443A5491DEC247D0003DAFD /* HyNearbyCircleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0443A5481DEC247D0003DAFD /* HyNearbyCircleModel.m */; };
@@ -278,7 +278,6 @@
 		0422E4111DF6893300FE32AA /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		0422E4121DF6893300FE32AA /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		0422E4151DF69F9400FE32AA /* messages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = messages.plist; sourceTree = "<group>"; };
-		0422E4171DF69F9C00FE32AA /* autoreply.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = autoreply.plist; sourceTree = "<group>"; };
 		0422E41A1DF6AA5400FE32AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0422E4201DF937B400FE32AA /* HyLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyLoginViewController.h; sourceTree = "<group>"; };
 		0422E4211DF937B400FE32AA /* HyLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyLoginViewController.m; sourceTree = "<group>"; };
@@ -464,6 +463,7 @@
 		0424B1201ED5B0B00069ACCF /* HyBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyBookViewController.h; sourceTree = "<group>"; };
 		0424B1211ED5B0B00069ACCF /* HyBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyBookViewController.m; sourceTree = "<group>"; };
 		0424B1221ED5B0B00069ACCF /* HyBookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyBookViewController.xib; sourceTree = "<group>"; };
+		04397D451EFA684F0062B626 /* autoreply.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = autoreply.plist; sourceTree = "<group>"; };
 		0443A5421DEC1D950003DAFD /* HyNearbyCircleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyNearbyCircleTableViewCell.h; sourceTree = "<group>"; };
 		0443A5431DEC1D950003DAFD /* HyNearbyCircleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyNearbyCircleTableViewCell.m; sourceTree = "<group>"; };
 		0443A5441DEC1D950003DAFD /* HyNearbyCircleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HyNearbyCircleTableViewCell.xib; sourceTree = "<group>"; };
@@ -1346,8 +1346,8 @@
 		044D58581DB1F4DE00450FF6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				04397D451EFA684F0062B626 /* autoreply.plist */,
 				0422E4191DF6AA5400FE32AA /* LaunchScreen.storyboard */,
-				0422E4171DF69F9C00FE32AA /* autoreply.plist */,
 				0422E4151DF69F9400FE32AA /* messages.plist */,
 				04584B531DE7C3EB00ED2651 /* custemPlist */,
 				E4375B701DC1AFB9009AF40D /* home.plist */,
@@ -1778,7 +1778,6 @@
 				0422E5011DF93CE200FE32AA /* dt_wqu@2x.png in Resources */,
 				0422E4E71DF93CE200FE32AA /* dt_hux@2x.png in Resources */,
 				0422E3E11DF50E2800FE32AA /* HynearCircleDarentangTableViewCell.xib in Resources */,
-				0422E4181DF69F9C00FE32AA /* autoreply.plist in Resources */,
 				0422E41B1DF6AA5400FE32AA /* LaunchScreen.storyboard in Resources */,
 				0422E4D91DF93CE200FE32AA /* dt_dab@2x.png in Resources */,
 				0422E4D21DF93CE200FE32AA /* dt_bia@2x.png in Resources */,
@@ -1867,6 +1866,7 @@
 				0422E4F11DF93CE200FE32AA /* dt_kuw@2x.png in Resources */,
 				0422E4F41DF93CE200FE32AA /* dt_qia@2x.png in Resources */,
 				0422E5241DF93CE200FE32AA /* DTMore_normal@2x.png in Resources */,
+				04397D461EFA684F0062B626 /* autoreply.plist in Resources */,
 				04584B591DE7C40D00ED2651 /* Nearby_thing.plist in Resources */,
 				04584B441DE6D03300ED2651 /* HyNearByThingTableViewCell.xib in Resources */,
 				0422E3ED1DF53F2700FE32AA /* Nearby_circleAddTalk.plist in Resources */,
