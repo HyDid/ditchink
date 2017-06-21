@@ -35,22 +35,27 @@
     
     NSLog( @"login - %@|%@", strCid, strPwd);
     
-    
-    [g_pIMMyself setCustomUserID:strCid];
-    [g_pIMMyself setPassword:strPwd];
-    [g_pIMMyself registerWithTimeoutInterval:0 success:^{
-        
-        [self backBtnOnclick];
-        
-    } failure:^(NSString *e) {
-        NSLog(@"%@", e);
-        
-        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"注册失败 - %@",e]];
-        
-//        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"注册失败 - %@", e] message:e delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil,nil];
-//        
-//        [alertView show];
+    [[EMClient sharedClient]registerWithUsername:strCid password:strPwd completion:^(NSString *aUsername, EMError *aError) {
+        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"注册失败 - %@",aError]];
     }];
+    
+    
+    
+//    [g_pIMMyself setCustomUserID:strCid];
+//    [g_pIMMyself setPassword:strPwd];
+//    [g_pIMMyself registerWithTimeoutInterval:0 success:^{
+//        
+//        [self backBtnOnclick];
+//        
+//    } failure:^(NSString *e) {
+//        NSLog(@"%@", e);
+//        
+//        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"注册失败 - %@",e]];
+//        
+////        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"注册失败 - %@", e] message:e delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil,nil];
+////        
+////        [alertView show];
+//    }];
 
 }
 

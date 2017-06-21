@@ -74,7 +74,7 @@
     [self setupTableView];
     [self setupeditTextBarView];
     
-    [g_pIMMyself setDelegate:self];
+    
 
 }
 
@@ -154,19 +154,29 @@
     
     NSLog( @"send text - %@|%@", strCid, strMsg);
     
-    [g_pIMMyself sendText:strMsg toUser:strCid success:^{
-        NSLog(@"send to %@ success", strCid);
-        
-    } failure:^(NSString *e) {
-        NSLog(@"%@", e);
-        
-        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"发送失败 - %@",e]];
-        
-    } ];
+    EMTextMessageBody *body = [[EMTextMessageBody alloc] initWithText:strMsg];
+    NSString *from = [[EMClient sharedClient] currentUsername];
     
-//    // 2.自动回复一条消息
-//    NSString *reply = [self replayWithText:textField.text];
-//    [self addMessage:reply type:MJMessageTypeOther];
+    //生成Message
+
+    EMMessage *message = [[EMMessage alloc]initWithConversationID:self.titleNameStr from:from to:strCid body:body ext:nil];
+    
+    message.chatType = EMChatTypeChat;
+    
+    
+//    [g_pIMMyself sendText:strMsg toUser:strCid success:^{
+//        NSLog(@"send to %@ success", strCid);
+//        
+//    } failure:^(NSString *e) {
+//        NSLog(@"%@", e);
+//        
+//        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"发送失败 - %@",e]];
+//        
+//    } ];
+    
+    // 2.自动回复一条消息
+    NSString *reply = [self replayWithText:textField.text];
+    [self addMessage:reply type:MJMessageTypeOther];
 }
 
 /**

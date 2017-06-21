@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -71,15 +71,8 @@
                         <constraint firstAttribute="height" constant="50" id="GpB-jV-jGx"/>
                         <constraint firstAttribute="width" constant="50" id="T0U-By-KAa"/>
                     </constraints>
-                    <state key="normal" backgroundImage="icon-weixin"/>
+                    <state key="normal" backgroundImage="weibo"/>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-border" translatesAutoresizingMaskIntoConstraints="NO" id="ALn-Jk-Bec">
-                    <rect key="frame" x="130.5" y="83" width="113" height="90"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="113" id="QL1-ks-z5Q"/>
-                        <constraint firstAttribute="height" constant="90" id="dPt-pv-tsE"/>
-                    </constraints>
-                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9CI-Ca-lnB">
                     <rect key="frame" x="62" y="372" width="250" height="50"/>
                     <constraints>
@@ -111,30 +104,37 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-border" translatesAutoresizingMaskIntoConstraints="NO" id="ALn-Jk-Bec">
+                    <rect key="frame" x="142" y="83" width="90" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="SEH-LR-s8I"/>
+                        <constraint firstAttribute="width" constant="90" id="bfJ-QW-Pua"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="LF8-qY-Ckb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="40O-9D-zLT"/>
-                <constraint firstItem="ALn-Jk-Bec" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="83" id="6Pz-yk-70N"/>
                 <constraint firstItem="b0h-IG-kPr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="774-uH-vzf"/>
                 <constraint firstItem="2hW-Xd-23f" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="7ts-8B-6RX"/>
                 <constraint firstItem="9CI-Ca-lnB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9Dh-Sh-spu"/>
                 <constraint firstItem="2hW-Xd-23f" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="9dd-xl-KXh"/>
+                <constraint firstItem="ALn-Jk-Bec" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="83" id="Aaq-pf-3Yy"/>
                 <constraint firstAttribute="trailing" secondItem="tgO-UR-g3v" secondAttribute="trailing" id="Dtj-Bi-jp6"/>
                 <constraint firstItem="ogv-ne-MCl" firstAttribute="top" secondItem="sfO-hW-PRC" secondAttribute="bottom" constant="11" id="EKW-ek-5KJ"/>
                 <constraint firstAttribute="bottom" secondItem="tgO-UR-g3v" secondAttribute="bottom" id="G2X-xB-NeE"/>
                 <constraint firstItem="tgO-UR-g3v" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HH4-DE-Aqv"/>
                 <constraint firstItem="tgO-UR-g3v" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Moh-s7-bxd"/>
+                <constraint firstItem="VZ0-PY-rdS" firstAttribute="top" secondItem="ALn-Jk-Bec" secondAttribute="bottom" constant="58" id="ODI-IS-oOn"/>
+                <constraint firstItem="ALn-Jk-Bec" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PLa-nO-wtV"/>
                 <constraint firstItem="LF8-qY-Ckb" firstAttribute="top" secondItem="VZ0-PY-rdS" secondAttribute="bottom" constant="14" id="PeP-qe-uaW"/>
                 <constraint firstItem="dkj-fU-WmR" firstAttribute="top" secondItem="sfO-hW-PRC" secondAttribute="bottom" constant="11" id="Qha-CW-1vA"/>
                 <constraint firstAttribute="trailing" secondItem="dkj-fU-WmR" secondAttribute="trailing" constant="108" id="TdZ-80-LvM"/>
-                <constraint firstItem="VZ0-PY-rdS" firstAttribute="top" secondItem="ALn-Jk-Bec" secondAttribute="bottom" constant="58" id="bHD-4d-0kV"/>
                 <constraint firstItem="VZ0-PY-rdS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="d7E-C7-1jI"/>
                 <constraint firstItem="ogv-ne-MCl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="108" id="frz-QB-6AZ"/>
                 <constraint firstItem="9CI-Ca-lnB" firstAttribute="top" secondItem="LF8-qY-Ckb" secondAttribute="bottom" constant="27" id="pkP-Eh-VzH"/>
                 <constraint firstItem="tgO-UR-g3v" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="r64-k0-t4n"/>
                 <constraint firstItem="b0h-IG-kPr" firstAttribute="top" secondItem="9CI-Ca-lnB" secondAttribute="bottom" constant="8" id="roa-vM-YCB"/>
-                <constraint firstItem="ALn-Jk-Bec" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="skT-uV-Wyu"/>
                 <constraint firstItem="sfO-hW-PRC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="t9P-Oq-VNf"/>
                 <constraint firstItem="sfO-hW-PRC" firstAttribute="top" secondItem="b0h-IG-kPr" secondAttribute="bottom" constant="50" id="vxt-n4-v65"/>
                 <constraint firstItem="tgO-UR-g3v" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="z9k-86-YDo"/>
@@ -147,5 +147,6 @@
         <image name="icon-button" width="279" height="49"/>
         <image name="icon-green" width="382" height="656"/>
         <image name="icon-weixin" width="50" height="51"/>
+        <image name="weibo" width="109" height="109"/>
     </resources>
 </document>

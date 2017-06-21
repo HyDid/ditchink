@@ -60,26 +60,42 @@
     NSLog( @"login - %@|%@", strCid, strPwd);
     
     
-    [g_pIMMyself setCustomUserID:[_nameTextField text]];
-    [g_pIMMyself setPassword:[_passwordTextField text]];
-    [g_pIMMyself loginWithTimeoutInterval:0 success:^{
-        
-        [SVProgressHUD showSuccessWithStatus:@"登陆成功"];
-        [self backBtnOnclick];
+    [[EMClient sharedClient] loginWithUsername:strCid
+                                      password:strPwd
+                                    completion:^(NSString *aUsername, EMError *aError) {
+                                        if (!aError) {
+                                            [SVProgressHUD showSuccessWithStatus:@"登陆成功"];
+                                            [self backBtnOnclick];
 
-        
-    } failure:^(NSString *e) {
-        NSLog(@"%@", e);
-        
-        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"登录失败 - %@",e]];
-//        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"注册失败 - %@", e] message:e delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil,nil];
-     
-//        [alertView show];
-    }];
+                                        } else {
+                                            [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"登录失败"]];
+                                        }
+                                    }];
+//    [g_pIMMyself setCustomUserID:[_nameTextField text]];
+//    [g_pIMMyself setPassword:[_passwordTextField text]];
+//    [g_pIMMyself loginWithTimeoutInterval:0 success:^{
+//        
+//        [SVProgressHUD showSuccessWithStatus:@"登陆成功"];
+//        [self backBtnOnclick];
+//
+//        
+//    } failure:^(NSString *e) {
+//        NSLog(@"%@", e);
+//        
+//        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"登录失败 - %@",e]];
+////        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"注册失败 - %@", e] message:e delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil,nil];
+//     
+////        [alertView show];
+//    }];
 }
 
 -(void)logoutBtnOnclick:(UIButton *)logoutBtn{
-    [g_pIMMyself logout];
+    
+    [[EMClient sharedClient]logout:YES completion:^(EMError *aError) {
+        NSLog(@"退出");
+    }];
+    
+    
 }
 
 @end

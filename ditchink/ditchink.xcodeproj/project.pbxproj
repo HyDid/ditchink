@@ -201,7 +201,7 @@
 		04F3BFE21DC7558D00E427E1 /* HySystemViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F3BFE01DC7558D00E427E1 /* HySystemViewTableViewCell.xib */; };
 		04F3BFE51DC769B100E427E1 /* HyMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3BFE41DC769B100E427E1 /* HyMessageModel.m */; };
 		04F3BFE81DC769CF00E427E1 /* HySystemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3BFE71DC769CF00E427E1 /* HySystemModel.m */; };
-		CF92AFBADF0160AA35F4F888 /* libPods-ditchink.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8C8630BCDEDA91006837EC /* libPods-ditchink.a */; };
+		A04FDB32C4EC6D6778982992 /* libPods-ditchink.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCFB909B608C593CB9D8ACE /* libPods-ditchink.a */; };
 		E4375B711DC1AFB9009AF40D /* home.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4375B701DC1AFB9009AF40D /* home.plist */; };
 		E4A457B41DDB0F2C00BE597E /* HyHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A457A11DDB0F2C00BE597E /* HyHomeViewController.m */; };
 		E4A457B51DDB0F2C00BE597E /* HyHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4A457A21DDB0F2C00BE597E /* HyHomeViewController.xib */; };
@@ -233,6 +233,19 @@
 			remoteInfo = ditchink;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		042F20721EFA3FAA007D9E86 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0422E3D21DF0146B00FE32AA /* HyNearbyAddCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyNearbyAddCircleViewController.h; sourceTree = "<group>"; };
@@ -532,7 +545,7 @@
 		04F3BFE41DC769B100E427E1 /* HyMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyMessageModel.m; sourceTree = "<group>"; };
 		04F3BFE61DC769CF00E427E1 /* HySystemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HySystemModel.h; sourceTree = "<group>"; };
 		04F3BFE71DC769CF00E427E1 /* HySystemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HySystemModel.m; sourceTree = "<group>"; };
-		1F8C8630BCDEDA91006837EC /* libPods-ditchink.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ditchink.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACCFB909B608C593CB9D8ACE /* libPods-ditchink.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ditchink.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E0B158292A533E12A5675F /* Pods-ditchink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ditchink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ditchink/Pods-ditchink.debug.xcconfig"; sourceTree = "<group>"; };
 		E4375B701DC1AFB9009AF40D /* home.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = home.plist; sourceTree = "<group>"; };
 		E4A457A01DDB0F2C00BE597E /* HyHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyHomeViewController.h; sourceTree = "<group>"; };
@@ -569,7 +582,7 @@
 				0422E5361DF93D4100FE32AA /* SystemConfiguration.framework in Frameworks */,
 				0422E5321DF93D2900FE32AA /* CoreLocation.framework in Frameworks */,
 				0422E5301DF93CE200FE32AA /* libIMSDK.a in Frameworks */,
-				CF92AFBADF0160AA35F4F888 /* libPods-ditchink.a in Frameworks */,
+				A04FDB32C4EC6D6778982992 /* libPods-ditchink.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1556,7 +1569,7 @@
 				0422E5351DF93D4100FE32AA /* SystemConfiguration.framework */,
 				0422E5331DF93D3400FE32AA /* CoreTelephony.framework */,
 				0422E5311DF93D2900FE32AA /* CoreLocation.framework */,
-				1F8C8630BCDEDA91006837EC /* libPods-ditchink.a */,
+				ACCFB909B608C593CB9D8ACE /* libPods-ditchink.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1625,6 +1638,7 @@
 				044D58531DB1F4DE00450FF6 /* Resources */,
 				A15934D9D9A00B81DC5759B1 /* [CP] Embed Pods Frameworks */,
 				40691F1182991A925BB79DFB /* [CP] Copy Pods Resources */,
+				042F20721EFA3FAA007D9E86 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1704,6 +1718,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 044D584C1DB1F4DE00450FF6;
 			productRefGroup = 044D58561DB1F4DE00450FF6 /* Products */;
@@ -2135,6 +2150,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 77UD393KBV;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ditchink/Other/ios_IM_sdk_V3.3.2/ChatDemo-UI3.0/ChatDemo-UI3.0/3rdparty/Parse",
+					"$(PROJECT_DIR)/ditchink/Other/ios_IM_sdk_V3.3.2/ChatDemo-UI3.0",
+					"$(PROJECT_DIR)/ditchink/Other/ios_IM_sdk_V3.3.2/ChatDemo-UI3.0/Pods/RedPacketAlipay",
+					"$(PROJECT_DIR)/ditchink/Other/ios_IM_sdk_V3.3.2/HyphenateFullSDK",
+					"$(PROJECT_DIR)/ditchink/Other/ios_IM_sdk_V3.3.2/HyphenateSDK",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ditchink/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = ditchink/Info.plist;
@@ -2143,6 +2166,13 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ditchink/Other/IM/IMSDK-Lib",
+					"$(PROJECT_DIR)/ditchink/Other/ios_IM_sdk_V3.3.2/ChatDemo-UI3.0/ChatDemo-UI3.0/3rdparty/UMeng",
+					"$(PROJECT_DIR)/ditchink/Other/ios_IM_sdk_V3.3.2/ChatDemo-UI3.0/ChatDemo-UI3.0/Class/Call/plugin",
+					"$(PROJECT_DIR)/ditchink/Other/ios_IM_sdk_V3.3.2/ChatDemo-UI3.0/Pods/RedpacketAliAuthLib/Redpacket/lib",
+					"$(PROJECT_DIR)/ditchink/Other/ios_IM_sdk_V3.3.2/ChatDemo-UI3.0/Pods/RedpacketLib/RedpacketStaticLib/lib",
+					"$(PROJECT_DIR)/ditchink/Other/ios_IM_sdk_V3.3.2/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrnb",
+					"$(PROJECT_DIR)/ditchink/Other/ios_IM_sdk_V3.3.2/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrwb",
+					"$(PROJECT_DIR)/ditchink/Other/ios_IM_sdk_V3.3.2/HyphenateVideoRecoder/HyphenateVideoRecorderPlugin",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -2168,7 +2198,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Hy.ditchink;
 				PRODUCT_NAME = "沟思";
-				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Debug;
 		};
@@ -2179,6 +2209,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 77UD393KBV;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ditchink/Other/ios_IM_sdk_V3.3.2/ChatDemo-UI3.0/ChatDemo-UI3.0/3rdparty/Parse",
+					"$(PROJECT_DIR)/ditchink/Other/ios_IM_sdk_V3.3.2/ChatDemo-UI3.0",
+					"$(PROJECT_DIR)/ditchink/Other/ios_IM_sdk_V3.3.2/ChatDemo-UI3.0/Pods/RedPacketAlipay",
+					"$(PROJECT_DIR)/ditchink/Other/ios_IM_sdk_V3.3.2/HyphenateFullSDK",
+					"$(PROJECT_DIR)/ditchink/Other/ios_IM_sdk_V3.3.2/HyphenateSDK",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ditchink/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = ditchink/Info.plist;
@@ -2187,6 +2225,13 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ditchink/Other/IM/IMSDK-Lib",
+					"$(PROJECT_DIR)/ditchink/Other/ios_IM_sdk_V3.3.2/ChatDemo-UI3.0/ChatDemo-UI3.0/3rdparty/UMeng",
+					"$(PROJECT_DIR)/ditchink/Other/ios_IM_sdk_V3.3.2/ChatDemo-UI3.0/ChatDemo-UI3.0/Class/Call/plugin",
+					"$(PROJECT_DIR)/ditchink/Other/ios_IM_sdk_V3.3.2/ChatDemo-UI3.0/Pods/RedpacketAliAuthLib/Redpacket/lib",
+					"$(PROJECT_DIR)/ditchink/Other/ios_IM_sdk_V3.3.2/ChatDemo-UI3.0/Pods/RedpacketLib/RedpacketStaticLib/lib",
+					"$(PROJECT_DIR)/ditchink/Other/ios_IM_sdk_V3.3.2/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrnb",
+					"$(PROJECT_DIR)/ditchink/Other/ios_IM_sdk_V3.3.2/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrwb",
+					"$(PROJECT_DIR)/ditchink/Other/ios_IM_sdk_V3.3.2/HyphenateVideoRecoder/HyphenateVideoRecorderPlugin",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -2212,7 +2257,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Hy.ditchink;
 				PRODUCT_NAME = "沟思";
-				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Release;
 		};

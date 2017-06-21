@@ -17,6 +17,8 @@
 //IM即时通讯（爱萌）
 #import "IMSDK.h"
 #import "IMMyself.h"
+//环信即时通讯
+#import "EMSDK.h"
 
 #define IMDeveloper_APPKey @"bc9f2b4f2fcf411b4c74061f"
 
