@@ -62,6 +62,10 @@
 
 }
 
-
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.nameTextField resignFirstResponder];
+    
+    [self.passwordTextField resignFirstResponder];
+}
 
 @end
