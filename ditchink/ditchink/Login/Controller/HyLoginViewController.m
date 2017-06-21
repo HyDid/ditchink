@@ -66,9 +66,17 @@
                                         if (!aError) {
                                             [SVProgressHUD showSuccessWithStatus:@"登陆成功"];
                                             [self backBtnOnclick];
+                                            
+                                            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                                                [SVProgressHUD dismiss];
+                                            });
 
                                         } else {
                                             [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"登录失败"]];
+                                            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                                                [SVProgressHUD dismiss];
+                                            });
+
                                         }
                                     }];
 //    [g_pIMMyself setCustomUserID:[_nameTextField text]];

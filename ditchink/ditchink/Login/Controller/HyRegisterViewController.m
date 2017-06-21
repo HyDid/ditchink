@@ -36,7 +36,10 @@
     NSLog( @"login - %@|%@", strCid, strPwd);
     
     [[EMClient sharedClient]registerWithUsername:strCid password:strPwd completion:^(NSString *aUsername, EMError *aError) {
-        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"注册失败 - %@",aError]];
+        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"欢迎注册 - %@",aUsername]];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [SVProgressHUD dismiss];
+        });
     }];
     
     
